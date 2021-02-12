@@ -9,6 +9,7 @@
 
     <h1>Programming for Operations Research</h1>
 
+    <hr>
     <h2>Week 1</h2>
     <ul>
         <li><a href="https://www.oracle.com/java/technologies/javase-downloads.html" target="_blank">Install Java Development Kit (JDK)</a></li>
@@ -23,6 +24,63 @@
         <li>Suggested IDEs: <a href="https://www.eclipse.org" target="_blank">Eclipse</a>, <a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ</a>, <a href="https://netbeans.org" target="_blank">Netbeans</a></li>
 
     </ul>
+    <hr>
+    <h2>Week 2</h2>
+    <h4><a href="https://www.loom.com/share/f2e1b8fc379145cebc6c9f624bbc035d" target="_blank">Hello World</a></h4>
+
+    <ul>
+        <li>IDEs are not particularly helpful while getting familiar with the syntax. Instead you are recommended to use a simple text editor.</li>
+        <li>For comments: Use // for single line, /* text... */ for multiple lines. It is important to document the flow of code with comments.</li>
+        <li>Java syntax for the class with the main method:
+            <h5>
+            class -classname- {<br/>
+                &emsp;public static void main (String[] args) {<br/>
+                    &emsp;&emsp;//code block here<br/>
+                    &emsp;}<br/>
+            }<br/>
+            </h5>
+        </li> 
+        <li>Class name and file name must be same and extension must be .java</li>
+        <li>javac compiles the java file:  "javac -classname-.java"</li>
+        <li>javac produces executable "-classname-.class"</li>
+    </ul>
+
+    <h4><a href="https://www.loom.com/share/76bd70fa2c664d3184a4263a0508a9ce" target="_blank">Numerical Operations</a></h4>
+<ul><li>We can define variables in 2 different ways:
+    <h5>Variabletype -variablename- ;<br />
+    -variablename- = somevalue;<br />
+    // or alternatively <br />
+    Variabletype -variablename- = somevalue ;</h5></li>
+    <li>Concatenation
+        <h5>System.out.println("string " + variable) // outputs string variable<br />
+        System.out.println("string " + variable1 + variable2) // outputs string variable1variable2<br />
+        System.out.println("string " + (variable1 + variable2)) // outputs string (sum of variable1 and variable2)</h5> </li>
+        
+    <li>Primitive Data Types:<br /><img src="Figures/Screen Shot 2020-10-10 at 17.01.56.png" type="image/png" width="343"/><br />Source: book, page 33</li>
+    
+    <li>integer / integer = integer. How to fix it, if a double result is needed?<ul>
+        <li>Define integers as double.</li>
+        <li>Or convert to double: (double) var1/var2.</li></ul></li>
+
+        <li>Do not rely on equality of doubles. When you manipulate doubles, although you do operations that lead to the same double mathematically, it is very likely that the results are not the same because of computer precision.</li></ul>
+        
+        <h4><a href="https://www.loom.com/share/4534666f98214d32afc8ba46af0145b8" target="_blank">For Loops</a></h4>
+        
+        <ul><li>Syntax of a for loop:
+            <h5>for (int -variablename- = -startingpoint- ; -variablename- -checkingcondition- -upperboundvalue- ; specify that how -variablename- will be updated”) { <span>}</h5><img src="Figures/Image [1].png" type="image/png" width="337"/><br />Source: w3schools</li>
+            <li>Initialization must be done before the scope of for. Others can be manipulated in the scope of for.</li>
+            <li>Arithmetic Operations:<br /><img src="Figures/Screen Shot 2020-10-10 at 16.59.46.png" type="image/png" width="340"/><br />Source: textbook, page 46</li>
+            <li>Break kicks you out of the inner-most for or while loop.</li></ul>
+            
+            
+        <h4><a href="https://www.loom.com/share/fc1ec9a37fab4541a54687ce7b239201" target="_blank">If Statements</a></h4>
+        
+        <img src="Figures/Image [2].png" type="image/png" width="328"/><br />Source: geeksforgeeks
+        <ul>
+            <li>If there are no curly braces, Java assumes it is single line.</li>
+            <li>Give meaningful name to your variables. Technically, it doesn't matter but it is a common practice for easier verification and maintainability of the code.</li>
+            <li>Relational operators (page49)<ul><li>== : equal to</li><li>!= : not equal to</li><li>&lt; : Less than</li><li>&lt;= : Less than or equal to</li><li>&gt;: Greater than</li><li>&gt;= : Greater than or equal to</li></ul></li><li>Logical operators (page49)<ul><li>&amp; : AND</li><li>| : OR</li><li>^ : XOR (exclusive OR)</li><li>|| : Short-circuit OR</li><li>&amp;&amp; : Short-circuit AND</li><li>! : NOT</li></ul></li></ul>
+
     <a href="http://validator.w3.org/check?url=oekundakcioglu.github.io/IE246" target="_blank"><img src="w3c.jpg" alt="Validate" style="float:right;height:23px;"></a>
 
 </html>
