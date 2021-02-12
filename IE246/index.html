@@ -5,6 +5,14 @@
     <title>Programming for Operations Research</title>
 </head>
 
+<style type="text/css">
+.question {
+    border: 1px solid #ddd;
+    margin: 2px;
+    padding: 1px;
+}
+</style>
+
 <body>
 
     <h1>Programming for Operations Research</h1>
@@ -26,7 +34,7 @@
     </ul>
     <hr>
     <h2>Week 2</h2>
-    <h4><a href="https://www.loom.com/share/f2e1b8fc379145cebc6c9f624bbc035d" target="_blank">Hello World</a></h4>
+    <h4><a href="https://www.loom.com/share/f2e1b8fc379145cebc6c9f624bbc035d" target="_blank">Hello World</a> <font color="white">InonuStadium</font></h4>
 
     <ul>
         <li>IDEs are not particularly helpful while getting familiar with the syntax. Instead you are recommended to use a simple text editor.</li>
@@ -45,7 +53,7 @@
         <li>javac produces executable "-classname-.class"</li>
     </ul>
 
-    <h4><a href="https://www.loom.com/share/76bd70fa2c664d3184a4263a0508a9ce" target="_blank">Numerical Operations</a></h4>
+    <h4><a href="https://www.loom.com/share/76bd70fa2c664d3184a4263a0508a9ce" target="_blank">Numerical Operations</a> <font color="white">HakkiYeten</font></h4>
 <ul><li>We can define variables in 2 different ways:
     <h5>Variabletype -variablename- ;<br />
     -variablename- = somevalue;<br />
@@ -56,7 +64,7 @@
         System.out.println("string " + variable1 + variable2) // outputs string variable1variable2<br />
         System.out.println("string " + (variable1 + variable2)) // outputs string (sum of variable1 and variable2)</h5> </li>
         
-    <li>Primitive Data Types:<br /><img src="Figures/primitive.png" alt="primitive" width="343"/><br />Source: book, page 33</li>
+    <li>Primitive Data Types:<br /><img src="Figures/primitive.png" alt="primitive" width="343"/><br />Source: textbook, page 33</li>
     
     <li>integer / integer = integer. How to fix it, if a double result is needed?<ul>
         <li>Define integers as double.</li>
@@ -64,7 +72,7 @@
 
         <li>Do not rely on the equality of double variables. Upon a set of operations on two double variables, which should mathematically lead to the same result, it is very likely that the variables are not equal due to computer precision and the way these doubles are stored in memory.</li></ul>
         
-        <h4><a href="https://www.loom.com/share/4534666f98214d32afc8ba46af0145b8" target="_blank">For Loops</a></h4>
+        <h4><a href="https://www.loom.com/share/4534666f98214d32afc8ba46af0145b8" target="_blank">For Loops</a> <font color="white">FeyyazUcar</font></h4>
         
         <ul><li>Syntax of a for loop:
             <h5>for (int -variablename- = -startingpoint- ; -variablename- -checkingcondition- -upperboundvalue- ; specify that how -variablename- will be updated”) { }</h5><img src="Figures/Image1.png" alt="for-loop" width="337"/><br />Source: w3schools</li>
@@ -73,13 +81,127 @@
             <li>Break kicks you out of the inner-most for or while loop.</li></ul>
             
             
-        <h4><a href="https://www.loom.com/share/fc1ec9a37fab4541a54687ce7b239201" target="_blank">If Statements</a></h4>
+        <h4><a href="https://www.loom.com/share/fc1ec9a37fab4541a54687ce7b239201" target="_blank">If Statements</a> <font color="white">SergenYalcin</font></h4>
         
         <img src="Figures/Image2.png" alt="if-statement" width="328"/><br />Source: geeksforgeeks
         <ul>
-            <li>If there are no curly braces, Java assumes it is a single line.</li>
-            <li>Give meaningful name to your variables. Technically it doesn't matter, but it is a common practice for easier verification and maintainability of the code.</li>
+            <li>Curly braces provide a code block to be run without any disruptions. If there are no curly braces enclosing the body of a for loop or if statement, a single line is assumed to be the body. </li>
+            <li>Give meaningful names to your variables. Technically it doesn't matter, but it is a common practice for easier verification and maintainability of the code.</li>
             <li>Relational operators (page49)<ul><li>== : equal to</li><li>!= : not equal to</li><li>&lt; : Less than</li><li>&lt;= : Less than or equal to</li><li>&gt;: Greater than</li><li>&gt;= : Greater than or equal to</li></ul></li><li>Logical operators (page49)<ul><li>&amp; : AND</li><li>| : OR</li><li>^ : XOR (exclusive OR)</li><li>|| : Short-circuit OR</li><li>&amp;&amp; : Short-circuit AND</li><li>! : NOT</li></ul></li></ul>
+
+            <div class="question">
+                <h3>Practice Questions</h3>
+                <p>Write a Java code that prints all the numbers between 0 and 1500 that are divisible by 7 but not by 3 on the screen.</p>
+          
+<p>We can cast a long into an int without any information loss. True or False?</p>
+
+<p>Write down what the following codes would output on the screen. If you think it would give an error during runtime or compilation, indicate the reason for the error and how it can be fixed.</p>
+                <ul>
+                    <li>
+                    <h5>boolean a = true;<br />
+                        boolean b = false;<br />
+                        if(a && !b)<br />
+                        System.out.print("Hello");<br />
+                        b = true;<br />
+                        if(a == false || b == false)<br />
+                        System.out.println("World");<br />
+                        if(b)<br />
+                        System.out.println("!");
+                        </h5></li>
+
+                        <li>
+                            <h5>
+                                for (int index = 0; index &lt; 3; index++) {<br />
+                                    &emsp; System.out.println("Welcome");<br />
+                                    &emsp; break;<br />
+                                }
+        </h5>
+                        </li>
+<li><h5>for(int i = 0; i &lt;= 5; i++) {<br />
+    &emsp;   System.out.println("i = " + i );<br />
+    }<br />
+    System.out.println("i after the loop = " + 1 );</h5></li>
+                        <li>
+
+                            <h5>int value1 = 1;<br />
+
+                                int value2 = 2;<br />
+                                
+                                if(value1 == value2)<br />
+                                
+                                System.out.println("value1 == value2");<br />
+                                
+                                if(value1 != value2)<br />
+                                
+                                System.out.println("value1 != value2");<br />
+                                
+                                if(value1 > value2)<br />
+                                
+                                System.out.println("value1 > value2");<br />
+                                
+                                if(value1 &lt; value2)<br />
+                                
+                                System.out.println("value1 &lt; value2");<br />
+                                
+                                if(value1 &lt;= value2)<br />
+                                
+                                System.out.println(value1 &lt;= value2);
+                            </h5>
+                        </li>
+<li><h5>int s = 3; <br />
+int x = 7; <br />
+int y = 8; <br />
+int z = 11; <br />
+s++; <br />
+y--;<br />
+System.out.println("Output: " + (z + x + s) + " and "+ y); </h5></li>
+
+<li><h5>System.out.println("Hello");<br />
+    System.out.print("World");<br />    
+    System.out.println("!");</h5></li>
+
+                        <li>
+<h5>int result = 1 + 2;<br />
+    System.out.println("1 + 2 = " + result);<br />
+    int original_result = result;<br />
+    <br />
+    result = result - 1;<br />
+    System.out.println(original_result + " - 1 = " + result);<br />
+    original_result = result;<br />
+    <br />
+    result = result * 2;<br />
+    System.out.println(original_result + " * 2 = " + result);<br />
+    original_result = result;<br />
+    <br />
+    result = result / 2;<br />
+    System.out.println(original_result + " / 2 = " + result);<br />
+    original_result = result;<br />
+    <br />
+    result = result + 8;<br />
+    System.out.println(original_result + " + 8 = " + result);<br />
+    original_result = result;<br />
+    <br />
+    result = result % 7;<br />
+    System.out.println(original_result + " % 7 = " + result);</h5>
+                        </li>
+                        <li><h5>for(int i=1; i&lt;65; i++) {<br />
+                            &emsp;if(i%3==0) {<br />
+                            
+                                &emsp;&emsp;if(i%2==0 && i%5!=0)<br />
+                                &emsp;&emsp;&emsp;
+                                     System.out.println(i);<br />
+                                     &emsp;}<br />
+                            
+                            }
+                            </h5></li>
+                        </ul>
+          
+                   </div>
+                
+         
+
+
+
 
     <a href="http://validator.w3.org/check?url=oekundakcioglu.github.io/IE246" target="_blank"><img src="w3c.jpg" alt="Validate" style="float:right;height:23px;"></a>
 
