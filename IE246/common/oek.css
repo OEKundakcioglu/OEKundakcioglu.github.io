@@ -1,0 +1,18 @@
+h6 {
+    color:white;
+    display:inline
+}
+h4 {
+    display:inline
+}
+
+code {
+    display:block;
+    color:blue;
+    background-color:lightgray;
+    padding: 0px;
+}
+
+li {
+    margin-bottom: 4px;
+}
