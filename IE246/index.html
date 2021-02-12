@@ -48,10 +48,10 @@
 
     <h4><a href="https://www.loom.com/share/76bd70fa2c664d3184a4263a0508a9ce" target="_blank">Numerical Operations</a> </h4><h6>HakkiYeten</h6>
 <ul><li>We can define variables in 2 different ways:
-    <code>Variabletype -variablename- ;<br />
+    <code>Variabletype -variablename-;<br />
     -variablename- = somevalue;<br />
     // or alternatively <br />
-    Variabletype -variablename- = somevalue ;</code></li>
+    Variabletype -variablename- = somevalue;</code></li>
     <li>Concatenation
         <code>System.out.println("string " + variable) // outputs string variable<br />
         System.out.println("string " + variable1 + variable2) // outputs string variable1variable2<br />
@@ -69,7 +69,9 @@
 
         
         <ul><li>Syntax of a for loop:
-            <code>for (int -variablename- = -startingpoint- ; -variablename- -checkingcondition- -upperboundvalue- ; specify that how -variablename- will be updated) { }</code><img src="Figures/Image1.png" alt="for-loop" width="337"/><br />Source: w3schools</li>
+            <code>for (int -variablename- = -startingpoint-; -variablename- -checkingcondition- -boundvalue-; how -variablename- will be itearated) {<br />
+             &emsp;// code block here   <br />
+             }</code><img src="Figures/Image1.png" alt="for-loop" width="337"/><br />Source: w3schools</li>
             <li>Initialization must be done before the scope of for. Others can be manipulated in the scope of for.</li>
             <li>Arithmetic Operations:<br /><img src="Figures/operator.png" alt="operators" width="340"/><br />Source: textbook, page 46</li>
             <li>Break kicks you out of the inner-most for or while loop.</li></ul>
@@ -83,15 +85,21 @@
             <li>Give meaningful names to your variables. Technically it doesn't matter, but it is a common practice for easier verification and maintainability of the code.</li>
             <li>Relational operators <ul><li>== : equal to</li><li>!= : not equal to</li><li>&lt; : Less than</li><li>&lt;= : Less than or equal to</li><li>&gt;: Greater than</li><li>&gt;= : Greater than or equal to</li></ul></li><li>Logical operators <ul><li>&amp; : AND</li><li>| : OR</li><li>^ : XOR (exclusive OR)</li><li>|| : Short-circuit OR</li><li>&amp;&amp; : Short-circuit AND</li><li>! : NOT</li></ul></li></ul>
 
-               <h3>Questions</h3>
-                <p>Write a Java code that prints all the numbers between 0 and 1500 that are divisible by 7 but not by 3 on the screen.</p>
-          
-<p>We can cast a long into an int without any information loss. True or False?</p>
+               <h4>Questions</h4>
+               
+               <p>Write a Java code that prints all the numbers between 0 and 1500 that are divisible by 7 but not by 3 on the screen.</p>
 
-<p>Write down what the following codes would output on the screen. If you think it would give an error during runtime or compilation, indicate the reason for the error and how it can be fixed.</p>
-                <ul>
-                    <li>
-                    <code>boolean a = true;<br />
+               <p>Write a Java code that prints all the letters in the alphabet in lowercase (char decimals 97-122) in a single line without any space in between.</p>
+               
+               <p>Write a Java code that prints all the letters in the alphabet in lowercase (5 letters per line) without any space in between.</p>
+               
+               <p>Write a Java code that prints all the letters in the alphabet in lowercase (move to the next line if e or t is to be printed next) with one space in between.</p>
+               
+               <p>We can cast a long into an int without any information loss. True or False?</p>
+
+<p>Without compiling/running, predict what the following codes would output on the screen. If you think it would give an error during runtime or compilation, indicate the reason for the error and how it can be fixed.</p>
+                <ol>
+                    <li><code>boolean a = true;<br />
                         boolean b = false;<br />
                         if(a && !b)<br />
                         System.out.print("Hello");<br />
@@ -187,7 +195,7 @@ System.out.println("Output: " + (z + x + s) + " and "+ y); </code></li>
                             
                             }
                             </code></li>
-                        </ul>
+                        </ol>
           
                 
          

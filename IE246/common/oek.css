@@ -7,12 +7,12 @@ h4 {
 }
 
 code {
-    display:block;
-    color:blue;
-    background-color:lightgray;
-    padding: 0px;
+    display: table-cell;
+    color:darkslateblue;
+    background-color:lightgrey;
+    padding: 3px;
 }
 
 li {
-    margin-bottom: 4px;
+    margin-bottom: 3px;
 }
