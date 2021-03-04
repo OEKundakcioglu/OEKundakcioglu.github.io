@@ -3,16 +3,15 @@
 <meta charset="UTF-8">
 
 <title>Programming for Operations Research</title>
+
 <link rel="stylesheet" type="text/css" href="common/oek.css">
 
 <body>
 
     <h1>Programming for Operations Research</h1>
     <div style="display: flex; justify-content: flex-end"> <a href="references/BeginnersGuide.pdf" target="_blank"> <img src="Figures/book-128.png" alt="video_icon" width="20"/> </a> <a href="references/HowtoProgram.pdf" target="_blank"> <img src="Figures/book-256.png" alt="video_icon" width="20"/> </a></div>
-    
-    <div style="text-align:center;"><a href="#week1">Week1</a> | <a href="#week2">Week2</a>
-        <!--     <a href="#week3"> Week3 </a>
-             <a href="#week4"> Week4 </a>
+    <div style="text-align:center;"><a href="#week1">Week1</a> | <a href="#week2">Week2</a> | <a href="#week3"> Week3 </a>
+<!--              <a href="#week4"> Week4 </a>
              <a href="#week5"> Week5 </a>
              <a href="#week6"> Week6 </a> 
              <a href="#week7"> Week7 </a> 
@@ -117,9 +116,6 @@
 
     </div> 
 
-<!--
-
-
 
 
 
@@ -134,13 +130,13 @@
         <li>For now, you can memorize some use cases we discussed but it's good to know why/how we use the periods in that syntax.</li>
         
 
-        <li>Popular Example:<br /><img src="Figures/method_example.png" alt="method_example" width="343"/><br />Source: Smartherd</li>
+        <li>Popular Example:<br /><img src="Figures/method_example.png" alt="method_example" width="243"/><br />Source: Smartherd</li>
         <li>Function (Method): A block of code that performs a specific task. There are several built-in functions, e.g., math.sqrt(). You can design your own functions hopefully in 3 weeks :) </li>
         
         <li>You can increment/decrement chars similar to an integer. You can even initialize them as integers.</li>
         <li>Every char has an ASCII number (they are basically integers, see figure given below). You access any char with the associated numeric value. <br /><img src="Figures/ascii_table.png" alt="ascii_table" width="343"/><br />Source: Source: Harvard CS50 Course (you may want to review this course) </li>
         <li>Long to integer conversion: Since integer has smaller domain, compiler gives error. Same error on integer to char conversion because there are fewer characters than integers.</li>
-        <li> Compiler converts any validation statement true or false (e.g. (10>9)) to boolean. </li>
+        <li> Compiler converts any validation statement true or false (e.g., (10>9)) to boolean. </li>
 
         <li>Java syntax for the class with the main method:
             <code>
@@ -161,7 +157,7 @@
         <li>A code block is statements written between curly braces. </li>
         <li>Scope is the region where defined variables are usable. </li>
         <li>The scope of a variable depends on where you define a variable. It starts right after the point of declaration, goes until the end of the block. </li>
-        <li>A variable is not usable outside (i.e. before/after) its scope. </li>
+        <li>A variable is not usable outside (i.e., before/after) its scope. </li>
         <li>In the scope of a variable, you cannot define another variable with the same name. </li>
         <li>You cannot refer to a variable before its declaration. </li>
         <li>Scope Example:<br /><img src="Figures/scope_example.gif" alt="scope_example" width="343"/><br />Source: Emory University</li>
@@ -170,13 +166,13 @@
        
         </ul>
 
-    <h4>Input Mechanisms </h4><h6> <a href="https://www.loom.com/embed/fd9b7db6a0d7489c99cf886214c84899" target="_blank"> <img src="Figures/video_icon.png" alt="video_icon" width="20"/> </a> RecepCetin</h6>
+    <h4>Input Mechanisms </h4><h6> <a href="https://www.loom.com/embed/fd9b7db6a0d7489c99cf886214c84899" target="_blank"> <img src="Figures/video_icon.png" alt="video_icon" width="20"/> </a> RecepCetin</h6> <h6> <a href="https://www.loom.com/embed/d6ca0fbed1d94834b834bcd295182e85" target="_blank"> <img src="Figures/video_icon.png" alt="video_icon" width="20"/> </a> GokhanKeskin</h6>
 
 
     <ul>
         
         <li>User input is dynamically changing in real life. </li>
-        <li>Getting input from user (once):
+        <li>Getting input from the user (once):
             <code>
             System.in.read()
             </code>
@@ -184,7 +180,7 @@
 
         <li>Casting: changing data type into a different data type. Usage: new data type in parenthesis, e.g., (double)</li>
         <li>Some escape characters: "\n" : new line "\t" : tab</li>
-        <li>Using "java classname inputs" command is another option to receive user input. </li>
+        <li>Using "java classname inputs" command is another (and much more flexible) option to receive user input. </li>
         <li>Arrays - A quick preview: 
             <ul>
                 <li>Consider arrays as vectors</li>
@@ -198,12 +194,7 @@
         <li>Double.parseDouble(data): casts data into a double</li>
         <li>Integer.parseInt(data): casts data into an integer</li>
         <li>We have to make sure these types can be casted. Not all casting is possible or makes sense. But a string of say '6' can definitely be converted to an integer.</li>
-        <li>Remember some casting is easier as mentioned on the third bullet above; (double) would convert an int to a double.</li>
-
-
-        <li>Week3-Video4 <h6> <a href="https://www.loom.com/embed/d6ca0fbed1d94834b834bcd295182e85" target="_blank"> <img src="Figures/video_icon.png" alt="video_icon" width="20"/> </a> GokhanKeskin</h6></li>
-
-       
+        <li>Remember some casting is easier as mentioned on the third bullet above; (double) would convert an int to a double.</li>       
     </ul>
 
 
@@ -212,6 +203,9 @@
 
     </div> 
 
+
+
+<!--
 
 
 
@@ -392,11 +386,11 @@
 
         <li>When you give a name to your function, be careful. Don't use reserved keywords and give reasonable names. </li>
         
-        <li>Two types of function: Functions that return a value(e.g. integer array, double, String etc.) or void type functions(i.e. methods which do not return a value). You must declare it when you define your function. </li>
+        <li>Two types of function: Functions that return a value(e.g., integer array, double, String etc.) or void type functions(i.e., methods which do not return a value). You must declare it when you define your function. </li>
 
         <li>Usage(function calling):  <br /><img src="Figures/function_usage.jpg" alt="function_usage" width="343"/><br /> Source: Programiz</li>
 
-        <li>Don't manipulate original data (i.e. input parameters) in your functions. You may want to do it for a purpose but if you don't have one, use copy of parameter. Otherwise, if the input parameter is a reference or class type, note that you're changing it elsewhere too. </li>
+        <li>Don't manipulate original data (i.e., input parameters) in your functions. You may want to do it for a purpose but if you don't have one, use copy of parameter. Otherwise, if the input parameter is a reference or class type, note that you're changing it elsewhere too. </li>
 
 
         </ul>
@@ -498,9 +492,9 @@
             <li>You can check conventions from Oracle's web-site: <a href="https://www.oracle.com/java/technologies/javase/codeconventions-namingconventions.html" target="_blank"> Oracle Naming Conventions</a> </li>
             <li>Naming convention: 
             <ul>
-                <li>Classes starts with upper-case (e.g. class  TwoPeople) </li>
-                <li>Functions and variables: lower-case first word, upper-case other words. (e.g. myVariable, runFast()) </li>
-                <li>Constants (i.e. data types that we never change) : upper-case letters  (e.g. static final int MIN_WEIGHT=10.) </li>
+                <li>Classes starts with upper-case (e.g., class  TwoPeople) </li>
+                <li>Functions and variables: lower-case first word, upper-case other words. (e.g., myVariable, runFast()) </li>
+                <li>Constants (i.e., data types that we never change) : upper-case letters  (e.g., static final int MIN_WEIGHT=10.) </li>
                 <li>Long names are fine (unless too long). Be crystal clear when you are naming. </li>
             </ul>
             </li>
@@ -608,7 +602,7 @@
         </li> 
 
 
-        <li>If you declare that two objects are equal, then you make their pointers equal (i.e. both objects point the exactly same location in memory). When you update one object, both will be updated.</li> 
+        <li>If you declare that two objects are equal, then you make their pointers equal (i.e., both objects point the exactly same location in memory). When you update one object, both will be updated.</li> 
 
 
     </ul> 
@@ -861,7 +855,7 @@
             <ul>
                 <li>Define value/weight for every item.  </li>
                 <li>Sort them in a descending order.</li>
-                <li>Start from the first item (i.e. biggest in terms of value per weight)</li>
+                <li>Start from the first item (i.e., biggest in terms of value per weight)</li>
                 <li>Include item if there is enough capacity, otherwise check the next item in sorted array.</li>
             </ul>
         </li>
@@ -897,8 +891,8 @@
             <ul>
                 <li>.put(key, value) // add element to the HashMap</li>
                 <li>.put(key, value) // add element to the HashMap</li>
-                <li>.keySet() // returns all keys. Note that hashmap.keySet() can be iterated (i.e. for each loop)</li>
-                <li>.values() // returns all values. Note that, hashmap.values() can be iterated (i.e. for each loop)</li>
+                <li>.keySet() // returns all keys. Note that hashmap.keySet() can be iterated (i.e., for each loop)</li>
+                <li>.values() // returns all values. Note that, hashmap.values() can be iterated (i.e., for each loop)</li>
                 <li>.remove(key) // remove given key and associated value.</li>
                 <li>.clear() // clear all key-value pairs of HashMap</li>
                 <li>.size() // returns size of the HashMap</li>
