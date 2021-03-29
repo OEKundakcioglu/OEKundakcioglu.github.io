@@ -9,9 +9,8 @@
 
     <h1>Programming for Operations Research - Questions</h1>
     <br />
-    <div style="text-align:center;"> <a href="#week2"> Week2 </a> | <a href="#week3"> Week3 </a> | <a href="#week4"> Week4 </a> | <a href="#week5"> Week5 </a>
-     <!--<a href="#week6"> Week6 </a> 
-     <a href="#week7"> Week7 </a> 
+    <div style="text-align:center;"> <a href="#week2"> Week2 </a> | <a href="#week3"> Week3 </a> | <a href="#week4"> Week4 </a> | <a href="#week5"> Week5 </a> | <a href="#week6"> Week6 </a> 
+      <!--<a href="#week7"> Week7 </a> 
      <a href="#week8"> Week8 </a>     
      <a href="#week9"> Week9 </a> 
      <a href="#week10"> Week10 </a> 
@@ -227,6 +226,54 @@ Enter a number between 1 and 12<br />
 </ol>
         </div>
 
+        <div id = "week6"> 
+            <hr>
+        <h2>Week 6</h2>
+                   
+                   <ol>
+            <li>Write an Author class with following features:<br /><br />
+
+                Instance variables:<br />
+                firstName for the author’s first name of type String.<br />
+                lastName for the author’s last name of type String.<br /><br />
+                
+                Constructor:<br />
+                public Author (String firstName, String lastName): A constructor with parameters, it creates the Author object by setting the two fields to the passed values.<br /><br />
+
+                Instance methods:<br />
+                public void setFirstName (String firstName): Used to set the first name of author.<br />
+                public void setLastName (String lastName): Used to set the last name of author.<br />
+                public double getFirstName(): This method returns the first name of the author.<br />
+                public double getLastName(): This method returns the last name of the author.</li>
+        <li>Consider the Movie class below.
+            <code>public class Movie {<br />
+                &emsp;private String title;<br />
+                &emsp;private int rating;<br />
+                &emsp;// your code goes here<br />
+                }
+                </code>
+            An instance of class Movie represents a film. This class
+            has the following variables:
+            
+            <ul><li>title, which is a String representing the title of the movie</li>
+            <li>rating, which is an integer representing the imdb rating of the movie</li></ul>
+            Write a constructor for the class Movie, which takes a String representing the title of the movie, and an int representing the rating as its arguments, and sets the respective class variables to these values.
+        </li>
+        <li>Can a class have multiple constructors?</li>
+        <li>Can a class have multiple constructors with same number and types of inputs?</li>
+        <li>Create a Rectangle class that has the attributes length and width, and methods getArea() and getPerimeter(). Then, create two Rectangle objects and compare (print the values returned by the getter methods) their areas and perimeters.</li>
+        <li>Write a program that would print the information (name, year started, salary, address) for three employees by creating a class named 'Employee'. There should be a row that indicates type of information and three rows for three employeees in spreadsheet format with tabs in between columns.</li>
+        <li><img src="images/brain.png" style="height:38px;" alt="Think">Write a RightTriangle class with two edge lengths stored as variables. Include a constructor that takes two values as input and sets these variables. Include the necessary code so that I can do the following from the main method.<code>
+            RightTriangle rightTriangle = new RightTriangle(3,4);<br />
+            double hyp = rightTriangle.hypotenuse(); // hyp gets value 5.0<br />
+            double a = rightTriangle.area(); // a gets value 6.0<br />
+            double p = rightTriangle.perimeter(); // p gets value 12.0<br />
+            double s = rightTriangle.smallestAngle(2); // s gets value ~ 53.13 which is the 2nd smallest angle for the triangle. <br />
+            double ss = rightTriangle.smallestAngle(1); // ss gets value ~ 36.87 which is the 1st smallest angle for the triangle. <br />
+            
+        </code></li>
+        </ol>
+                </div>
     <a href="http://validator.w3.org/check?url=oekundakcioglu.github.io/IE246/questions.html" target="_blank"><img src="w3c.jpg" alt="Validate" style="float:right;height:23px;"></a>
 
 </html>
