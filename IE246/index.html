@@ -220,17 +220,15 @@
                     &emsp;&emsp;//code block here<br/>
                     &emsp;&emsp;break; //break is optional but very common if you want to do one code block for each case<br/>
                     &emsp;<br/>
-            <br/>
             &emsp;case y: <br/>
                     &emsp;&emsp;//code block here<br/>
                     &emsp;&emsp;break;<br/>
                     &emsp;<br/>
-            <br/>
+            
             &emsp;default: //default is optional<br/>
                     &emsp;&emsp;//code block here<br/>
                     &emsp;&emsp;break;<br/>
-                    &emsp;<br/>
-            }<br/>
+            }
 
             </code>
         </li> 
@@ -737,30 +735,21 @@
 
         <li>Syntax:
             <code>
-            
             import java.util.Random;<br/>
             <br/>
 
             Random -name- = new Random();<br/>
-            -name-.setSeed(-seed_number-);<br/>
-
-            <br/>
-
+            -name-.setSeed(-seed_number-);
             </code>
 
         </li> 
 
         <li>Some other functions:
             <code>
-            
             -name-.nextInt(-integer_value-); //generates integer random number in between [0,-integer_value-) - default [0,1)<br/>
 
-            <br/>
-           
-            -name-.nextDouble(); //generates double random number in between [0,1)<br/>
-
-            <br/>
-
+            
+            -name-.nextDouble(); //generates double random number in between [0,1)
             </code>
 
         </li> 
@@ -807,25 +796,18 @@
             
             import java.io.FileReader;<br/>
             import java.io.BufferedReader;<br/>
+            // OR <br/>
+            //import java.io.* // imports everything in java.io! <br/>
             <br/>
-
-            OR <br/>
-            <br/>
-
-
-            import java.io.* // imports everything in java.io! <br/>
-            
-            <br/>
-
             try { <br/>
-                &emsp;&emsp; FileReader -filereader_name- = new FileReader("-data-");  // You will give path to the data. Full path is not needed if the file is in the same folder with the class file.<br/><br/>
-                &emsp;&emsp; BufferedReader -bufferedreader_name- = new BufferedReader(-filereader_name-);  // Compiler can complain since FileReader not initialized. <br/><br/>
-                &emsp;&emsp; String -line_name- = -bufferedreader_name-.readLine(); // Read entire line as String<br/><br/>
-                &emsp;&emsp; String[ ] -array_name- =  -line_name-.split("-split_char-"); // "split" "given line of string" into elements  according to given "split_char"<br/><br/>
+                &emsp;&emsp; FileReader -filereader_name- = new FileReader("-data-");  // You will give path to the data. Full path is not needed if the file is in the same folder with the class file.<br/>
+                &emsp;&emsp; BufferedReader -bufferedreader_name- = new BufferedReader(-filereader_name-);  // Compiler can complain since FileReader not initialized. <br/>
+                &emsp;&emsp; String -line_name- = -bufferedreader_name-.readLine(); // Read entire line as String<br/>
+                &emsp;&emsp; String[ ] -array_name- =  -line_name-.split("-split_char-"); // "split" "given line of string" into elements  according to given "split_char"<br/>
 
-                &emsp;}catch (FileNotFoundException e) {<br/><br/>
-                &emsp;&emsp; System.out.println(e); // If your data.csv file can not 
-                &emsp;}catch (IOException e) {<br/><br/>
+                &emsp;} catch (FileNotFoundException e) {<br/>
+                &emsp;&emsp; System.out.println(e); // If your data.csv file can not be found <br />
+                &emsp;} catch (IOException e) {<br/>
                 &emsp;&emsp; System.out.println(e); //<br/>
                 &emsp;}<br/>
            
