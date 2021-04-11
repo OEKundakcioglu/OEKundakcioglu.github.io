@@ -311,11 +311,55 @@ Enter a number between 1 and 12<br />
                 <code>double y = Exponential(5); // y takes the value of a randomly generated exponential random variable with rate 5</code>
             </li>
             </ol>
-                
-
-
-
-
+            </div>
+            <div style="display: flex; justify-content: flex-end"> <a href="#top"> Back to top </a> </div>
+            <div id = "week8"> 
+                <hr>
+            <h2>Week 8</h2>
+                       
+                       <ol>
+                        <li>Suppose we have the following code with an object named efes, that holds the jersey numbers and names of players:
+<code>
+                    HashMap&#60;Integer, String&#62; efes = new HashMap&#60;Integer, String&#62;();<br />
+                    efes.put(15, "Ufuk");<br />
+                    efes.put(13, "Kamer");<br />
+                    efes.put(8, "Volkan");<br />
+                    efes.put(11, "Murat");<br />
+                </code>               What lines would you include next, in order to update the second player's name from "Kamer" to "Tamer" and remove the last player added above? </li>
+                <li>Suppose we have the following code with an object named efes, that holds the jersey numbers and names of players:
+                <code>HashMap&#60;Integer, String&#62; efes = new HashMap&#60;Integer, String&#62;();<br />
+                    efes.put(15, "Ufuk");<br />
+                    efes.put(7, "Petar");<br />
+                    efes.put(9, "Conrad");<br />
+                    efes.put(8, "Volkan");<br />
+                    efes.put(11, "Murat");</code>
+                    Write a Player class with only public variable members and a HashSort method that takes the HashMap and returns a sorted array of Player objects in ascending jersey number. I should be able to do 
+                    <code>Player[] efes_sorted=HashSort(efes);</code>
+                    After this line, Player.length should be 5. For example: Player[0].number should be 7 and Player[0].name should be "Petar", Player[2].number should be 9 and Player[2].name should be "Conrad" etc.
+                </li>
+                <li><img src="images/brain.png" style="height:38px;" alt="Think"> Create a Player class with member variables name and jersey number. Create two players of your choice and place them in a Hashmap&#60;Player, Integer&#62; where the integer value can represent the total points scored, thus you can make up some values. Next, create a new Player object (say player3) that is identical to one of the earlier created players (same name and jersey number). Now try to use player3 as a key and access the corresponding integer value (total points scored) for this player. Can you? If yes, explain how. If not, explain why not.</li>
+                <li>Provide a method named sortMyArray that can take a vector of doubles as input (should work with both an ArrayList&#60;double&#62; and a double[] array) and returns a HashMap where the key is the index of that item in the sorted list or array (in ascending order) and value is the item's value. For example if I do the following
+<code>double exampleArray={12 , 6 , -1.5, 4.8}<br />
+                    HashMap&#60;Integer, double&#62; sortedArray = sortMyArray(exampleArray) <br />
+                </code>
+                    my sortedArray should include &#60;key:0,value:-1.5&#62;, &#60;key:1,value:4.8&#62;, &#60;key:2,value:6&#62;, &#60;key:3,value:12&#62;.</li>
+                    <li>Write a method that takes a HashMap&#60;String,Integer&#62;. The method should identify two integers from the values of the HashMap, where the first one is divisible by the second. The method must print keys of all such pairs of numbers on console. Pairs of keys cannot be the same. Suppose I have the following keys and values in HashMap named hm:<br />
+                        "A":20<br />
+                        "B":120<br />
+                        "C":40<br />
+                        "D":17<br />
+                        "E":51<br />
+                        I should be able to call divisibles(hm) and it should only print out the associated keys as:
+<code>
+                        B is divisible by A.<br />
+                        
+                        B is divisible by C.<br />
+                        
+                        E is divisible by D.</code>                        </li>
+                        <li>Write a method that takes a string and a HashMap&#60;String, Integer&#62; as inputs and if that string is a key in the given HashMap, changes the corresponding integer value to another randomly generated value.</li>
+                        
+                        <li><img src="images/brain.png" style="height:38px;" alt="Think">Write a method that takes an integer and a HashMap&#60;Integer, String&#62; as inputs and if that integer is a key in the given HashMap, changes that key to another randomly generated value. You have to make sure that there is a change (i.e., it cannot coincidentally by the same value, or the random outcome should not coincide with another key).</li>
+                </ol>
                 </div>
                 <div style="display: flex; justify-content: flex-end"> <a href="#top"> Back to top </a> </div><hr>
     <a href="http://validator.w3.org/check?url=oekundakcioglu.github.io/IE246/questions.html" target="_blank"><img src="w3c.jpg" alt="Validate" style="float:right;height:23px;"></a>
