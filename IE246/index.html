@@ -10,13 +10,11 @@
 <div id = "top">
     <h1>Programming for Operations Research</h1>
     <div style="display: flex; justify-content: flex-end"> <a href="references/BeginnersGuide.pdf" target="_blank"> <img src="images/book-128.png" alt="video_icon" width="20"/> </a> <a href="references/HowtoProgram.pdf" target="_blank"> <img src="images/book-256.png" alt="video_icon" width="20"/> </a></div>
-    <div style="text-align:center;"><a href="#week1">Week1</a> | <a href="#week2">Week2</a> | <a href="#week3"> Week3 </a> | <a href="#week4"> Week4 </a> | <a href="#week5"> Week5 </a> | <a href="#week6"> Week6 </a> | <a href="#week7"> Week7 </a> | <a href="#week8"> Week8 </a>     
-             <!--<a href="#week9"> Week9 </a> 
-             <a href="#week10"> Week10 </a> 
-             <a href="#week11"> Week11 </a> 
-             <a href="#week12"> Week12 </a>
-             <a href="#week13"> Week13 </a> 
-             <a href="#week14"> Week14 </a> 
+    <div style="text-align:center;"><a href="#week1">Week1</a> | <a href="#week2">Week2</a> | <a href="#week3"> Week3 </a> | <a href="#week4"> Week4 </a> | <a href="#week5"> Week5 </a> | <a href="#week6"> Week6 </a> | <a href="#week7"> Week7 </a> | <a href="#week8"> Week8 </a> | <a href="#week9"> Week9 </a> 
+             <!--| <a href="#week10"> Week10 </a> | <a href="#week11"> Week11 </a> 
+             | <a href="#week12"> Week12 </a>
+             | <a href="#week13"> Week13 </a> 
+             | <a href="#week14"> Week14 </a> 
             --></div>
         
     
@@ -810,8 +808,8 @@
             </ul>
         </li>
 
-        <li>Heuristic approach: Although it can find optimal solution, you can not guarantee that the solution is optimal.</li>
-        <li>Next week, we are going to solve same problem with a commercial solver.</li>
+        <li>Heuristic approach: Although it can find a solution, you cannot guarantee that the solution is optimal.</li>
+        <li>Next week, we are going to solve the same problem with a commercial solver.</li>
 
     </ul> 
 
@@ -853,12 +851,6 @@
     <p><a href="files/Week8.zip"><img src="images/folder.png" alt="Folder" width="18"/> Download Files</a></p>
     </div> 
 
-
-
-
-
-<!--
-
     <div id = "week9"> 
     <hr>
     <h2>Week 9</h2>
@@ -879,14 +871,13 @@
 
         <li>Gurobi Installation Guide:
             <ul>
-                <li><a href="https://pages.gurobi.com/registration" target="_blank">Register </a> with your .ozu e-mail to get Academic Licence </li>
+                <li><a href="https://pages.gurobi.com/registration" target="_blank">Register </a> with your .ozu.edu.tr e-mail to receive an academic license</li>
                 <li><a href="https://www.gurobi.com/downloads/ ">Download page</a> </li>
                 <li>Default download directory for macOS: /Library/gurobi</li>   
                 <li>Default download directory for Windows:  C:\gurobi\</li>   
-                <li>When you get the academic licence, you will see "grbgetkey -numbers-". Copy and paste it to the terminal/cmd.</li>   
-                <li>Terminal/Cmd will ask you to where to locate Gurobi licence, give the download directory. </li>   
-                <li>After that, should add .jar to the path to use Gurobi.</li> 
-                <li>If you have any problem, please contact with TA's.</li>  
+                <li>When you get the academic licence, you will see "grbgetkey -code-". Copy and paste it to your terminal/cmd window.</li>   
+                <li>Terminal/Cmd will ask you to where to locate Gurobi licence, and you can provide your home directory. </li>   
+                <li>You must add gurobi.jar to the class path to use Gurobi from your code.</li> 
             </ul>
         </li>
 
@@ -914,14 +905,14 @@
         <li>How to work with different jars? (JAR: Java ARchive)
             <code>
             
-            javac -clashpath "path_to_jar":. -main_method-.java <br/>
-            java -clashpath "path_to_jar":. -main_method- <br/>
+            javac -classpath "path_to_jar":. -main_method-.java <br/>
+            java -classpath "path_to_jar":. -main_method- <br/>
            
             </code>
 
         </li> 
 
-        <li>Also you can add external jar with IDE.</li> 
+        <li>You can also add external jar files using your IDE.</li> 
 
 
         </ul>
@@ -930,33 +921,25 @@
 
 
 
-    <h4>Solving Knapsack Problem with Gurobi </h4><h6> <a href="https://www.loom.com/embed/d8a640b0788b4abda039516cc47f2c70" target="_blank"> <img src="images/video_icon.png" alt="video_icon" width="20"/> </a> PascalNouma</h6>
+    <h4>Solving the Knapsack Problem with Gurobi </h4><h6> <a href="https://www.loom.com/embed/d8a640b0788b4abda039516cc47f2c70" target="_blank"> <img src="images/video_icon.png" alt="video_icon" width="20"/> </a> PascalNouma</h6><h6> <a href="https://www.loom.com/embed/31bdf4ae679f4288be7e2de7b742e57b" target="_blank"> <img src="images/video_icon.png" alt="video_icon" width="20"/> </a> AndreasBeck</h6>
 
 
     <ul>
-        <li>Week9-Video4 <h6> <a href="https://www.loom.com/embed/31bdf4ae679f4288be7e2de7b742e57b" target="_blank"> <img src="images/video_icon.png" alt="video_icon" width="20"/> </a> AndreasBeck</h6> </li>
 
         <li>Recall: Compile and run java
             <code>
             
             import gurobi.* // Import all Gurobi files<br/>
-            <br/>
             GRBEnv -env_name- = new GRBEnv ("-name-.log");  // Creating Gurobi environment <br/>
-            <br/>
             GRBModel -model_name- = new GRBModel(-env_name-); // Creating Gurobi model <br/>
             <br/>
             GRBVar[ ] -var_name- = new GRBVar[-size-] // Creating GRBVar array (Decision Variables) <br/>
-            <br/>
             -var_name-[-index-] = -model_name-.addVar(-lower_bound_value-, -upper_bound_value-, -objective_value-, -type_of_variable-, -name_of_variable-); // Add variable to the model<br/>
-            &emsp;&emsp; //Note: Type of variable can be GRB.BINARY, GRB.INTEGER, GRB.CONTINUOUS etc. For more details, check Gurobi reference.<br/>
-            <br/>
+            &emsp;&emsp; //Note: Type of variable can be GRB.BINARY, GRB.INTEGER, GRB.CONTINUOUS etc. For more details, check Gurobi reference.<br/> <br/>
             GRBLinExpr -expression_name- = new GRBLinExpr(); // Creating new Linear Expression  <br/>
-            <br/>
-            -expression_name-.addTerm(-coefficient_value-, -gurobi_variable-);  // Add  -coefficient_value- * -gurobi_variable-  to the expression <br/>
-            <br/>
-            -model_name-.addConstr( -expression_name- ,  -inequality- , -right_hand_side- , -name_of_the_constraint-);  // Add constraint to the model<br/>
-            &emsp;&emsp; //Note: Inequalities > GRB.LESS_EQUAL , GRB.GREATER_EQUAL, GRB.EQUAL etc. For more details, check Gurobi reference. <br/>
-            <br/>
+            -expression_name-.addTerm(-coefficient_value-, -gurobi_variable-);  // Add  -coefficient_value- * -gurobi_variable-  to the expression <br/> <br/>
+            -model_name-.addConstr(-expression_name- ,  -inequality- , -right_hand_side- , -name_of_the_constraint-);  // Add constraint to the model<br/>
+            &emsp;&emsp; //Note: Inequalities > GRB.LESS_EQUAL , GRB.GREATER_EQUAL, GRB.EQUAL etc. For more details, check Gurobi reference. <br/> <br/>
             -model_name-.setObjective( -expression_name-, -objective_preference-); // Add objective to the model <br/>
             &emsp;&emsp; //Note: Objective Preference > GRB.MINIMIZE, GRB.MAXIMIZE <br/>
             <br/>
@@ -967,7 +950,6 @@
             -gurobi_variable-.get(GRB.DoubleAttr.X) // Get optimal value of Gurobi variable, after optimization.  <br/>
             <br/>
             -model_name-.dispose(); // Clear model <br/>
-            <br/>
             -environment_name-.dispose();  // Clear environment<br/>
             </code>
 
@@ -978,18 +960,33 @@
     </ul>
 
     </div> 
+    <p><a href="files/Week9.zip"><img src="images/folder.png" alt="Folder" width="18"/> Download Files</a></p>
+
+<!--
+    <div id = "week10"> 
+        <hr>
+        <h2>Week 10</h2>
+
+        <p><a href="files/Week10.zip"><img src="images/folder.png" alt="Folder" width="18"/> Download Files</a></p>
+</div>
+
+<h6> <a href="https://www.loom.com/embed/2c516ad26b884013b3d3af8504489473" target="_blank"> <img src="images/video_icon.png" alt="video_icon" width="20"/> </a> CenkTosun</h6>
+
+<h6> <a href="https://www.loom.com/embed/8a1cc1cd63c941c1b40f40fdb9fd030d" target="_blank"> <img src="images/video_icon.png" alt="video_icon" width="20"/> </a> AhmetDursun</h6>
 
 
+<h6> <a href="https://www.loom.com/embed/9eb4b68515fa450a9f7bdf782878d18a" target="_blank"> <img src="images/video_icon.png" alt="video_icon" width="20"/> </a> SukruGulesin</h6>
+
+<h6> <a href="https://www.loom.com/embed/c7025de85a11428cad51ce35d558778f" target="_blank"> <img src="images/video_icon.png" alt="video_icon" width="20"/> </a> NihatKahveci</h6>
 
 
-
-    
     <div id = "week11"> 
     <hr>
     <h2>Week 11</h2>
 
     
-    <h4> Week11-Video1 </h4><h6> <a href="https://www.loom.com/embed/6444856b3e18408499d44b15b33d6eef" target="_blank"><img src="images/video_icon.png" alt="video_icon" width="20"/> </a> MarioGomez</h6>
+    <h4> Week11-Video1 </h4><h6> <a href="ht
+        tps://www.loom.com/embed/6444856b3e18408499d44b15b33d6eef" target="_blank"><img src="images/video_icon.png" alt="video_icon" width="20"/> </a> MarioGomez</h6>
     <br/>
     <h4> Week11-Video2 </h4><h6> <a href="https://www.loom.com/embed/ef57fa0a6c5549259c4550ee3bbf1820" target="_blank"> <img src="images/video_icon.png" alt="video_icon" width="20"/> </a> Bobo</h6>
     <br/>
