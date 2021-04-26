@@ -10,8 +10,8 @@
 <div id = "top">
     <h1>Programming for Operations Research</h1>
     <div style="display: flex; justify-content: flex-end"> <a href="references/BeginnersGuide.pdf" target="_blank"> <img src="images/book-128.png" alt="video_icon" width="20"/> </a> <a href="references/HowtoProgram.pdf" target="_blank"> <img src="images/book-256.png" alt="video_icon" width="20"/> </a></div>
-    <div style="text-align:center;"><a href="#week1">Week1</a> | <a href="#week2">Week2</a> | <a href="#week3"> Week3 </a> | <a href="#week4"> Week4 </a> | <a href="#week5"> Week5 </a> | <a href="#week6"> Week6 </a> | <a href="#week7"> Week7 </a> | <a href="#week8"> Week8 </a> | <a href="#week9"> Week9 </a> 
-             <!--| <a href="#week10"> Week10 </a> | <a href="#week11"> Week11 </a> 
+    <div style="text-align:center;"><a href="#week1">Week1</a> | <a href="#week2">Week2</a> | <a href="#week3"> Week3 </a> | <a href="#week4"> Week4 </a> | <a href="#week5"> Week5 </a> | <a href="#week6"> Week6 </a> | <a href="#week7"> Week7 </a> | <a href="#week8"> Week8 </a> | <a href="#week9"> Week9 </a> | <a href="#week10"> Week10 </a> 
+        <!--| <a href="#week11"> Week11 </a> 
              | <a href="#week12"> Week12 </a>
              | <a href="#week13"> Week13 </a> 
              | <a href="#week14"> Week14 </a> 
@@ -827,8 +827,7 @@
 
         <li>Syntax:
             <code>
-            
-            HashMap &lt;-datatype->,&lt;-datatype-> -hashmap_name- = new HashMap &lt;-datatype->,&lt;-datatype->();<br/>
+            HashMap &#60;-datatype-&#62;,&#60;-datatype-&#62; -hashmap_name- = new HashMap &#60;-datatype-&#62;,&#60;-datatype-&#62;();<br/>
 
             </code>
 
@@ -846,8 +845,24 @@
                 <li>.size() // returns the size of the HashMap (number of key-value pairs)</li>
             </ul>
         </li>
+        <li>Notes:
+            <ul> <li>HashMap has unique keys. So no two keys can be the same. </li>
 
-    </ul>    
+        <li> Keys are never primitive types, but class types (objects). It can be a predefined type such as Integer, or a type you created.</li>
+        
+        <li>Keep in mind that the key is actually a pointer. So it doesn't really search the HashMap as you would search a dictionary one by one. It uses the pointer referring to the object and access the associated value using that pointer. That is why HashMap is an extremely efficient data structure in retrieval. </li>
+            <li>What that pointer logic means in implementation is that if you create two objects with the exact same variable values, they are actually two different objects that can be two separate keys.</li>
+            
+<li>While using HashMaps, iterate through the objects themselves and look for associated values. </li>
+            
+<li>In case of HashMap of a HashMap, it is still a HashMap inside so the same properties hold, each key must be unique. Here is an example: distances between two cities. Suppose we create "City" objects. You can do HashMap&#60;City,HashMap&#60;City, Double&#62;&#62; distances, where the first key is origin city, and the latter is the destination city.
+            <ul><li>
+            If you only to distances.get(c) that would return a HashMap, where keys are all cities and values are distances from city c to each city. </li>
+        <li>
+            So from City c to City d you can compute the distance using distances.get(c).get(d).</li>
+</ul>
+</li></ul>
+  </li>  </ul>    
     <p><a href="files/Week8.zip"><img src="images/folder.png" alt="Folder" width="18"/> Download Files</a></p>
     </div> 
 
@@ -962,22 +977,133 @@
     </div> 
     <p><a href="files/Week9.zip"><img src="images/folder.png" alt="Folder" width="18"/> Download Files</a></p>
 
-<!--
-    <div id = "week10"> 
-        <hr>
-        <h2>Week 10</h2>
-
-        <p><a href="files/Week10.zip"><img src="images/folder.png" alt="Folder" width="18"/> Download Files</a></p>
 </div>
+<div id = "week10"> 
+<hr>
 
-<h6> <a href="https://www.loom.com/embed/2c516ad26b884013b3d3af8504489473" target="_blank"> <img src="images/video_icon.png" alt="video_icon" width="20"/> </a> CenkTosun</h6>
+<h2>Week 10</h2>
+<h4> Introduction to Databases </h4><h6> <a href="https://www.loom.com/embed/2c516ad26b884013b3d3af8504489473" target="_blank"> <img src="images/video_icon.png" alt="video_icon" width="20"/> </a> CenkTosun</h6>
+        
+        <ul>
+            <li>What is a database? Great overview: <a href="https://www.guru99.com/what-is-dbms.html" target="_blank">DBMS</a> </li>
+            <li>What is SQL and NoSQL?: <a href="https://www.guru99.com/sql-vs-nosql.html" target="_blank">SQL vs. NoSQL </a> </li>
+            <li>We will only cover how to consume data.</li>
+            <li>As an industrial engineer, you do not need to be an expert on databases. However, it is crucial to know how to consume and structure the data!</li>
 
-<h6> <a href="https://www.loom.com/embed/8a1cc1cd63c941c1b40f40fdb9fd030d" target="_blank"> <img src="images/video_icon.png" alt="video_icon" width="20"/> </a> AhmetDursun</h6>
+            <li> W3school is a good starting point for learning SQL. You can try queries in their database and solve examples: <a href="https://www.w3schools.com/sql/" target="_blank"> w3school</a></li>
+
+            <li>We recommend Database System Concepts as a reference book. You can check the slides of the book: <a href="https://www.db-book.com/db7/slides-dir/index.html" target="_blank"> db-book</a> </li>
+
+            <li>Some simple queries:
+            <code>
+            SELECT &#60;"set_of_columns"&#62; FROM &#60;"table_name"&#62; <br/>
+            INSERT INTO &#60;"table_name"&#62; (&#60;"set_of_columns"&#62;) VALUES (&#60;"set_of_values"&#62;) <br/>
+            DELETE FROM &#60;"table_name"&#62;  WHERE &#60;"condition"&#62; <br/>
+            </code>
+
+            </li> 
+
+        </ul>
 
 
-<h6> <a href="https://www.loom.com/embed/9eb4b68515fa450a9f7bdf782878d18a" target="_blank"> <img src="images/video_icon.png" alt="video_icon" width="20"/> </a> SukruGulesin</h6>
 
-<h6> <a href="https://www.loom.com/embed/c7025de85a11428cad51ce35d558778f" target="_blank"> <img src="images/video_icon.png" alt="video_icon" width="20"/> </a> NihatKahveci</h6>
+
+    <h4>Accessing a MySQL Database  </h4><h6> <a href="https://www.loom.com/embed/8a1cc1cd63c941c1b40f40fdb9fd030d" target="_blank"> <img src="images/video_icon.png" alt="video_icon" width="20"/> </a> AhmetDursun</h6>
+
+
+        <ul>
+        
+        <li>MySQL JDBC download link <a href="https://mvnrepository.com/artifact/mysql/mysql-connector-java/8.0.16" target="_blank"> JDBC </a> </li>
+        <li>Go to the link, download the JAR file, and add jar to the path of your Java project. </li>
+
+        <li>For connection:
+            <code>
+            Connection con = null;<br/>
+            String url = "jdbc:mysql://sql9.freemysqlhosting.net";<br/>
+            String username = "sql9379593";<br/>
+            String password = "xiUymS7XsA";<br/>
+            Class.forName("com.mysql.cj.jdbc.Driver")<br/>
+            con = DriverManager.getConnection(url, username, password);<br/>
+           
+            </code>
+
+        </li> 
+
+    
+
+        <li>Here is how we run SQL queries from Java code:
+            <code>
+            
+            Statement statement = con.createStatement(); // Creating statement. Later we will use it for queries.<br/>
+
+            ResultSet resultSet = statement.executeQuery("&#60;"query"&#62;"); <br/>
+
+            resultSet.next() // returns boolean whether there is another row or not. <br/>
+
+            resultSet.get&#60;"Datatype"&#62; (&#60;"index"&#62;) // returns value type: &#60;"data type"&#62;, column: &#60;"index"&#62; <br/>
+
+            </code>
+
+        </li> 
+
+        <li>Data Types: <br /><img src="images/db_datatypes.jpg" alt="db_datatypes" width="343"/><br /> Source: MySQLTutorial</li>
+
+
+        <li>There are many other datatypes: <a href="https://www.mysqltutorial.org/mysql-data-types.aspx/" target="_blank"> mysql-data-types</a> </li>
+
+        <li>In databases, indexing starts with 1. </li>
+
+
+        </ul>
+
+
+
+
+
+
+    <h4>Consuming MetaData from a MySQL Database </h4><h6> <a href="https://www.loom.com/embed/9eb4b68515fa450a9f7bdf782878d18a" target="_blank"> <img src="images/video_icon.png" alt="video_icon" width="20"/> </a> SukruGulesin</h6>
+
+    <ul>
+
+         <li>Here is how you can access metadata, which contains important attributes for the DB:
+            <code>
+            
+            ResultSetMetaData resultSetMetaData = resultSet.getMetaData(); // Initialize ResultSetMetaData object. <br/>
+            resultSetMetaData.getColumnCount(); // returns number of columns <br/>
+            resultSetMetaData.getColumnName(&#60;"i"&#62;); // returns i-th column ( Recall: starts with 1) <br/>
+            statement.executeUpdate(&#60;"insert_query"&#62;) // Inserts values to the corresponding table.  <br/>
+            </code>
+        </li>
+        
+        
+
+    </ul> 
+
+
+
+
+
+
+    <h4>Output to File </h4><h6> <h6> <a href="https://www.loom.com/embed/c7025de85a11428cad51ce35d558778f" target="_blank"> <img src="images/video_icon.png" alt="video_icon" width="20"/> </a> NihatKahveci</h6>
+
+
+    <ul>
+ 
+        <li> BufferedWriter can be used to output results of a code block to a file.
+            <code>
+            
+            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("&#60;"output_file"&#62;"); <br/>
+            bufferedWriter.write("&#60;"some text"&#62;");  // writes to the <"output_file"&#62;. As with System.out.print, you can use escape characters: \n moves to the new line, \t inserts a tab etc..<br/>
+            bufferedWriter.close(); // After your writing task is finished, you have to close the file. <br/>
+
+            </code>
+        </li>
+
+
+    </ul>    
+   <p><a href="files/Week10.zip"><img src="images/folder.png" alt="Folder" width="18"/> Download Files</a></p>
+    </div> 
+    <!--
 
 
     <div id = "week11"> 
