@@ -417,8 +417,19 @@ optimalSolution.printOptimalValue(5); // prints the value of variable with the g
 </code>
 
 </li>
-
-                    </ol>
+<li>Assume that you need to assign 7 workers to 14 shifts. Names of the shifts are "Mon1", "Tue2", "Wed3", "Thu4", "Fri5", "Sat6", "Sun7", "Mon8", "Tue9", "Wed10", "Thu11", "Fri12", "Sat13", "Sun14". For each shift, there is a minimum required number of workers of 3, 2, 4, 4, 5, 6, 5, 2, 2, 3, 4, 6, 7, 5, respectively. Workers you need to assign are Amy, Bob, Cathy, Dan, Ed, Fred, and Gu. The amount you pay to each of these workers for a shift that they are assigned to is 10, 12, 10, 8, 8, 9, 11, respectively. Not every worker is available for every shift. The availability matrix is as follows, where rows represent workers and columns represent shifts:
+    <code>
+    int availability[] = <br />
+    {{ 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1 },<br />
+    { 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0 },<br />
+    { 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 },<br />
+    { 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1 },<br />
+    { 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1 },<br />
+    { 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1 },<br />
+    { 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 }};</code>
+    
+    Formulate a model where you try to minimize the total payment amount. Obtain the optimal solution using Gurobi. For each shift, print out the names of the workers that are assigned to that shift.</li>
+                     </ol>
                     </div>
 
                 <div style="display: flex; justify-content: flex-end"> <a href="#top"> Back to top </a> </div><hr>

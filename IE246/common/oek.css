@@ -1,5 +1,5 @@
 h6 {
-    color:#fff8e7;
+    color:#FFFFF0;
     display:inline
 }
 h4 {
@@ -21,7 +21,7 @@ a {
 
 code {
     display: table-cell;
-    color:white;
+    color:#FFFFF0;
     background-color: #264c7d ;
     padding: 3px;
 }
