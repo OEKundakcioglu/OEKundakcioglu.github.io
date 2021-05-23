@@ -9,7 +9,7 @@
     <div id = "top">
     <h1>Programming for Operations Research - Questions</h1>
     <br />
-    <div style="text-align:center;"> <a href="#week2"> Week2 </a> | <a href="#week3"> Week3 </a> | <a href="#week4"> Week4 </a> | <a href="#week5"> Week5 </a> | <a href="#week6"> Week6 </a> | <a href="#week7"> Week7 </a> | <a href="#week8"> Week8 </a> | <a href="#week9"> Week9 </a> | <a href="#week11"> Week11 | <a href="#week12"> Week12 </a> 
+    <div style="text-align:center;"> <a href="#week2"> Week2 </a> | <a href="#week3"> Week3 </a> | <a href="#week4"> Week4 </a> | <a href="#week5"> Week5 </a> | <a href="#week6"> Week6 </a> | <a href="#week7"> Week7 </a> | <a href="#week8"> Week8 </a> | <a href="#week9"> Week9 </a> | <a href="#week11"> Week11</a> | <a href="#week12"> Week12 </a> 
 </div>
     <div style="display: flex; justify-content: flex-end"> <a href="index.html"> Notes </a> </div>
 </div>
@@ -484,7 +484,23 @@ As item 1 is not included we know the remaining capacity will be 11. So use deci
                 </li>
 <li>Provide the code block that performs the following in the main method: Update the statistics of the "Basketball" player named "Festus Ezeli". Note that there are multiple players with the same name, so update the one with jersey number 11. In his last game, his statistics should be updated as follows: 26 points, 19.5 minutes, and he was the MVP of the game. Include any other methods needed and where they should be located.</li>
 <li>Write a method that takes a GameStatistic object as an input, prints out the name of the MVP of the game, and returns the Player that is the MVP of the game. The same method should also be called with two inputs, a GameStatistic object and a String that denotes the position. In the two input case, the method should still return the Player that is the MVP of the game, but should print out the name of the MVP of the game, only if he/she plays in the position that is input. </li>
-            </ul>
+<li>I'm about to solve an optimization problem for a given type of sports using Gurobi, and each Player of that sport needs an associated decision variable that is continuous, greater than or equal to zero, and less than or equal to 100. In the main method I have the following code:
+    <code>Variables variables = new Variables(); // next I call method initializeAll to initialize decision variables
+    </code>
+    I'd like to access the decision variable for Player p as variables.getForPlayer(p). Provide the initializeAll method for the Variables class and clearly show how I can call that method from the main method above.</li>
+    <li>Write a method for Team class that adjusts the annualSalary values of all players proportional to their playerRating values. The sum of annual salaries of players in the team should stay the same. </li>
+    <li>Write an updateRandomly method for the League class that randomly picks a Team in the league, and updates the rating of the team with 91. Include any other methods needed and where they should be located.</li>
+        <li>Write a method that takes a GameStatistic object and prints out the names of players in ascending order of points they scored in that game. The print out should be formatted as follows:
+<code>Player | Points
+<br />LeBron James | 36
+<br />Thomas Bryant | 25
+<br />Anthony Davis | 21
+<br />Bradley Beal | 20
+<br />Ish Smith | 17
+<br />Marc Gasol | 16
+<br />Isaac Bonga | 15</code></li> 
+<li>Write an updateSalary method for the Player class, that takes an ArrayList of game statistics as input and increases the annual salary of a player by 20% if the player is an MVP for 5 or more games in the given set. Suppose that, in the main method we have Player p as the player named "James Harden" and ArrayList&#60;GameStatistic&#62; gs as the games he played during the season. Provide the code block that performs the following in the main method: Increase the annual salary of James Harden by 20% if he was an MVP for 5 or more games during the season.</li>
+</ul>
             </li></ol></div>
 
                 <div style="display: flex; justify-content: flex-end"> <a href="#top"> Back to top </a> </div><hr>
