@@ -8,12 +8,11 @@ h1{
   margin: 4px auto;
   padding: 2px 4px 2px 4px;
   border-radius: 4px;
-  border: solid 1px;
+  border: dashed .1px;
 }
 
 h3 #header {
   text-align: center;
-  text-transform: uppercase;
   margin: 2px;
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
