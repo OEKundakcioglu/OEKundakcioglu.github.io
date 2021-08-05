@@ -16,3 +16,15 @@ h3 #header {
   margin: 2px;
   font-size: 1.2em;
 }
+
+.columnt1 {
+  width: 76%;
+  float: left;
+  text-align: left;
+}
+
+.columnt2 {
+  width: 23%;
+  float: right;
+  text-align: right;
+}
