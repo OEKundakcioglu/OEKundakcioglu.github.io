@@ -26,5 +26,7 @@ h3 #header {
 .columnt2 {
   width: 23%;
   float: right;
-  text-align: right;
+  text-align: center;
+  border: ridge 1px;
+  border-radius: 4px 4px 4px 4px;
 }
