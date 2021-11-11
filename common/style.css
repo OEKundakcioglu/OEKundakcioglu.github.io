@@ -27,6 +27,6 @@ h3 #header {
   width: 23%;
   float: right;
   text-align: center;
-  border: ridge 2px;
+  border: ridge 0px;
   border-radius: 9px 9px 9px 9px;
 }
