@@ -2,6 +2,11 @@ h1{
   text-align: center;
 }
 
+body{
+  margin-left: 3%;
+	margin-right: 3%;
+}
+
 #header {
   display: block;
   max-width: 100%;
