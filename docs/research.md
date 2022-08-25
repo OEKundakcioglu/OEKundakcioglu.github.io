@@ -16,15 +16,15 @@ nav_order: 2
 
 ## Research Areas
 
-My research interests are in _decision analytics_ and _mathematical optimization_ in **supply chain management** and **data mining**.
+My research interests lie primarily in _decision analytics_ and _mathematical optimization_, with applications in **supply chain management** and **data mining**. 
 
 ### Supply Chain Management
 
-I primarily work on _inventory control_ problems under _demand and supply uncertainty_. These decision problems are ubiquitous in **healthcare** and **humanitarian aid operations**. I have also studied various mathematical optimization problems in production and service systems, including scheduling, lot sizing, routing, and pricing.
+I primarily work on _inventory control_ under _demand and supply uncertainty_. These decision problems are ubiquitous in **healthcare** and **humanitarian aid operations**. I have also studied various mathematical optimization problems in production and service systems, including scheduling, lot sizing, routing, and pricing.
 
 ### Data Mining
 
-My research on data mining consists of combinatorial optimization approaches in different subdomains, including **sequential testing**, **multi-instance learning**, and **time series analysis**. In addition, I have had a chance to apply supervised learning approaches to the toxicological evaluation of nanoparticles and interpreting EEG data. 
+My current research on data mining involves combinatorial optimization approaches in numerous subdomains, including **sequential testing**, **multi-instance learning**, and **time series analysis**. In addition, I have applied supervised learning approaches to the toxicological evaluation of nanoparticles and interpreting EEG data. 
 
 ---
 
