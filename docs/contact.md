@@ -5,8 +5,8 @@ nav_order: 99
 ---
 # Contact
 
-## Online
-[Book an appointment](https://calendly.com/erhun-kundakcioglu/zoom-meeting){:target="_blank" .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }  [Email me](mailto:erhunk@gmail.com){: .btn .fs-5 .mb-4 .mb-md-0 }
+<img src="/assets/images/oek2.png" alt="OEK" width="119"/> [Book an appointment](https://calendly.com/erhun-kundakcioglu/zoom-meeting){:target="_blank" .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }  
+[Email me](mailto:erhunk@gmail.com){: .btn .fs-5 .mb-4 .mb-md-0 }
 ## Mailing Address 
 Ozyegin University<br />
 Department of Industrial Engineering<br />
