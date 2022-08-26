@@ -114,6 +114,8 @@ My research involves combinatorial optimization approaches in numerous subdomain
     <li> O. Seref, O. E. Kundakcioglu, and P. M. Pardalos, Eds., Data mining, systems analysis, and optimization in biomedicine, no. 953, American Institute of Physics, 2008.</li>
 </ul>
 
+---
+
 ## Funding
 
 * **Researcher**, 
@@ -149,5 +151,3 @@ University of Houston Small Grants Program.
 * **PI**,
 _Combinatorial Optimization in Kernel-based Learning Methods_,
 University of Houston New Faculty Research Grant.
-
----
