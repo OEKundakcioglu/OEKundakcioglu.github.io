@@ -39,20 +39,22 @@ My research involves combinatorial optimization approaches in numerous subdomain
 
 ### Graduated
 
-* Tonguç Yavuz, Ph.D., Fall 2021, _Assistant Professor at Bilgi University_
-* Samira Saedi, Ph.D., Spring 2013, _Assistant Director of Healthcare System Engineer at Texas Children's Hospital_
-* Mohammad H. Poursaeidi, Ph.D., Spring 2013, _Senior Research Engineer at Intel Corporation_
-* Şeyma Gözüyılmaz, M.S., Fall 2019, _Ph.D. Student at Sabancı University_
-* İbrahim Edhem Sakarya, M.S., Spring 2019, _Ph.D. Student at Eindhoven University of Technology_
-* Ahmet Emir Tuzcu, M.S., Spring 2019, _Control and Automation Engineer at Eczacıbaşı ESAN_
-* Onur Şimşek, M.S., Spring 2019, _Product Manager at n11.com_
-* Gizem Atasoy, M.S., Summer 2018, _Ph.D. Student at University of Illinois at Chicago_
-* Cem Deniz Çağlar Bozkır, M.S., Spring 2018, _Senior Analytics Consultant at KoçDigital_
-* Ayşenur Betül Çengil, M.S., Summer 2017, _Ph.D. Student at the University of Arkansas_
-* Büşra Tüfekci, M.S., Spring 2016, _Marketing Assistant at Ermoda Tekstil_
-* Andrea Viacaba, M.S., Fall 2011, _Global Supply Chain Analyst II at Mary Kay Global_
-* Smita (Sethi) Jain, M.S., Fall 2011, _Data Analyst at Wyndham Destinations_
-* Savya K. Ramesh, M.S., Fall 2010, _Industrial Engineering Consultant at Eton System_
+- Ph.D.
+    - Tonguç Yavuz, Fall 2021, _Assistant Professor at Bilgi University_
+    - Samira Saedi, Spring 2013, _Assistant Director of Healthcare System Engineer at Texas Children's Hospital_
+    - Mohammad H. Poursaeidi, Spring 2013, _Senior Research Engineer at Intel Corporation_
+- M.S.
+    - Şeyma Gözüyılmaz, Fall 2019, _Ph.D. Student at Sabancı University_
+    - İbrahim Edhem Sakarya, Spring 2019, _Ph.D. Student at Eindhoven University of Technology_
+    - Ahmet Emir Tuzcu, Spring 2019, _Control and Automation Engineer at Eczacıbaşı ESAN_
+    - Onur Şimşek, Spring 2019, _Product Manager at n11.com_
+    - Gizem Atasoy, Summer 2018, _Ph.D. Student at University of Illinois at Chicago_
+    - Cem Deniz Çağlar Bozkır, Spring 2018, _Senior Analytics Consultant at KoçDigital_
+    - Ayşenur Betül Çengil, Summer 2017, _Ph.D. Student at the University of Arkansas_
+    - Büşra Tüfekci, Spring 2016, _Marketing Assistant at Ermoda Tekstil_
+    - Andrea Viacaba, Fall 2011, _Global Supply Chain Analyst II at Mary Kay Global_
+    - Smita (Sethi) Jain, Fall 2011, _Data Analyst at Wyndham Destinations_
+    - Savya K. Ramesh, Fall 2010, _Industrial Engineering Consultant at Eton System_
 
 ---
 
