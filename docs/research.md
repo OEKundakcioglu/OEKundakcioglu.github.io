@@ -39,11 +39,11 @@ My research involves combinatorial optimization approaches in numerous subdomain
 
 ### Graduated
 
-- Ph.D.
+- **Ph.D.**
     - Tonguç Yavuz, Fall 2021, _Assistant Professor at Bilgi University_
     - Samira Saedi, Spring 2013, _Assistant Director of Healthcare System Engineer at Texas Children's Hospital_
     - Mohammad H. Poursaeidi, Spring 2013, _Senior Research Engineer at Intel Corporation_
-- M.S.
+- **M.S.**
     - Şeyma Gözüyılmaz, Fall 2019, _Ph.D. Student at Sabancı University_
     - İbrahim Edhem Sakarya, Spring 2019, _Ph.D. Student at Eindhoven University of Technology_
     - Ahmet Emir Tuzcu, Spring 2019, _Control and Automation Engineer at Eczacıbaşı ESAN_
