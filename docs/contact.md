@@ -6,13 +6,7 @@ nav_order: 99
 # Contact
 
 
-<table>
-  <tr>
-    <td><img src="/assets/images/oek2.png" alt="OEK" width="119"/></td>
-    <td>[Email](mailto:erhunk@gmail.com){: .btn .fs-5 .mb-4 .mb-md-0 }  
-[Book an appointment](https://calendly.com/erhun-kundakcioglu/zoom-meeting){:target="_blank" .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }</td>
-  </tr>
-</table>
+| <img src="/assets/images/oek2.png" alt="OEK" width="119"/> | [Email](mailto:erhunk@gmail.com){: .btn .fs-5 .mb-4 .mb-md-0 } [Book an appointment](https://calendly.com/erhun-kundakcioglu/zoom-meeting){:target="_blank" .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } |
 
 
 
