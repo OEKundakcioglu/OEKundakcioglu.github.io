@@ -16,7 +16,7 @@ nav_order: 2
 
 ## Research Areas
 
-My research interests lie primarily in _decision analytics_ and _mathematical optimization_, with applications in **supply chain management** and **data mining**. 
+My research interests lie primarily in **supply chain management** and **data mining** spanning _decision analytics_ and _mathematical optimization_ problems. 
 
 ### Supply Chain Management
 
