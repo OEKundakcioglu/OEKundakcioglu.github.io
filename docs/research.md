@@ -65,42 +65,61 @@ My research involves combinatorial optimization approaches in numerous subdomain
 
 {:style="counter-reset:step-counter 19"}
 1. I. E. Sakarya and O. E. Kundakcioglu, "<a href="https://doi.org/10.1007/s10898-022-01219-y" target="_blank">Multi-instance learning by maximizing the area under receiver operating characteristic curve</a>," <br /><i>Journal of Global Optimization</i>, forthcoming.
+
 {:style="counter-reset:step-counter 18"}
 1. C. D. C. Bozkir, O. E. Kundakcioglu, and A. C. Henry, "<a href="https://doi.org/10.1007/s10898-021-01058-3" target="_blank">Hospital service levels during drug shortages: Stocking and transshipment policies for pharmaceutical inventory</a>," <br /><i>Journal of Global Optimization</i>, vol. 83, pp. 565-584, 2022.
+
 {:style="counter-reset:step-counter 17"}
 1. S. Korkmaz, O. E. Kundakcioglu, and O. Sivrikaya, "<a href="https://doi.org/10.1057/s41272-021-00284-4" target="_blank">A fluid approximation for the single-leg fare allocation problem with nonhomogeneous Poisson demand</a>," <br /> <i>Journal of Revenue and Pricing Management</i>, vol. 21, pp. 81-96, 2022.
+
 {:style="counter-reset:step-counter 16"}
 1. O. Simsek and O. E. Kundakcioglu, "<a href="https://doi.org/10.3934/jimo.2021001" target="_blank">Cost of fairness in agent scheduling for contact centers</a>," <br /><i>Journal of Industrial and Management Optimization</i>, vol. 18, no. 2, pp. 873-896, 2022.
+
 {:style="counter-reset:step-counter 15"}
 1. S. Azizi, C. D. C. Bozkir, A. C. Trapp, O. E. Kundakcioglu, and A. K. Kurbanzade, "<a href="https://doi.org/10.1111/poms.13531" target="_blank">Aid allocation for camp-based and urban refugees with uncertain demand and replenishments</a>,"<br /><i>Production and Operations Management</i>, vol. 30, no. 12, pp. 4455-4474, 2021.
+
 {:style="counter-reset:step-counter 14"}
 1. S. Gozuyilmaz and O. E. Kundakcioglu, "<a href="https://doi.org/10.1007/s00291-021-00637-w" target="_blank">Mathematical optimization for time series decomposition</a>,"<br /><i>OR Spectrum</i>, vol. 43, pp. 733-758, 2021.
+
 {:style="counter-reset:step-counter 13"}
 1. M. Önal, O. E. Kundakcioglu, and S. Sethi, "<a href="https://doi.org/10.1007/s11590-020-01566-3" target="_blank">An EOQ model with deteriorating items and self-selection constraints</a>,"<br /><i>Optimization Letters</i>, vol. 14, pp. 1491–1518, 2020.
+
 {:style="counter-reset:step-counter 12"}
 1. T. Yavuz, O. E. Kundakcioglu, and T. Ünlüyurt, "<a href="https://doi.org/10.1016/j.cor.2019.07.010" target="_blank">Exact and heuristic approaches to detect failures in failed k-out-of-n systems</a>,"<br /><i>Computers and Operations Research</i>, vol. 112, 104752, 2019.
+
 {:style="counter-reset:step-counter 11"}
 1. N. R. Barshes, S. Saedi, J. Wrobel, P. Kougias, O. E. Kundakcioglu, and D. G. Armstrong, "<a href="https://doi.org/10.1016/j.jdiacomp.2016.12.017" target="_blank">A model to estimate cost-savings in diabetic foot ulcer prevention efforts</a>,"<br /><i>Journal of Diabetes and Its Complications</i>, vol. 31, no. 4, pp. 700–707, 2017.
+
 {:style="counter-reset:step-counter 10"}
 1. B. Balcik, C. D. C. Bozkir, and O. E. Kundakcioglu, "<a href="https://doi.org/10.1016/j.sorms.2016.10.002" target="_blank">A literature review on inventory management in humanitarian supply chains</a>,"<br /><i>Surveys in Operations Research and Management Science</i>, vol. 21, no. 2, pp. 101–116, 2016.
+
 {:style="counter-reset:step-counter 9"}
 1. M. Önal, A. Yenipazarli, and O. E. Kundakcioglu, "<a href="https://doi.org/10.1016/j.cie.2016.11.002" target="_blank">A mathematical model for perishable products with price- and stock-dependent demand</a>,"<br /><i>Computers and Industrial Engineering</i>, vol. 102, pp. 246–258, 2016.
+
 {:style="counter-reset:step-counter 8"}
 1. S. Saedi, O. E. Kundakcioglu, and A. C. Henry, "<a href="https://doi.org/10.1016/j.ejor.2015.11.017" target="_blank">Mitigating the impact of drug shortages for a healthcare facility: An inventory management approach</a>,"<br /><i>European Journal of Operational Research</i>, vol. 251, no. 1, pp. 107–123, 2016.
+
 {:style="counter-reset:step-counter 7"}
 1. M. H. Poursaeidi and O. E. Kundakcioglu, "<a href="https://doi.org/10.1007/s10479-012-1241-z" target="_blank">Robust support vector machines for multiple instance classification</a>,"<br /><i>Annals of Operations Research</i>, vol. 216, no. 1, pp. 205–227, 2014.
+
 {:style="counter-reset:step-counter 6"}
 1. W. van den Heuvel, O. E. Kundakcioglu, J. Geunes, H. E. Romeijn, T. Sharkey, and A. P. M. Wagelmans, "<a href="https://doi.org/10.1007/s10107-011-0441-7" target="_blank">Integrated market selection and production planning: Complexity and solution approaches</a>,"<br /><i>Mathematical Programming</i>, vol. 134, no. 2, pp. 395–424, 2012.
+
 {:style="counter-reset:step-counter 5"}
 1. G. Pyrgiotakis, O. E. Kundakcioglu, P. M. Pardalos, and B. M. Moudgil, "<a href="https://doi.org/10.1002/jrs.2839" target="_blank">Raman spectroscopy and support vector machines for quick toxicological evaluation of Titania nanoparticles</a>,"<br /><i>Journal of Raman Spectroscopy</i>, vol. 42, no. 6, pp. 1222–1231, 2011.
+
 {:style="counter-reset:step-counter 4"}
 1. O. E. Kundakcioglu, O. Seref, and P. M. Pardalos, "<a href="https://doi.org/10.1016/j.apnum.2009.05.013" target="_blank">Multiple instance learning via margin maximization</a>,"<br /><i>Applied Numerical Mathematics</i>, vol. 60, no. 4, pp. 358–369, 2010.
+
 {:style="counter-reset:step-counter 3"}
 1. P. M. Pardalos and O. E. Kundakcioglu, "<a href="pdf/Pardalos2009.pdf" target="_blank">Classification via mathematical programming</a>,"<br /><i>Applied and Computational Mathematics</i>, vol. 8, no. 1, pp. 23–35, 2009.
+
 {:style="counter-reset:step-counter 2"}
 1. G. Pyrgiotakis, O. E. Kundakcioglu, K. Finton, P. M. Pardalos, K. Powers, and B. M. Moudgil, "<a href="https://doi.org/10.1007/s10439-009-9688-z" target="_blank">Cell death discrimination with Raman spectroscopy and support vector machines</a>,"<br /><i>Annals of Biomedical Engineering</i>, vol. 37, no. 7, pp. 1464–1473, 2009.
+
 {:style="counter-reset:step-counter 1"}
 1. O. Seref, O. E. Kundakcioglu, O. Prokopyev, and P. M. Pardalos, "<a href="https://doi.org/10.1007/s10878-008-9189-2" target="_blank">Selective support vector machines</a>,"<br /><i>Journal of Combinatorial Optimization</i>, vol. 17, no. 1, pp. 3–20, 2009.
+
 {:style="counter-reset:step-counter 0"}
 1. O. E. Kundakcioglu and T. Ünlüyurt, "<a href="https://doi.org/10.1109/TSMCA.2007.893459" target="_blank">Bottom-up construction of minimum-cost AND/OR trees for sequential fault diagnosis</a>,"<br /><i>IEEE Transactions on Systems, Man, and Cybernetics - Part A: Systems and Humans</i>, vol. 37, no. 5, pp. 621–629, 2007.
 
