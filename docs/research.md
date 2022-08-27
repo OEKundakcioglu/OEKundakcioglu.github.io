@@ -63,6 +63,7 @@ My research involves combinatorial optimization approaches in numerous subdomain
 
 ### Journal Articles
 
+
     20. I. E. Sakarya and O. E. Kundakcioglu, "<a href="https://doi.org/10.1007/s10898-022-01219-y" target="_blank">Multi-instance learning by maximizing the area under receiver operating characteristic curve</a>," <br /><i>Journal of Global Optimization</i>, forthcoming.</li>
     19. C. D. C. Bozkir, O. E. Kundakcioglu, and A. C. Henry, "<a href="https://doi.org/10.1007/s10898-021-01058-3" target="_blank">Hospital service levels during drug shortages: Stocking and transshipment policies for pharmaceutical inventory</a>," <br /><i>Journal of Global Optimization</i>, vol. 83, pp. 565-584, 2022.</li>
     18. S. Korkmaz, O. E. Kundakcioglu, and O. Sivrikaya, "<a href="https://doi.org/10.1057/s41272-021-00284-4" target="_blank">A fluid approximation for the single-leg fare allocation problem with nonhomogeneous Poisson demand</a>," <br /> <i>Journal of Revenue and Pricing Management</i>, vol. 21, pp. 81-96, 2022.</li>
