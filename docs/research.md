@@ -63,8 +63,8 @@ My research involves combinatorial optimization approaches in numerous subdomain
 
 ### Journal Articles
 
-<ul>
-    <li>I. E. Sakarya and O. E. Kundakcioglu, "<a href="https://doi.org/10.1007/s10898-022-01219-y" target="_blank">Multi-instance learning by maximizing the area under receiver operating characteristic curve</a>," <br /><i>Journal of Global Optimization</i>, forthcoming.</li>
+<ol>
+    <li value="20">I. E. Sakarya and O. E. Kundakcioglu, "<a href="https://doi.org/10.1007/s10898-022-01219-y" target="_blank">Multi-instance learning by maximizing the area under receiver operating characteristic curve</a>," <br /><i>Journal of Global Optimization</i>, forthcoming.</li>
     <li>C. D. C. Bozkir, O. E. Kundakcioglu, and A. C. Henry, "<a href="https://doi.org/10.1007/s10898-021-01058-3" target="_blank">Hospital service levels during drug shortages: Stocking and transshipment policies for pharmaceutical inventory</a>," <br /><i>Journal of Global Optimization</i>, vol. 83, pp. 565-584, 2022.</li>
     <li> S. Korkmaz, O. E. Kundakcioglu, and O. Sivrikaya, "<a href="https://doi.org/10.1057/s41272-021-00284-4" target="_blank">A fluid approximation for the single-leg fare allocation problem with nonhomogeneous Poisson demand</a>," <br /> <i>Journal of Revenue and Pricing Management</i>, vol. 21, pp. 81-96, 2022.</li>
     <li> O. Simsek and O. E. Kundakcioglu, "<a href="https://doi.org/10.3934/jimo.2021001" target="_blank">Cost of fairness in agent scheduling for contact centers</a>," <br /><i>Journal of Industrial and Management Optimization</i>, vol. 18, no. 2, pp. 873-896, 2022.</li>
@@ -84,7 +84,7 @@ My research involves combinatorial optimization approaches in numerous subdomain
     <li> G. Pyrgiotakis, O. E. Kundakcioglu, K. Finton, P. M. Pardalos, K. Powers, and B. M. Moudgil, "<a href="https://doi.org/10.1007/s10439-009-9688-z" target="_blank">Cell death discrimination with Raman spectroscopy and support vector machines</a>,"<br /><i>Annals of Biomedical Engineering</i>, vol. 37, no. 7, pp. 1464–1473, 2009.</li>
     <li> O. Seref, O. E. Kundakcioglu, O. Prokopyev, and P. M. Pardalos, "<a href="https://doi.org/10.1007/s10878-008-9189-2" target="_blank">Selective support vector machines</a>,"<br /><i>Journal of Combinatorial Optimization</i>, vol. 17, no. 1, pp. 3–20, 2009.</li>
     <li> O. E. Kundakcioglu and T. Ünlüyurt, "<a href="https://doi.org/10.1109/TSMCA.2007.893459" target="_blank">Bottom-up construction of minimum-cost AND/OR trees for sequential fault diagnosis</a>,"<br /><i>IEEE Transactions on Systems, Man, and Cybernetics - Part A: Systems and Humans</i>, vol. 37, no. 5, pp. 621–629, 2007.</li>
-</ul>
+</ol>
 
 ### Conference Proceedings and Book Chapters
 
