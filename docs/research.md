@@ -155,6 +155,8 @@ My research involves combinatorial optimization approaches in numerous subdomain
 
 ## Funding
 
+### Grants in Progress
+
 * **PI**,
 _Coordination and Management of Uncertainty in Refugee Camp Inventory Operations_,
 TUBITAK ARDEB 1001.
@@ -162,11 +164,14 @@ TUBITAK ARDEB 1001.
 _Stock Replenishment and Storage Space Allocation Problem When Demand is Stock Dependent_, 
 TUBITAK ARDEB 1001, PI: M. Önal, co-PI: E. Albey.
 * **PI**,
-_Airline Optimization and Engineering System_,
-TUBITAK TEYDEB 1507.
-* **PI**,
 _Industry 4.0 Applications in Flat Steel Manufacturing_,
 TUBITAK BIDEB 2244, co-PI: O. Ozener.
+
+### Completed
+
+* **PI**,
+_Airline Optimization and Engineering System_,
+TUBITAK TEYDEB 1507.
 * **Consultant**,
 _MeVe: Supporting Tool for the Measurement and Verification of Energy Savings Under IPMVP_,
 TUBITAK TEYDEB 1509 – EUREKA, PI: MIR ARGE, SYLTEC, CARTIF.
