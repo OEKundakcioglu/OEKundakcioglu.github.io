@@ -64,10 +64,10 @@ My research involves combinatorial optimization approaches in numerous subdomain
 ### Journal Articles
 
 {:style="counter-reset:step-counter 19"}
-1. I. E. Sakarya and O.&nbsp;E.&nbsp;Kundakcioglu, "<a href="https://doi.org/10.1007/s10898-022-01219-y" target="_blank">Multi-instance learning by maximizing the area under receiver operating characteristic curve</a>," <i>Journal of Global Optimization</i>, forthcoming. <a href="https://github.com/OEKundakcioglu/MI-ROCMax" target="_blank"><img src="/assets/images/folder.png" alt="Folder" width="18"/>Source Code</a>
+1. I. E. Sakarya and O.&nbsp;E.&nbsp;Kundakcioglu, "<a href="https://doi.org/10.1007/s10898-022-01219-y" target="_blank">Multi-instance learning by maximizing the area under receiver operating characteristic curve</a>," <i>Journal of Global Optimization</i>, forthcoming. <br /><a href="https://github.com/OEKundakcioglu/MI-ROCMax" target="_blank"><img src="/assets/images/folder.png" alt="Folder" width="18"/>Source Code</a>
 
 {:style="counter-reset:step-counter 18"}
-1. C. D. C. Bozkir, O.&nbsp;E.&nbsp;Kundakcioglu, and A.&nbsp;C.&nbsp;Henry, "<a href="https://doi.org/10.1007/s10898-021-01058-3" target="_blank">Hospital service levels during drug shortages: Stocking and transshipment policies for pharmaceutical inventory</a>," <i>Journal of Global Optimization</i>, vol. 83, pp. 565-584, 2022.
+1. C. D. C. Bozkir, O.&nbsp;E.&nbsp;Kundakcioglu, and A.&nbsp;C.&nbsp;Henry, "<a href="https://doi.org/10.1007/s10898-021-01058-3" target="_blank">Hospital service levels during drug shortages: Stocking and transshipment policies for pharmaceutical inventory</a>," <i>Journal of Global Optimization</i>, vol. 83, pp. 565-584, 2022. <br /><a href="https://github.com/OEKundakcioglu/HospitalInventorySimulation" target="_blank"><img src="/assets/images/folder.png" alt="Folder" width="18"/>Source Code</a>
 
 {:style="counter-reset:step-counter 17"}
 1. S. Korkmaz, O.&nbsp;E.&nbsp;Kundakcioglu, and O. Sivrikaya, "<a href="https://doi.org/10.1057/s41272-021-00284-4" target="_blank">A fluid approximation for the single-leg fare allocation problem with nonhomogeneous Poisson demand</a>," <i>Journal of Revenue and Pricing Management</i>, vol. 21, pp. 81-96, 2022.
@@ -76,10 +76,10 @@ My research involves combinatorial optimization approaches in numerous subdomain
 1. O. Simsek and O.&nbsp;E.&nbsp;Kundakcioglu, "<a href="https://doi.org/10.3934/jimo.2021001" target="_blank">Cost of fairness in agent scheduling for contact centers</a>," <i>Journal of Industrial and Management Optimization</i>, vol. 18, no. 2, pp. 873-896, 2022.
 
 {:style="counter-reset:step-counter 15"}
-1. S. Azizi, C. D. C. Bozkir, A. C. Trapp, O.&nbsp;E.&nbsp;Kundakcioglu, and A. K. Kurbanzade, "<a href="https://doi.org/10.1111/poms.13531" target="_blank">Aid allocation for camp-based and urban refugees with uncertain demand and replenishments</a>," <i>Production and Operations Management</i>, vol. 30, no. 12, pp. 4455-4474, 2021.
+1. S. Azizi, C. D. C. Bozkir, A. C. Trapp, O.&nbsp;E.&nbsp;Kundakcioglu, and A. K. Kurbanzade, "<a href="https://doi.org/10.1111/poms.13531" target="_blank">Aid allocation for camp-based and urban refugees with uncertain demand and replenishments</a>," <i>Production and Operations Management</i>, vol. 30, no. 12, pp. 4455-4474, 2021. <br /><a href="https://github.com/OEKundakcioglu/RefugeeAidAllocation" target="_blank"><img src="/assets/images/folder.png" alt="Folder" width="18"/>Source Code</a>
 
 {:style="counter-reset:step-counter 14"}
-1. S. Gozuyilmaz and O.&nbsp;E.&nbsp;Kundakcioglu, "<a href="https://doi.org/10.1007/s00291-021-00637-w" target="_blank">Mathematical optimization for time series decomposition</a>," <i>OR Spectrum</i>, vol. 43, pp. 733-758, 2021.
+1. S. Gozuyilmaz and O.&nbsp;E.&nbsp;Kundakcioglu, "<a href="https://doi.org/10.1007/s00291-021-00637-w" target="_blank">Mathematical optimization for time series decomposition</a>," <i>OR Spectrum</i>, vol. 43, pp. 733-758, 2021. 
 
 {:style="counter-reset:step-counter 13"}
 1. M. Önal, O.&nbsp;E.&nbsp;Kundakcioglu, and S. Sethi, "<a href="https://doi.org/10.1007/s11590-020-01566-3" target="_blank">An EOQ model with deteriorating items and self-selection constraints</a>," <i>Optimization Letters</i>, vol. 14, pp. 1491–1518, 2020.
