@@ -64,7 +64,7 @@ My research involves combinatorial optimization approaches in numerous subdomain
 ### Journal Articles
 
 {:style="counter-reset:step-counter 19"}
-1. I. E. Sakarya and O.&nbsp;E.&nbsp;Kundakcioglu, "<a href="https://doi.org/10.1007/s10898-022-01219-y" target="_blank">Multi-instance learning by maximizing the area under receiver operating characteristic curve</a>," <i>Journal of Global Optimization</i>, forthcoming.
+1. I. E. Sakarya and O.&nbsp;E.&nbsp;Kundakcioglu, "<a href="https://doi.org/10.1007/s10898-022-01219-y" target="_blank">Multi-instance learning by maximizing the area under receiver operating characteristic curve</a>," <i>Journal of Global Optimization</i>, forthcoming. <a href="https://github.com/OEKundakcioglu/MI-ROCMax" target="_blank"><img src="/assets/images/folder.png" alt="Folder" width="18"/>Source Code</a>
 
 {:style="counter-reset:step-counter 18"}
 1. C. D. C. Bozkir, O.&nbsp;E.&nbsp;Kundakcioglu, and A.&nbsp;C.&nbsp;Henry, "<a href="https://doi.org/10.1007/s10898-021-01058-3" target="_blank">Hospital service levels during drug shortages: Stocking and transshipment policies for pharmaceutical inventory</a>," <i>Journal of Global Optimization</i>, vol. 83, pp. 565-584, 2022.
