@@ -51,7 +51,7 @@ My research involves combinatorial optimization approaches in numerous subdomain
     - Gizem Atasoy, Summer 2018, _Ph.D. Student at University of Illinois at Chicago_
     - Cem Deniz Çağlar Bozkır, Spring 2018, _Senior Analytics Consultant at KoçDigital_
     - Ayşenur Betül Çengil, Summer 2017, _Ph.D. Student at the University of Arkansas_
-    - Büşra Tüfekci, Spring 2016, _Marketing Assistant at Ermoda Tekstil_
+    - Büşra Tüfekci, Spring 2016, _Prodution Planning Supervisor at Beş A_
     - Andrea Viacaba, Fall 2011, _Global Supply Chain Analyst II at Mary Kay Global_
     - Smita (Sethi) Jain, Fall 2011, _Data Analyst at Wyndham Destinations_
     - Savya K. Ramesh, Fall 2010, _Industrial Engineering Consultant at Eton System_
