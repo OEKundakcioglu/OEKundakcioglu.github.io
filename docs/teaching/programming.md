@@ -166,14 +166,14 @@ System.out.println("!");
 ```
 
 ```js
-for (int index = 0; index &lt; 3; index++) {
+for (int index = 0; index < 3; index++) {
     System.out.println("Welcome");
-    break;*
+    break;
 }
 ```
 
 ```js
-for(int i = 0; i &lt;= 5; i++) {
+for(int i = 0; i <= 5; i++) {
    System.out.println("i = " + i );
 }
 System.out.println("i after the loop = " + 1 );
@@ -187,10 +187,10 @@ System.out.println("value1 == value2");
 if(value1 != value2)
 System.out.println("value1 != value2");
 if(value1 > value2)System.out.println("value1 > value2");
-if(value1 &lt; value2)
-System.out.println("value1 &lt; value2");
-if(value1 &lt;= value2)
-System.out.println(value1 &lt;= value2);
+if(value1 < value2)
+System.out.println("value1 < value2");
+if(value1 <= value2)
+System.out.println(value1 <= value2);
 ```
 
 ```js
@@ -235,7 +235,7 @@ System.out.println(original_result + " % 7 = " + result);
 ```
 
 ```js
-for(int i=1; i&lt;65; i++) {
+for(int i=1; i<65; i++) {
     if(i%3==0) {
         if(i%2==0 && i%5!=0)
             System.out.println(i);
@@ -1137,7 +1137,7 @@ model_name-.write("-file_name-.lp"); // Writes model to the -file_name-.lp file
 
 1. Suppose that I'm solving a Knapsack problem using Gurobi and already defined
 ```js
-GRBEnv env = new GRBEnv("knapsack.log");*
+GRBEnv env = new GRBEnv("knapsack.log");
 GRBModel grbModel = new GRBModel(env);
 ```  
 and I introduced binary variables associated with items: x[i] where i = 0, 1, ... , n-1. Suppose I included in the constraints in the code as well. 
@@ -1146,7 +1146,7 @@ and I introduced binary variables associated with items: x[i] where i = 0, 1, ..
 1. What would the following code add mathematically to the optimization model?
 ```js
 GRBLinExpr exprObj = new GRBLinExpr();
-for(int i=0;i&lt;6;i++)
+for(int i=0;i<6;i++)
 {
         exprObj.addTerm(6, x[i]);
         exprObj.addTerm(-2*i, x[i]);
