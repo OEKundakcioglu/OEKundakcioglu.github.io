@@ -4,7 +4,7 @@ title: Programming for OR
 parent: Teaching
 nav_order: 2
 ---
-# Programming for Operations Research
+# Object Oriented Programming for Operations Research
 {: .no_toc }
 
 ##  Table of contents
