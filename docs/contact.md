@@ -25,4 +25,4 @@ Cekmekoy, 34794 Istanbul, Turkey
 <a href="https://publons.com/researcher/457748/o-erhun-kundakcioglu/" target="_blank"><img src="../../assets/images/publons.png" style="height:21px;" alt="Publons"> Publons</a>  
 <a href="https://orcid.org/0000-0003-3033-0986" target="_blank"><img src="../../assets/images/orcid.png" style="height:21px;" alt="Orcid"> Orcid</a>  
 <a href="https://www.researchgate.net/profile/O_Kundakcioglu" target="_blank"><img src="../../assets/images/researchg.png" style="height:21px;" alt="Researchgate"> ResearchGate</a>
-<p style="color:white"><a rel="me" href="https://techhub.social/@OEKundakcioglu">Mastodon</a></p>
+<a rel="me" href="https://techhub.social/@OEKundakcioglu">.</a>
