@@ -16,7 +16,7 @@
 title: Erhun Kundakcioglu
 description: Erhun Kundakcioglu's Personal Site
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://oekundakcioglu.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://erhun.me" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: pretty
 exclude: ["docs/tests/"
