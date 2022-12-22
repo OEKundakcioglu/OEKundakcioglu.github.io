@@ -1224,7 +1224,7 @@ resultSet.get<"Datatype"> (<"index">) // returns value type: <"data type">, colu
 <img src="../../../assets/images/db_datatypes.jpg" alt="db_datatypes" width="343"/>  
 Source: MySQLTutorial
 * There are many other datatypes: <a href="https://www.mysqltutorial.org/mysql-data-types.aspx/" target="_blank"> mysql-data-types</a> 
-* In databases, indexing starts with 1. 
+* In databases, indexing starts with 1.  
 
 ## Consuming MetaData from a MySQL Database 
 <span style="color: white"> <a href="https://www.loom.com/embed/9eb4b68515fa450a9f7bdf782878d18a" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> SukruGulesin</span>
@@ -1236,7 +1236,39 @@ resultSetMetaData.getColumnCount(); // returns number of columns
 resultSetMetaData.getColumnName(<"i">); // returns i-th column ( Recall: starts with 1) 
 statement.executeUpdate(<"insert_query">) // Inserts values to the corresponding table.  
 ```
+* After you get the metadata, you can use that information to access the data itself. Here is what a final code might look like, if you were to print everything (including the data) on the terminal:
+```js
+Connection con = null;
+String url = "jdbc:mysql://sql9.freemysqlhosting.net";
+String username = "sql9379593";
+String password = "xiUymS7XsA";
 
+Class.forName("com.mysql.cj.jdbc.Driver"); // make sure you reference the jar file
+con = DriverManager.getConnection(url, username, password);
+
+Statement statement = con.createStatement();
+ResultSet resultSet = statement.executeQuery("select * from sql9379593.tableName");
+//pay attention to the fact that we include DB name in the above line before the table name
+
+ResultSetMetaData resultsetMetaData = resultSet.getMetaData();
+int numberOfColumns=resultsetMetaData.getColumnCount();
+for(int i=0;i<numberOfColumns;i++) 
+{
+    System.out.print(resultsetMetaData.getColumnTypeName(i+1)+"\t");
+}
+System.out.print("\n");
+
+for(int i=0;i<numberOfColumns;i++) 
+{
+    System.out.print(resultsetMetaData.getColumnName(i+1)+"\t");
+}
+System.out.print("\n");
+
+while(resultSet.next())
+{
+    System.out.print(resultSet.getString(1)+"\t"+resultSet.getInt(2)+"\t"+resultSet.getDouble(3)+"\t"+resultSet.getShort(4)+"\n");
+}
+```
 ## Output to File 
 <span style="color: white"> <a href="https://www.loom.com/embed/c7025de85a11428cad51ce35d558778f" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> NihatKahveci</span>
 
