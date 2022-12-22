@@ -1242,14 +1242,11 @@ Connection con = null;
 String url = "jdbc:mysql://sql9.freemysqlhosting.net";
 String username = "sql9379593";
 String password = "xiUymS7XsA";
-
 Class.forName("com.mysql.cj.jdbc.Driver"); // make sure you reference the jar file
 con = DriverManager.getConnection(url, username, password);
-
 Statement statement = con.createStatement();
 ResultSet resultSet = statement.executeQuery("select * from sql9379593.tableName");
 //pay attention to the fact that we include DB name in the above line before the table name
-
 ResultSetMetaData resultsetMetaData = resultSet.getMetaData();
 int numberOfColumns=resultsetMetaData.getColumnCount();
 for(int i=0;i<numberOfColumns;i++) 
@@ -1257,13 +1254,11 @@ for(int i=0;i<numberOfColumns;i++)
     System.out.print(resultsetMetaData.getColumnTypeName(i+1)+"\t");
 }
 System.out.print("\n");
-
 for(int i=0;i<numberOfColumns;i++) 
 {
     System.out.print(resultsetMetaData.getColumnName(i+1)+"\t");
 }
 System.out.print("\n");
-
 while(resultSet.next())
 {
     System.out.print(resultSet.getString(1)+"\t"+resultSet.getInt(2)+"\t"+resultSet.getDouble(3)+"\t"+resultSet.getShort(4)+"\n");
