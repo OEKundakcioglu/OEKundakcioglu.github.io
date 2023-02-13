@@ -54,7 +54,7 @@ My research involves combinatorial optimization approaches in numerous subdomain
     - Büşra Tüfekci, Spring 2016, _Prodution Planning Supervisor at Beş A_
     - Andrea Viacaba, Fall 2011, _Global Supply Chain Analyst II at Mary Kay Global_
     - Smita (Sethi) Jain, Fall 2011, _Data Analyst at Wyndham Destinations_
-    - Savya K. Ramesh, Fall 2010, _Industrial Engineering Consultant at Eton System_
+    - Savya K. Ramesh, Fall 2010, _Senior Logistics Engineer at J. B. Hunt Transport Services Inc._
 
 ---
 
@@ -64,7 +64,7 @@ My research involves combinatorial optimization approaches in numerous subdomain
 ### Journal Articles
 
 {:style="counter-reset:step-counter 19"}
-1. I. E. Sakarya and O.&nbsp;E.&nbsp;Kundakcioglu, "<a href="https://doi.org/10.1007/s10898-022-01219-y" target="_blank">Multi-instance learning by maximizing the area under receiver operating characteristic curve</a>," <i>Journal of Global Optimization</i>, forthcoming. <br /><a href="https://github.com/OEKundakcioglu/MI-ROCMax" target="_blank"><img src="/assets/images/folder.png" alt="Folder" width="18"/>Source Code</a>
+1. I. E. Sakarya and O.&nbsp;E.&nbsp;Kundakcioglu, "<a href="https://doi.org/10.1007/s10898-022-01219-y" target="_blank">Multi-instance learning by maximizing the area under receiver operating characteristic curve</a>," <i>Journal of Global Optimization</i>, vol. 85, pp. 351-375, 2023. <br /><a href="https://github.com/OEKundakcioglu/MI-ROCMax" target="_blank"><img src="/assets/images/folder.png" alt="Folder" width="18"/>Source Code</a>
 
 {:style="counter-reset:step-counter 18"}
 1. C. D. C. Bozkir, O.&nbsp;E.&nbsp;Kundakcioglu, and A.&nbsp;C.&nbsp;Henry, "<a href="https://doi.org/10.1007/s10898-021-01058-3" target="_blank">Hospital service levels during drug shortages: Stocking and transshipment policies for pharmaceutical inventory</a>," <i>Journal of Global Optimization</i>, vol. 83, pp. 565-584, 2022. <br /><a href="https://github.com/OEKundakcioglu/HospitalInventorySimulation" target="_blank"><img src="/assets/images/folder.png" alt="Folder" width="18"/>Source Code</a>
