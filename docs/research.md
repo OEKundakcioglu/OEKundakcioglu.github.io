@@ -160,15 +160,15 @@ My research involves combinatorial optimization approaches in numerous subdomain
 * **PI**,
 _Coordination and Management of Uncertainty in Refugee Camp Inventory Operations_,
 TUBITAK ARDEB 1001.
-* **Researcher**, 
-_Stock Replenishment and Storage Space Allocation Problem When Demand is Stock Dependent_, 
-TUBITAK ARDEB 1001, PI: M. Önal, co-PI: E. Albey.
 * **PI**,
 _Industry 4.0 Applications in Flat Steel Manufacturing_,
 TUBITAK BIDEB 2244, co-PI: O. Ozener.
 
 ### Completed
 
+* **Researcher**, 
+_Stock Replenishment and Storage Space Allocation Problem When Demand is Stock Dependent_, 
+TUBITAK ARDEB 1001, PI: M. Önal, co-PI: E. Albey.
 * **PI**,
 _Airline Optimization and Engineering System_,
 TUBITAK TEYDEB 1507.
