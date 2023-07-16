@@ -129,40 +129,40 @@ My research involves combinatorial optimization approaches in numerous subdomain
 ### Conference Proceedings and Book Chapters
 
 {:style="counter-reset:step-counter 11"}
-1. S. Saedi and O.&nbsp;E.&nbsp;Kundakcioglu, Handbook of Combinatorial Optimization, 2nd Ed., P. M. Pardalos, D.-Z. Du, and R. Graham, Eds., Springer, 2013, ch. Combinatorial optimization in data mining, pp. 595–630.</li>
+1. S. Saedi and O.&nbsp;E.&nbsp;Kundakcioglu, Handbook of Combinatorial Optimization, 2nd Ed., P. M. Pardalos, D.-Z. Du, and R. Graham, Eds., Springer, 2013, ch. Combinatorial optimization in data mining, pp. 595–630.
 
 {:style="counter-reset:step-counter 10"}
-1. M. H. Poursaeidi, M. Samorani, and O.&nbsp;E.&nbsp;Kundakcioglu, "Offshore Wind Farm Layout Optimization: What is the Hype?," in Proceedings of the Industrial and Systems Engineering Research Conference, ID: 952, 2013.</li>
+1. M. H. Poursaeidi, M. Samorani, and O.&nbsp;E.&nbsp;Kundakcioglu, "Offshore Wind Farm Layout Optimization: What is the Hype?," in Proceedings of the Industrial and Systems Engineering Research Conference, ID: 952, 2013.
     
 {:style="counter-reset:step-counter 9"}
-1. A. Viacaba, M. H. Poursaeidi, and O.&nbsp;E.&nbsp;Kundakcioglu, "Natural gas price forecasting via selective support vector regression," in Proceedings of the Industrial and Systems Engineering Research Conference, ID: 645, 2012.</li>
+1. A. Viacaba, M. H. Poursaeidi, and O.&nbsp;E.&nbsp;Kundakcioglu, "Natural gas price forecasting via selective support vector regression," in Proceedings of the Industrial and Systems Engineering Research Conference, ID: 645, 2012.
 
 {:style="counter-reset:step-counter 8"}
-1. O.&nbsp;E.&nbsp;Kundakcioglu and P. M. Pardalos, Clustering Challenges in Biological Networks, W. A. Chaovalitwongse, S. Butenko, and P. M. Pardalos, Eds., World Scientific, 2009, ch. The complexity of feature selection for consistent biclustering, pp. 257–266.</li>
+1. O.&nbsp;E.&nbsp;Kundakcioglu and P. M. Pardalos, Clustering Challenges in Biological Networks, W. A. Chaovalitwongse, S. Butenko, and P. M. Pardalos, Eds., World Scientific, 2009, ch. The complexity of feature selection for consistent biclustering, pp. 257–266.
  
 {:style="counter-reset:step-counter 7"}
-1. O.&nbsp;E.&nbsp;Kundakcioglu and P. M. Pardalos, Lectures on Global Optimization. American Mathematical Society, 2009, Fields Institute Communications Series, P. M. Pardalos and T. F. Coleman, Eds., vol. 55, ch. Optimization in biomedical research, pp. 155–182.</li>
+1. O.&nbsp;E.&nbsp;Kundakcioglu and P. M. Pardalos, Lectures on Global Optimization. American Mathematical Society, 2009, Fields Institute Communications Series, P. M. Pardalos and T. F. Coleman, Eds., vol. 55, ch. Optimization in biomedical research, pp. 155–182.
 
 {:style="counter-reset:step-counter 6"}
-1. O.&nbsp;E.&nbsp;Kundakcioglu and S. Alizamir, Encyclopedia of Optimization, second edition, C. A. Floudas and P. M. Pardalos, Eds., Springer, 2009, ch. Generalized assignment problem, pp. 1153–1162.</li>
+1. O.&nbsp;E.&nbsp;Kundakcioglu and S. Alizamir, Encyclopedia of Optimization, second edition, C. A. Floudas and P. M. Pardalos, Eds., Springer, 2009, ch. Generalized assignment problem, pp. 1153–1162.
 
 {:style="counter-reset:step-counter 5"}
-1. O. Seref, O.&nbsp;E.&nbsp;Kundakcioglu, and M. Bewernitz, Encyclopedia of Healthcare Information Systems, N. Wickramasinghe and E. Geisler, Eds., IDEA Group Inc., 2008, ch. Support vector machines in neuroscience, pp. 1283–1293.</li>
+1. O. Seref, O.&nbsp;E.&nbsp;Kundakcioglu, and M. Bewernitz, Encyclopedia of Healthcare Information Systems, N. Wickramasinghe and E. Geisler, Eds., IDEA Group Inc., 2008, ch. Support vector machines in neuroscience, pp. 1283–1293.
 
 {:style="counter-reset:step-counter 4"}
-1. O. Seref and O.&nbsp;E.&nbsp;Kundakcioglu, "Multiple instance classification with relaxed support vector machines," in Proceedings of the 3rd INFORMS Workshop on Data Mining and Health Informatics, J. Li, D. Aleman, and R. Sikora, Eds., 2008.</li>
+1. O. Seref and O.&nbsp;E.&nbsp;Kundakcioglu, "Multiple instance classification with relaxed support vector machines," in Proceedings of the 3rd INFORMS Workshop on Data Mining and Health Informatics, J. Li, D. Aleman, and R. Sikora, Eds., 2008.
 
 {:style="counter-reset:step-counter 3"}
-1. O.&nbsp;E.&nbsp;Kundakcioglu and P. M. Pardalos, "A branch and bound algorithm for multiple instance classification," in Proceedings of the 2008 International Conference on Machine Learning; Models, Technologies and Applications (MLMTA), H. R. Arabnia and Y. Mun, Eds., vol. 2, 2008, pp. 865–869.</li>
+1. O.&nbsp;E.&nbsp;Kundakcioglu and P. M. Pardalos, "A branch and bound algorithm for multiple instance classification," in Proceedings of the 2008 International Conference on Machine Learning; Models, Technologies and Applications (MLMTA), H. R. Arabnia and Y. Mun, Eds., vol. 2, 2008, pp. 865–869.
 
 {:style="counter-reset:step-counter 2"}
-1. O. Seref, O.&nbsp;E.&nbsp;Kundakcioglu, and P. M. Pardalos, "Selective linear and nonlinear classification," in Data Mining and Mathematical Programming, ser. CRM Proceedings and Lecture Notes, P. M. Pardalos and P. Hansen, Eds., vol. 45, American Mathematical Society, 2008, pp. 211–234.</li>
+1. O. Seref, O.&nbsp;E.&nbsp;Kundakcioglu, and P. M. Pardalos, "Selective linear and nonlinear classification," in Data Mining and Mathematical Programming, ser. CRM Proceedings and Lecture Notes, P. M. Pardalos and P. Hansen, Eds., vol. 45, American Mathematical Society, 2008, pp. 211–234.
 
 {:style="counter-reset:step-counter 1"}
-1. O. Seref, C. Cifarelli, O.&nbsp;E.&nbsp;Kundakcioglu, P. M. Pardalos, and M. Ding, "Detecting categorical discrimination in a visuomotor task using selective support vector machines," in Proceedings of the 2007 International Conference on Bioinformatics & Computational Biology (BIOCOMP), H. R. Arabnia, M. Q. Yang, and J. Y. Yang, Eds., vol. 2, 2007, pp. 580–587.</li>
+1. O. Seref, C. Cifarelli, O.&nbsp;E.&nbsp;Kundakcioglu, P. M. Pardalos, and M. Ding, "Detecting categorical discrimination in a visuomotor task using selective support vector machines," in Proceedings of the 2007 International Conference on Bioinformatics & Computational Biology (BIOCOMP), H. R. Arabnia, M. Q. Yang, and J. Y. Yang, Eds., vol. 2, 2007, pp. 580–587.
 
 {:style="counter-reset:step-counter 0"}
-1. O.&nbsp;E.&nbsp;Kundakcioglu, K. Bulbul, T. Ünlüyurt, K. Kilic, and O. Ercetin, "Minimum power multicasting with delay bound constraints in ad hoc wireless networks," in New Trends in Computer Networks, ser. Advances in Computer Science and Engineering: Reports. Imperial College Press, 2005, pp. 252–263.</li>
+1. O.&nbsp;E.&nbsp;Kundakcioglu, K. Bulbul, T. Ünlüyurt, K. Kilic, and O. Ercetin, "Minimum power multicasting with delay bound constraints in ad hoc wireless networks," in New Trends in Computer Networks, ser. Advances in Computer Science and Engineering: Reports. Imperial College Press, 2005, pp. 252–263.
 
 ### Edited Books and Special Issues
 
