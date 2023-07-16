@@ -163,7 +163,6 @@ My research involves combinatorial optimization approaches in numerous subdomain
 
 {:style="counter-reset:step-counter 0"}
 1. O.&nbsp;E.&nbsp;Kundakcioglu, K. Bulbul, T. Ünlüyurt, K. Kilic, and O. Ercetin, "Minimum power multicasting with delay bound constraints in ad hoc wireless networks," in New Trends in Computer Networks, ser. Advances in Computer Science and Engineering: Reports. Imperial College Press, 2005, pp. 252–263.</li>
-</ul>
 
 ### Edited Books and Special Issues
 
