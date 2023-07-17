@@ -24,7 +24,7 @@ I work on _inventory control_ under _demand and supply uncertainty_. These decis
 
 ### Data Science
 
-My research involves combinatorial optimization approaches in numerous subdomains of data science, including _sequential testing_, _multi-instance learning_, and _time series analysis_. In addition, I have applied supervised learning approaches to the toxicological evaluation of nanoparticles and interpreting EEG data. 
+My research involves combinatorial optimization approaches in numerous subdomains of data science, including **supervised learning** and **time series analysis**. In addition, I have applied some of these techniques to the toxicological evaluation of nanoparticles and interpreting EEG data. 
 
 ---
 
