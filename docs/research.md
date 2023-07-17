@@ -32,10 +32,11 @@ My research involves combinatorial optimization approaches in numerous subdomain
 
 ### In Progress
 
-* Deniz N. Yoltay (2nd year Ph.D.)
-* Serkan Ürkmez (3rd year Ph.D.)
-* Buket İpek Akbal (1st year M.S.)
-* Cem Y. Yıldız (1st year M.S.)
+* Deniz N. Yoltay (3rdd year Ph.D.)
+* Serkan Ürkmez (4th year Ph.D.)
+* Buket İpek Akbal (2nd year M.S.)
+* Cem Y. Yıldız (2nd year M.S.)
+* Ulvi Fındık (1st year M.S.)
 
 ### Graduated
 
