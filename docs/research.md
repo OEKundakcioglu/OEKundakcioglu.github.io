@@ -86,7 +86,7 @@ My research involves combinatorial optimization approaches in numerous subdomain
 1. S. Gozuyilmaz and O.&nbsp;E.&nbsp;Kundakcioglu, "<a href="https://doi.org/10.1007/s00291-021-00637-w" target="_blank">Mathematical optimization for time series decomposition</a>," <i>OR Spectrum</i>, vol. 43, pp. 733-758, 2021. 
 
 {:style="counter-reset:step-counter 13"}
-1. M. Önal, O.&nbsp;E.&nbsp;Kundakcioglu, and S. Sethi, "<a href="https://doi.org/10.1007/s11590-020-01566-3" target="_blank">An EOQ model with deteriorating items and self-selection constraints</a>," <i>Optimization Letters</i>, vol. 14, pp. 1491–1518, 2020.
+1. M. Önal, O.&nbsp;E.&nbsp;Kundakcioglu, and S. Jain, "<a href="https://doi.org/10.1007/s11590-020-01566-3" target="_blank">An EOQ model with deteriorating items and self-selection constraints</a>," <i>Optimization Letters</i>, vol. 14, pp. 1491–1518, 2020.
 
 {:style="counter-reset:step-counter 12"}
 1. T. Yavuz, O.&nbsp;E.&nbsp;Kundakcioglu, and T. Ünlüyurt, "<a href="https://doi.org/10.1016/j.cor.2019.07.010" target="_blank">Exact and heuristic approaches to detect failures in failed k-out-of-n systems</a>," <i>Computers and Operations Research</i>, vol. 112, 104752, 2019.
