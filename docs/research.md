@@ -65,7 +65,7 @@ My research involves combinatorial optimization approaches in numerous subdomain
 ### Journal Articles
 
 {:style="counter-reset:step-counter 20"}
-1. H.&nbsp;Shourabizadeh, O.&nbsp;E.&nbsp;Kundakcioglu, C.&nbsp;D.&nbsp;C.&nbsp;Bozkir, M.&nbsp;B.&nbsp;Tufekci, and A.&nbsp;C.&nbsp;Henry, "Healthcare Inventory Management in the Presence of Supply Disruptions and a Reliable Secondary Supplier," <i>Annals of Operations Research</i>, forthcoming. 
+1. H.&nbsp;Shourabizadeh, O.&nbsp;E.&nbsp;Kundakcioglu, C.&nbsp;D.&nbsp;C.&nbsp;Bozkir, M.&nbsp;B.&nbsp;Tufekci, and A.&nbsp;C.&nbsp;Henry, "Healthcare Inventory Management in the Presence of Supply Disruptions and a Reliable Secondary Supplier," <i>Annals of Operations Research</i>, forthcoming. DOI: 10.1007/s10479-023-05620-y 
 
 {:style="counter-reset:step-counter 19"}
 1. I. E. Sakarya and O.&nbsp;E.&nbsp;Kundakcioglu, "<a href="https://doi.org/10.1007/s10898-022-01219-y" target="_blank">Multi-instance learning by maximizing the area under receiver operating characteristic curve</a>," <i>Journal of Global Optimization</i>, vol. 85, pp. 351-375, 2023. <br /><a href="https://github.com/OEKundakcioglu/MI-ROCMax" target="_blank"><img src="/assets/images/folder.png" alt="Folder" width="18"/>Source Code</a>
