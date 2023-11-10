@@ -10,10 +10,6 @@ I am a Professor of Industrial Engineering at <a href="http://www.ozyegin.edu.tr
 
 My research interests are in <i>decision analytics</i> and <i>mathematical optimization</i>, and I had the opportunity to supervise 3 Ph.D. and 11 M.S. students in these areas. I received an Early Career Award from the <a href="https://www.tubitak.gov.tr" target="_blank">Scientific and Technological Research Council of Turkey</a>, a <a href="https://www.egr.uh.edu/news/201205/cullen-college-faculty-staff-honored-excellence" target="_blank">Teaching Excellence Award</a> at the University of Houston, and a Florida Chapter Scholarship from the <a href="https://www.himss.org" target="_blank">HIMSS Foundation</a>. I serve as an Associate Editor for the <a href="https://www.springer.com/journal/10898" target="_blank">Journal of Global Optimization</a>, <a href="https://www.springer.com/journal/11590" target="_blank">Optimization Letters</a>, <a href="https://www.springer.com/journal/43069" target="_blank">SN Operations Research Forum</a>, and the <a href="https://www.longdom.org/biomedical-data-mining.html" target="_blank">Journal of Biomedical Data Mining</a>.
 
----
-
-### Contact
-
 | <img src="/assets/images/oek2.png" alt="OEK" width="119"/> | [Email](mailto:erhunk@gmail.com){: .btn .fs-5 .mb-4 .mb-md-0 } <br /> [Book an appointment](https://calendly.com/erhun-kundakcioglu/zoom-meeting){:target="_blank" .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } |
 
 
@@ -26,7 +22,8 @@ Cekmekoy, 34794 Istanbul, Turkey
 +90 (216) 564 9473
 #### Fax
 +90 (216) 564 9057
-#### Academic/Professional Profiles
+
+---
 
 <a href="https://github.com/OEKundakcioglu/" target="_blank"> <img src="../../assets/images/github.png" style="height:21px;" alt="Github"> Github</a>  
 <a href="https://scholar.google.com/citations?user=k6NTKvsAAAAJ&hl=en" target="_blank"><img src="../../assets/images/scholar.jpg" style="height:21px;" alt="Scholar"> Google Scholar</a>  
