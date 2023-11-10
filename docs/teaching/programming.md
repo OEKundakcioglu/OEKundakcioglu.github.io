@@ -32,12 +32,12 @@ We start with setting up your computer.
 * Suggested IDEs: <a href="https://www.eclipse.org" target="_blank">Eclipse</a>, <a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ</a>, <a href="https://netbeans.org" target="_blank">Netbeans</a>
 * If you are a novice Windows user, who wants to keep things simple, then only install Eclipse and use Notepad as your text editor for now.
 * If you would like to be more involved in coding, then install SublimeText and Visual Studio Code alongside Eclipse.
-* Some requirements<span style="color: black"> <a href="https://www.loom.com/share/6ab082cc746540cfa68b619ff76a0f93" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> BlackWhite</span>
-* Basic Java usage<span style="color: black"> <a href="https://www.loom.com/share/27cd56a4eec84399b641362d59332067" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> BJK1903</span>
+* Some requirements<span style="color: white"> <a href="https://www.loom.com/share/6ab082cc746540cfa68b619ff76a0f93" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> BlackWhite</span>
+* Basic Java usage<span style="color: white"> <a href="https://www.loom.com/share/27cd56a4eec84399b641362d59332067" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> BJK1903</span>
 
 
 ## Hello World  
-<span style="color: black"> <a href="https://www.loom.com/share/f2e1b8fc379145cebc6c9f624bbc035d" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> InonuStadium</span>
+<span style="color: white"> <a href="https://www.loom.com/share/f2e1b8fc379145cebc6c9f624bbc035d" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> InonuStadium</span>
 
 * IDEs are not particularly useful while learning the syntax (as they tend to assist quite a bit). Instead, you are recommended to use a simple text editor for the first few weeks. Later, an IDE would be indispensable.
 * For comments: Use ```//``` for single line, ```/* text...*/``` for multiple lines. It is important to document the flow of code with comments.
@@ -61,7 +61,7 @@ javac Classname.java
 # Fundamentals
 
 ## Numerical Operations
-<span style="color: black"> <a href="https://www.loom.com/share/76bd70fa2c664d3184a4263a0508a9ce" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> HakkiYeten</span>
+<span style="color: white"> <a href="https://www.loom.com/share/76bd70fa2c664d3184a4263a0508a9ce" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> HakkiYeten</span>
 * We can define variables in 2 different ways:
 ```js
 Variabletype variableName;
@@ -100,7 +100,7 @@ System.out.println(a/b); // this will print 2, not 2.5
 # Program Control Statements
     
 ## For Loops
-<span style="color: black"> <a href="https://www.loom.com/share/4534666f98214d32afc8ba46af0145b8" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> FeyyazUcar</span>
+<span style="color: white"> <a href="https://www.loom.com/share/4534666f98214d32afc8ba46af0145b8" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> FeyyazUcar</span>
 
     
 * Syntax of a for loop:
@@ -118,7 +118,7 @@ Source: textbook, page 46
 * Break kicks you out of the inner-most for or while loop.
     
 ## If Statements
- <span style="color: black"> <a href="https://www.loom.com/share/fc1ec9a37fab4541a54687ce7b239201" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> SergenYalcin</span>
+ <span style="color: white"> <a href="https://www.loom.com/share/fc1ec9a37fab4541a54687ce7b239201" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> SergenYalcin</span>
     
 * The general structure of an if-else statement is as follows:  
 <img src="../../../assets/images/Image2.png" alt="if-statement" width="328"/>  
@@ -246,7 +246,7 @@ for(int i=1; i<65; i++) {
 <hr>
 
 ## Primitive Data Types 
-<span style="color: black"> <a href="https://www.loom.com/embed/86517bb512a6496f969fe61758b5e621" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> MetinTekin</span>
+<span style="color: white"> <a href="https://www.loom.com/embed/86517bb512a6496f969fe61758b5e621" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> MetinTekin</span>
 
     
 * Math library of Java: You can use for more complex mathematical operations such as sine, cosine, logarithm etc. 
@@ -276,7 +276,7 @@ class -classname- {
      
 
 ##  Scope of Variables 
-<span style="color: black"> <a href="https://www.loom.com/embed/2217be2c9ab34fe5bbd5a0f8dcda3c97" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> AliGultiken</span>
+<span style="color: white"> <a href="https://www.loom.com/embed/2217be2c9ab34fe5bbd5a0f8dcda3c97" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> AliGultiken</span>
 
     
 * A code block is statements written between curly braces. 
@@ -294,7 +294,7 @@ Source: Emory University
     
 
 ## Input Mechanisms 
-<span style="color: black"> <a href="https://www.loom.com/embed/fd9b7db6a0d7489c99cf886214c84899" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> RecepCetin</span> <span style="color: black"> <a href="https://www.loom.com/embed/d6ca0fbed1d94834b834bcd295182e85" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> GokhanKeskin</span>
+<span style="color: white"> <a href="https://www.loom.com/embed/fd9b7db6a0d7489c99cf886214c84899" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> RecepCetin</span> <span style="color: white"> <a href="https://www.loom.com/embed/d6ca0fbed1d94834b834bcd295182e85" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> GokhanKeskin</span>
 
 
 
@@ -363,7 +363,7 @@ second min is -3
 <hr>
 
 ## Switch Statement 
-<span style="color: black"> <a href="https://www.loom.com/embed/f4ee8891d9214c8ba0c6ea36f7029dd6" target="_blank"><img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> Besiktas</span>
+<span style="color: white"> <a href="https://www.loom.com/embed/f4ee8891d9214c8ba0c6ea36f7029dd6" target="_blank"><img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> Besiktas</span>
 
     
 
@@ -401,7 +401,7 @@ enum -enumname- {
 
 
 ## While, Break and Continue 
-<span style="color: black"> <a href="https://www.loom.com/embed/efa2542cb6b64c2caf857791a445b766" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> Akaretler</span><span style="color: black"> <a href="https://www.loom.com/embed/0feaa9c1870c4e569ba3cd9619f4ba89" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a>Fulya</span>
+<span style="color: white"> <a href="https://www.loom.com/embed/efa2542cb6b64c2caf857791a445b766" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> Akaretler</span><span style="color: white"> <a href="https://www.loom.com/embed/0feaa9c1870c4e569ba3cd9619f4ba89" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a>Fulya</span>
 
     
     
@@ -443,7 +443,7 @@ Source: programiz
 
 
 ## Arrays
-<span style="color: black"> <a href="https://www.loom.com/embed/e6af879950e34bec8466a502921cdd4b" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> Vefa </span>
+<span style="color: white"> <a href="https://www.loom.com/embed/e6af879950e34bec8466a502921cdd4b" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> Vefa </span>
 
 
 
@@ -500,7 +500,7 @@ Source: GeeksforGeeks
 
     
 ## Enhanced For Loops
-<span style="color: black"> <a href="https://www.loom.com/embed/412480d6d032427fb7ba8a9926b72244" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> OscarCordoba</span>
+<span style="color: white"> <a href="https://www.loom.com/embed/412480d6d032427fb7ba8a9926b72244" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> OscarCordoba</span>
 * Super useful especially in object oriented programming.
 * When you master the use of enhanced for loop, you will be able to write codes that make sense to everyone that needs to maintain the code.
 <p><a href="../../../assets/files/Week4.zip"><img src="../../../assets/images/folder.png" alt="Folder" width="18"/> Download Files</a></p>
@@ -543,7 +543,7 @@ The median of 8 5 4 -10 is 4.5
 # Classes, Objects, and Methods
 
 ## Primitive vs. Class Types 
-<span style="color: black"> <a href="https://www.loom.com/embed/1c7a15028c444638af846b816f13323e" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> MehmetOzdilek</span>
+<span style="color: white"> <a href="https://www.loom.com/embed/1c7a15028c444638af846b816f13323e" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> MehmetOzdilek</span>
 
     
 * Summary  
@@ -551,7 +551,7 @@ The median of 8 5 4 -10 is 4.5
 
 
 ## Functions 
-<span style="color: black"> <a href="https://www.loom.com/embed/19e1c89377654e798057cc03ebd10dc3" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> UlviGuveneroglu</span>
+<span style="color: white"> <a href="https://www.loom.com/embed/19e1c89377654e798057cc03ebd10dc3" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> UlviGuveneroglu</span>
   
 * A function is a block of code that perform certain actions.
 * General Syntax:  
@@ -566,7 +566,7 @@ Source: Programiz
 * Don't manipulate original data (i.e., input parameters) in your functions. You may want to do it for a purpose but if you don't have one, use copy of parameter. Otherwise, if the input parameter is a reference or class type, note that you're changing it elsewhere too. 
 
 ## Objects
-<span style="color: black"> <a href="https://www.loom.com/embed/1f628e2f9eb34328bfe7fc7d6a74061f" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a>  SuleymanSeba</span>
+<span style="color: white"> <a href="https://www.loom.com/embed/1f628e2f9eb34328bfe7fc7d6a74061f" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a>  SuleymanSeba</span>
     
 * A class is a template that defines the form of an object. It specifies both the data and the code that will operate on that data.
 * Syntax :
@@ -635,7 +635,7 @@ john.bmi;
 
 
 ##  Eclipse IDE and Code Conventions 
-<span style="color: black"> <a href="https://www.loom.com/embed/b3384c008c6e406b87049bfaa96ccb51" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> IkeShorunmu</span>
+<span style="color: white"> <a href="https://www.loom.com/embed/b3384c008c6e406b87049bfaa96ccb51" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> IkeShorunmu</span>
 
     
 * The reason why we used text editor so far is to have a good grasp of the Java syntax. 
@@ -664,7 +664,7 @@ john.bmi;
   
 
 ## Constructors 
-<span style="color: black"> <a href="https://www.loom.com/embed/784e4e38a0c14798b2aab360c1e76eda" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> RizaCalimbay</span>
+<span style="color: white"> <a href="https://www.loom.com/embed/784e4e38a0c14798b2aab360c1e76eda" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> RizaCalimbay</span>
 
 * Initialization of an object:
 
@@ -696,7 +696,7 @@ Person erhun = new Person( 25(int age) , 75.3(double weight), 182(int height), f
 * (Recommended) Don't do anything other than initialization of your object in constructors.
 
 ## Function Overloading 
-<span style="color: black"> <a href="https://www.loom.com/embed/1be50843e8004462bf5b690d6d7c8554" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> BayramBektas</span>
+<span style="color: white"> <a href="https://www.loom.com/embed/1be50843e8004462bf5b690d6d7c8554" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> BayramBektas</span>
 
 
 
@@ -739,7 +739,7 @@ public double calculateBmi(double height, int weight){
 * If you declare that two objects are equal, then you make their pointers equal (i.e., both objects point the exactly same location in memory). When you update one object, both will be updated. 
 
 ## Access Modifiers 
-<span style="color: black"> <a href="https://www.loom.com/embed/b97a7858166c46649c7a78ae6d6535ea" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> YasinSulun</span>
+<span style="color: white"> <a href="https://www.loom.com/embed/b97a7858166c46649c7a78ae6d6535ea" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> YasinSulun</span>
     
 * The access modifiers in Java specifies the accessibility or scope of a field, method, constructor or class. 
 * When no access modifier is specified, default access modifier is default. 
@@ -812,7 +812,7 @@ double ss = rightTriangle.smallestAngle(1); // ss gets value ~ 36.87 which is th
 # Random Number Generators and Simulation
 
 ##  Introduction to Martingale 
-<span style="color: black"> <a href="https://www.loom.com/embed/7afcf02df3fb44b188590b17be11979b" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> FabianErnst</span>
+<span style="color: white"> <a href="https://www.loom.com/embed/7afcf02df3fb44b188590b17be11979b" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> FabianErnst</span>
     
 * Martingale is a well-known gambling strategy. 
 * Martingale betting strategy:  
@@ -829,7 +829,7 @@ Source: pokerbankrollblog
 
 
 ## ArrayList 
-<span style="color: black"> <a href="https://www.loom.com/embed/56d09463f23a4dc79c4ca677ef42e139" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> StefanKuntz</span>
+<span style="color: white"> <a href="https://www.loom.com/embed/56d09463f23a4dc79c4ca677ef42e139" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> StefanKuntz</span>
 
     
     
@@ -856,7 +856,7 @@ ArrayList<"datatype"> -arraylist_name- = new ArrayList<"datatype">();
 * Note: Try to declare your variables as private inside the class as much as you can.  
 
 ## Random Numbers and Outcomes 
-<span style="color: black"> <a href="https://www.loom.com/embed/86b4af0b1d8742a797439f394079c295" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> DanielAmokachi</span>
+<span style="color: white"> <a href="https://www.loom.com/embed/86b4af0b1d8742a797439f394079c295" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> DanielAmokachi</span>
     
 * Keep in mind, your functions can also return objects.
 * Recall: Generalized syntax for return type functions:
@@ -872,7 +872,7 @@ ArrayList<"datatype"> -arraylist_name- = new ArrayList<"datatype">();
 * Is it possible to generate ''true'' random numbers? For those who are interested: <a href="https://engineering.mit.edu/engage/ask-an-engineer/can-a-computer-generate-a-truly-random-number/" target="_blank">True Random Numbers</a> 
 
 ## Seeds 
-<span style="color: black"> <a href="https://www.loom.com/embed/e5011b8487454e6ba8442194439b5ca0 " target="_blank"><img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> SinanEngin</span>
+<span style="color: white"> <a href="https://www.loom.com/embed/e5011b8487454e6ba8442194439b5ca0 " target="_blank"><img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> SinanEngin</span>
 
 * Seeds enable us to replicate a simulation. Whenever you use seed number, computer will generate same random numbers in the same order.
 * To generate random numbers from a seed, you need a random object.  
@@ -932,7 +932,7 @@ double y = Exponential(5); // y takes the value of a randomly generated exponent
 <hr>
 
 ##  Knapsack Problem 
-<span style="color: black"> <a href="https://www.loom.com/embed/5c9f761deaac47eb9f6b7c30b664b559" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> MatiasEmilioDelgado</span>
+<span style="color: white"> <a href="https://www.loom.com/embed/5c9f761deaac47eb9f6b7c30b664b559" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> MatiasEmilioDelgado</span>
     
 * Definition: Given weights and values of n items, put these items in a knapsack with capacity W to get the maximum total value in the knapsack.
 * Formulation:  
@@ -946,7 +946,7 @@ Source: The Optimization Expert
    
  
 ## Reading from File 
-<span style="color: black"> <a href="https://www.loom.com/embed/07d6214eb950489fb9a37510dca7d176" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> AliErenBeserler</span>
+<span style="color: white"> <a href="https://www.loom.com/embed/07d6214eb950489fb9a37510dca7d176" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> AliErenBeserler</span>
 
     
 * In real life, pulling data from excel or txt is a weak practice. Generally database and json format are used since they are more structured!
@@ -974,7 +974,7 @@ try {
 
 
 ## Structuring the Code 
-<span style="color: black"> <a href="https://www.loom.com/embed/1fd84cb402224d0c9f68ac13311b13c7" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> OsvaldoNartallo</span>
+<span style="color: white"> <a href="https://www.loom.com/embed/1fd84cb402224d0c9f68ac13311b13c7" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> OsvaldoNartallo</span>
 
 * When you are dealing with complex structures, you should write your code in a "modular" way. 
 - A heuristic solution for the knapsack problem:       
@@ -986,7 +986,7 @@ try {
 * Next week, we are going to solve the same problem with a commercial solver.
 
 ## Use of HashMap 
-<span style="color: black"> <a href="https://www.loom.com/embed/0b61fd3598444e8cb2d2dcc21a5a2713" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> EyjolfurSverrisson</span>
+<span style="color: white"> <a href="https://www.loom.com/embed/0b61fd3598444e8cb2d2dcc21a5a2713" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> EyjolfurSverrisson</span>
 
 * Syntax:
 ```js
@@ -1068,7 +1068,7 @@ my sortedArray should include &#60;key:0,value:-1.5&#62;, &#60;key:1,value:4.8&#
 
 # Exact Solutions for Mathematical Optimization Problems
 ##  Commercial Solvers 
-<span style="color: black"> <a href="https://www.loom.com/embed/3543d029696e40ffa240d1c4b1c81000" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> FevziTuncay</span>
+<span style="color: white"> <a href="https://www.loom.com/embed/3543d029696e40ffa240d1c4b1c81000" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> FevziTuncay</span>
     
 - Popular Commercial Solvers:
     - <a href="https://www.ibm.com/products/ilog-cplex-optimization-studio" target="_blank">CPLEX - IBM</a> 
@@ -1085,7 +1085,7 @@ my sortedArray should include &#60;key:0,value:-1.5&#62;, &#60;key:1,value:4.8&#
     - You must add gurobi.jar to the class path to use Gurobi from your code. 
 
 ## Introduction to Gurobi  
-<span style="color: black"> <a href="https://www.loom.com/embed/eb53c3fffb5b4d90848a617862b4386e" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> ErtugrulSaglam</span>
+<span style="color: white"> <a href="https://www.loom.com/embed/eb53c3fffb5b4d90848a617862b4386e" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> ErtugrulSaglam</span>
 
 * <a href="https://www.geeksforgeeks.org/interfaces-and-inheritance-in-java/" target="_blank">Interfaces - Inheritance</a> 
 * Recall: Compile and run java
@@ -1101,7 +1101,7 @@ java -classpath "path_to_jar":. -main_method-
 * You can also add external jar files using your IDE. 
 
 ## Solving the Knapsack Problem with Gurobi 
-<span style="color: black"> <a href="https://www.loom.com/embed/d8a640b0788b4abda039516cc47f2c70" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> PascalNouma</span><span style="color: black"> <a href="https://www.loom.com/embed/31bdf4ae679f4288be7e2de7b742e57b" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> AndreasBeck</span>
+<span style="color: white"> <a href="https://www.loom.com/embed/d8a640b0788b4abda039516cc47f2c70" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> PascalNouma</span><span style="color: white"> <a href="https://www.loom.com/embed/31bdf4ae679f4288be7e2de7b742e57b" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> AndreasBeck</span>
 
 * Recall: Compile and run java
 
@@ -1182,7 +1182,7 @@ Formulate a model where you try to minimize the total payment amount. Obtain the
                          
 <hr>
 ##  Introduction to Databases 
-<span style="color: black"> <a href="https://www.loom.com/embed/2c516ad26b884013b3d3af8504489473" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> CenkTosun</span>
+<span style="color: white"> <a href="https://www.loom.com/embed/2c516ad26b884013b3d3af8504489473" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> CenkTosun</span>
     
 * What is a database? Great overview: <a href="https://www.guru99.com/what-is-dbms.html" target="_blank">DBMS</a> 
 * What is SQL and NoSQL?: <a href="https://www.guru99.com/sql-vs-nosql.html" target="_blank">SQL vs. NoSQL </a> 
@@ -1200,7 +1200,7 @@ DELETE FROM <"table_name">  WHERE <"condition">
 # Systems Integration
 
 ## Accessing a MySQL Database  
-<span style="color: black"> <a href="https://www.loom.com/embed/8a1cc1cd63c941c1b40f40fdb9fd030d" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> AhmetDursun</span>
+<span style="color: white"> <a href="https://www.loom.com/embed/8a1cc1cd63c941c1b40f40fdb9fd030d" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> AhmetDursun</span>
     
 * MySQL JDBC download link <a href="https://mvnrepository.com/artifact/mysql/mysql-connector-java/8.0.16" target="_blank"> JDBC </a> 
 * Go to the link, download the JAR file, and add jar to the path of your Java project. 
@@ -1227,7 +1227,7 @@ Source: MySQLTutorial
 * In databases, indexing starts with 1.  
 
 ## Consuming MetaData from a MySQL Database 
-<span style="color: black"> <a href="https://www.loom.com/embed/9eb4b68515fa450a9f7bdf782878d18a" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> SukruGulesin</span>
+<span style="color: white"> <a href="https://www.loom.com/embed/9eb4b68515fa450a9f7bdf782878d18a" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> SukruGulesin</span>
 
 * Here is how you can access metadata, which contains important attributes for the DB:
 ```js
@@ -1265,7 +1265,7 @@ while(resultSet.next())
 }
 ```
 ## Output to File 
-<span style="color: black"> <a href="https://www.loom.com/embed/c7025de85a11428cad51ce35d558778f" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> NihatKahveci</span>
+<span style="color: white"> <a href="https://www.loom.com/embed/c7025de85a11428cad51ce35d558778f" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> NihatKahveci</span>
 
 *  BufferedWriter can be used to output results of a code block to a file.
 ```js
@@ -1279,12 +1279,12 @@ bufferedWriter.close(); // After your writing task is finished, you have to clos
 
 
 ##  Generalized Assignment Problem
-<span style="color: black"> <a href="https://www.loom.com/embed/6444856b3e18408499d44b15b33d6eef" target="_blank"><img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> MarioGomez</span>
+<span style="color: white"> <a href="https://www.loom.com/embed/6444856b3e18408499d44b15b33d6eef" target="_blank"><img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> MarioGomez</span>
 * <a href="../../../assets/files/Week11_GAP.pdf" target="_blank">Notes</a>
 * Structuring the code
-<span style="color: black"> <a href="https://www.loom.com/embed/ef57fa0a6c5549259c4550ee3bbf1820" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> Bobo</span>
+<span style="color: white"> <a href="https://www.loom.com/embed/ef57fa0a6c5549259c4550ee3bbf1820" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> Bobo</span>
 * Reading the data from the DB 
-<span style="color: black"> <a href="https://www.loom.com/embed/765bc724311b462e94c210f27ef95be6" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> JohnCarew</span>
+<span style="color: white"> <a href="https://www.loom.com/embed/765bc724311b462e94c210f27ef95be6" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> JohnCarew</span>
 <p><a href="../../../assets/files/Week11.zip"><img src="../../../assets/images/folder.png" alt="Folder" width="18"/> Download Files</a></p>
 
 ---
@@ -1317,13 +1317,13 @@ As item 1 is not included we know the remaining capacity will be 11. So use deci
 # Examples
 
 ##  Solving the Generalized Assignment Problem Using Gurobi
-<span style="color: black"> <a href="https://www.loom.com/embed/cb7cb5508ed54118a0d6e1751dab59d1" target="_blank"><img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> AndersonTalisca</span>
+<span style="color: white"> <a href="https://www.loom.com/embed/cb7cb5508ed54118a0d6e1751dab59d1" target="_blank"><img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> AndersonTalisca</span>
 
 ##  Defining Constraints and the Objective Function
-<span style="color: black"> <a href="https://www.loom.com/embed/fcdbe6e0fafe47aaa3ae4b9e45b3ee9a" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> LesFerdinand</span>
+<span style="color: white"> <a href="https://www.loom.com/embed/fcdbe6e0fafe47aaa3ae4b9e45b3ee9a" target="_blank"> <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> LesFerdinand</span>
 
 ## Reporting the Results
-<span style="color: black"> <a href="https://www.loom.com/embed/8fe2e2615e70482da1eff82b06255662" target="_blank">  <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> DanielPancu</span>
+<span style="color: white"> <a href="https://www.loom.com/embed/8fe2e2615e70482da1eff82b06255662" target="_blank">  <img src="../../../assets/images/video_icon.png" alt="video_icon" width="20"/> </a> DanielPancu</span>
 
 <p><a href="../../../assets/files/Week12.zip"><img src="../../../assets/images/folder.png" alt="Folder" width="18"/> Download Files</a></p>
 
