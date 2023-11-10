@@ -21,17 +21,17 @@ Cekmekoy, 34794 Istanbul, Turkey
 +90 (216) 564 9057
 
 <div style="text-align: center;">
-  <a href="https://github.com/OEKundakcioglu/" target="_blank"><img src="../../assets/images/github.png" style="height:21px;" alt="Github"></a>
+  <a href="https://github.com/OEKundakcioglu/" target="_blank" class="image-link"><img src="../../assets/images/github.png" style="height:21px;" alt="Github"></a>
   &nbsp;&nbsp;&nbsp;
-  <a href="https://scholar.google.com/citations?user=k6NTKvsAAAAJ&hl=en" target="_blank"><img src="../../assets/images/scholar.jpg" style="height:21px;" alt="Scholar"></a>
+  <a href="https://scholar.google.com/citations?user=k6NTKvsAAAAJ&hl=en" target="_blank" class="image-link"><img src="../../assets/images/scholar.jpg" style="height:21px;" alt="Scholar"></a>
   &nbsp;&nbsp;&nbsp;
-  <a href="https://www.linkedin.com/in/erhunkundakcioglu" target="_blank"><img src="../../assets/images/linkedin.png" style="height:21px;" alt="Linkedin"></a>
+  <a href="https://www.linkedin.com/in/erhunkundakcioglu" target="_blank" class="image-link"><img src="../../assets/images/linkedin.png" style="height:21px;" alt="Linkedin"></a>
   &nbsp;&nbsp;&nbsp;
-  <a href="https://publons.com/researcher/457748/o-erhun-kundakcioglu/" target="_blank"><img src="../../assets/images/publons.png" style="height:21px;" alt="Publons"></a>
+  <a href="https://publons.com/researcher/457748/o-erhun-kundakcioglu/" target="_blank" class="image-link"><img src="../../assets/images/publons.png" style="height:21px;" alt="Publons"></a>
   &nbsp;&nbsp;&nbsp;
-  <a href="https://orcid.org/0000-0003-3033-0986" target="_blank"><img src="../../assets/images/orcid.png" style="height:21px;" alt="Orcid"></a>
+  <a href="https://orcid.org/0000-0003-3033-0986" target="_blank" class="image-link"><img src="../../assets/images/orcid.png" style="height:21px;" alt="Orcid"></a>
   &nbsp;&nbsp;&nbsp;
-  <a href="https://www.researchgate.net/profile/O_Kundakcioglu" target="_blank"><img src="../../assets/images/researchg.png" style="height:21px;" alt="Researchgate"></a>
+  <a href="https://www.researchgate.net/profile/O_Kundakcioglu" target="_blank" class="image-link"><img src="../../assets/images/researchg.png" style="height:21px;" alt="Researchgate"></a>
 </div>
 
 
