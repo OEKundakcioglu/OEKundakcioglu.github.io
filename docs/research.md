@@ -205,7 +205,7 @@ _TV Commercial Broadcast Management Suite_,
 TUBITAK TEYDEB 1507.
 * **PI**,
 _Inventory Management and Transshipment Policies for Drugs with No Annual Contract in Pharmaceutical Supply Chain Planning Under Uncertainty_,
-TUBITAK ARDEB 3501.
+TUBITAK ARDEB 3501 Career Development Program (CAREER).
 * **Consultant**,
 _Design and Development of Wireless Sensor Network Platform for Power Theft and Loss Detection on Overhead Lines_,
 KOSGEB, PI: REENGEN.
