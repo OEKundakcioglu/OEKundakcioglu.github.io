@@ -99,7 +99,6 @@
 
 .site-header {
   display: flex;
-  padding-top: $sp-3;
   min-height: $header-height;
   align-items: center;
 
@@ -122,8 +121,8 @@
   @include fs-6;
 
   @include mq(md) {
-    padding-top: $sp-2;
-    padding-bottom: $sp-2;
+    padding-top: $sp-5;
+    padding-bottom: $sp-5;
   }
 }
 
