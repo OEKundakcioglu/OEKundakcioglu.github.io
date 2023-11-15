@@ -12,23 +12,20 @@ My research interests are in <i>decision analytics</i> and <i>mathematical optim
 
 <div style="text-align: center;">
 <br />
-      <a href="mailto:erhunk@gmail.com" class="btn fs-3 mb-4 mb-md-0">Email</a><br />
+      <a href="mailto:erhunk@gmail.com" class="btn fs-3 mb-4 mb-md-0">Email</a><br /><br />
       <a href="https://calendly.com/erhun-kundakcioglu/zoom-meeting" target="_blank" class="btn btn-primary fs-3 mb-4 mb-md-0 mr-2">Book an appointment</a>
 <br />
 </div>
 
-#### Phone
-+90 (216) 564 9473
-#### Fax
-+90 (216) 564 9057
-
-<div style="text-align: right;">
-<h4>Mailing Address</h4>
+#### Mailing Address
 Ozyegin University<br />
 Department of Industrial Engineering<br />
 Nisantepe Mah. Orman Sok.<br />
 Cekmekoy, 34794 Istanbul, Turkey
-</div>
+#### Phone
++90 (216) 564 9473
+#### Fax
++90 (216) 564 9057
 
 <div style="text-align: center;">
   <a href="https://github.com/OEKundakcioglu/" target="_blank" class="image-link"><img src="../../assets/images/github.png" style="height:21px;" alt="Github"></a>
