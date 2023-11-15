@@ -12,8 +12,7 @@ My research interests are in <i>decision analytics</i> and <i>mathematical optim
 
 <div style="text-align: center;">
 <br />
-      <a href="mailto:erhunk@gmail.com" class="btn fs-3 mb-4 mb-md-0">Email</a><br /><br />
-      <a href="https://calendly.com/erhun-kundakcioglu/zoom-meeting" target="_blank" class="btn btn-primary fs-3 mb-4 mb-md-0 mr-2">Book an appointment</a>
+      <a href="mailto:erhunk@gmail.com" class="btn fs-3 mb-4 mb-md-0">Email</a>&nbsp;&nbsp;&nbsp;<a href="https://calendly.com/erhun-kundakcioglu/zoom-meeting" target="_blank" class="btn btn-primary fs-3 mb-4 mb-md-0 mr-2">Book an appointment</a>
 <br />
 </div>
 
