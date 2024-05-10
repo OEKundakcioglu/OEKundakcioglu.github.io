@@ -18,4 +18,4 @@ echo "$EXTERNAL_IP" > "$FILE_PATH"
 cd ~/OEKundakcioglu.github.io/
 git add "$FILE_PATH"
 git commit -m "Update IP address"
-git push origin master
+git push origin main
