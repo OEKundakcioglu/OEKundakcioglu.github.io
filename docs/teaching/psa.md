@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Production and Systems Analysis
+title: Production Analysis
 parent: Teaching
 nav_order: 4
 ---
