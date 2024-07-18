@@ -129,11 +129,20 @@ My research involves combinatorial optimization approaches in numerous subdomain
 
 ### Conference Proceedings and Book Chapters
 
+{:style="counter-reset:step-counter 14"}
+1. C. Y. Yildiz and O.&nbsp;E.&nbsp;Kundakcioglu, "Disaster relief inventory simulation: Managing resources in humanitarian camps," in Proceedings of the 2024 Winter Simulation Conference.
+
+{:style="counter-reset:step-counter 13"}
+1. S. Azizi, D. Halilbeyoglu-Yoltay and O.&nbsp;E.&nbsp;Kundakcioglu, Handbook of Combinatorial Optimization, 3rd Ed., P. M. Pardalos and O. A. Prokopyev, Eds., Springer, 2024, ch. Inventory management for medical supplies.
+
+{:style="counter-reset:step-counter 12"}
+1. C. Y. Yildiz and O.&nbsp;E.&nbsp;Kundakcioglu, Handbook of Combinatorial Optimization, 3rd Ed., P. M. Pardalos and O. A. Prokopyev, Eds., Springer, 2024, ch. Optimization for time series decomposition.
+
 {:style="counter-reset:step-counter 11"}
 1. S. Saedi and O.&nbsp;E.&nbsp;Kundakcioglu, Handbook of Combinatorial Optimization, 2nd Ed., P. M. Pardalos, D.-Z. Du, and R. Graham, Eds., Springer, 2013, ch. Combinatorial optimization in data mining, pp. 595–630.
 
 {:style="counter-reset:step-counter 10"}
-1. M. H. Poursaeidi, M. Samorani, and O.&nbsp;E.&nbsp;Kundakcioglu, "Offshore Wind Farm Layout Optimization: What is the Hype?," in Proceedings of the Industrial and Systems Engineering Research Conference, ID: 952, 2013.
+1. M. H. Poursaeidi, M. Samorani, and O.&nbsp;E.&nbsp;Kundakcioglu, "Offshore wind farm layout optimization: What is the hype?," in Proceedings of the Industrial and Systems Engineering Research Conference, ID: 952, 2013.
     
 {:style="counter-reset:step-counter 9"}
 1. A. Viacaba, M. H. Poursaeidi, and O.&nbsp;E.&nbsp;Kundakcioglu, "Natural gas price forecasting via selective support vector regression," in Proceedings of the Industrial and Systems Engineering Research Conference, ID: 645, 2012.
