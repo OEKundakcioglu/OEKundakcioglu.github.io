@@ -4,6 +4,8 @@ title: Contact
 nav_order: 4
 ---
 
+# Contact
+
 #### Mailing Address
 Ozyegin University<br />
 Department of Industrial Engineering<br />
