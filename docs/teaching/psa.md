@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Production Analysis
+title: P&S Analysis
 parent: Teaching
 nav_order: 4
 ---
