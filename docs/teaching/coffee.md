@@ -2,7 +2,7 @@
 layout: default
 title: OPS Management
 parent: Teaching
-nav_order: 4
+nav_order: 5
 ---
 # Operations Management
 
