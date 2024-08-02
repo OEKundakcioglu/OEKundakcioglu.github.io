@@ -7,7 +7,7 @@ nav_order: 3
 {: .no_toc }
 
 ## Journal Articles
-
+ 
 {:style="counter-reset:step-counter 20"}
 1. H.&nbsp;Shourabizadeh, O.&nbsp;E.&nbsp;Kundakcioglu, C.&nbsp;D.&nbsp;C.&nbsp;Bozkir, M.&nbsp;B.&nbsp;Tufekci, and A.&nbsp;C.&nbsp;Henry, "<a href="https://doi.org/10.1007/s10479-023-05620-y" target="_blank">Healthcare Inventory Management in the Presence of Supply Disruptions and a Reliable Secondary Supplier</a>," <i>Annals of Operations Research</i>, vol. 331, pp. 1149-1206, 2023.
 
