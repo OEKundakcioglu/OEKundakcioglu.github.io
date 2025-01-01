@@ -73,11 +73,14 @@ nav_order: 3
 
 ## Conference Proceedings and Book Chapters
 
+{:style="counter-reset:step-counter 15"}
+1. U. Findik, O.&nbsp;E.&nbsp;Kundakcioglu, and S. Alizamir, Handbook of Combinatorial Optimization, 3rd Ed., P. M. Pardalos and O. A. Prokopyev, Eds., Springer, 2024, ch. Generalized Assignment Problem.
+
 {:style="counter-reset:step-counter 14"}
 1. C. Y. Yildiz and O.&nbsp;E.&nbsp;Kundakcioglu, "Disaster relief inventory simulation: Managing resources in humanitarian camps," in Proceedings of the 2024 INFORMS Winter Simulation Conference.
 
 {:style="counter-reset:step-counter 13"}
-1. S. Azizi, D. Halilbeyoglu-Yoltay and O.&nbsp;E.&nbsp;Kundakcioglu, Handbook of Combinatorial Optimization, 3rd Ed., P. M. Pardalos and O. A. Prokopyev, Eds., Springer, 2024, ch. Inventory management for medical supplies.
+1. S. Azizi, D. Halilbeyoglu-Yoltay, and O.&nbsp;E.&nbsp;Kundakcioglu, Handbook of Combinatorial Optimization, 3rd Ed., P. M. Pardalos and O. A. Prokopyev, Eds., Springer, 2024, ch. Inventory management for medical supplies.
 
 {:style="counter-reset:step-counter 12"}
 1. C. Y. Yildiz and O.&nbsp;E.&nbsp;Kundakcioglu, Handbook of Combinatorial Optimization, 3rd Ed., P. M. Pardalos and O. A. Prokopyev, Eds., Springer, 2024, ch. Optimization for time series decomposition.
