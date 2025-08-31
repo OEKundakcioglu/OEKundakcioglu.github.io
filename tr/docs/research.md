@@ -82,7 +82,7 @@ _Belirsizlik Altında İlaç Tedarik Zinciri Planlamasında Yıllık Sözleşmes
 TÜBİTAK ARDEB 3501 Kariyer Geliştirme Programı.
 
 * **Danışman**  
-_Havai Hatlarda Elektrik Hırsızlığı ve Kayıp Tespitinde Kablosuz Sensör Ağ Platformunun Tasarımı ve Geliştirilmesi_  
+_Hatlarda Elektrik Hırsızlığı ve Kayıp Tespitinde Kablosuz Sensör Ağ Platformunun Tasarımı ve Geliştirilmesi_  
 KOSGEB, Yürütücü: REENGEN.
 
 * **Yürütücü**  
