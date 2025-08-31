@@ -14,7 +14,7 @@ Araştırmalarım aynı zamanda **denetimli öğrenme** ve **zaman serisi analiz
 
 ---
 
-## Yönettiğim Lisansüstü Öğrenciler
+## Danışan Lisansüstü Öğrenciler
 
 ### Devam Eden
 
@@ -47,56 +47,51 @@ Araştırmalarım aynı zamanda **denetimli öğrenme** ve **zaman serisi analiz
 
 ---
 
-## Projeler ve Destekler
+## Desteklenen Projeler
 
-### Devam Eden Destekler
+### Devam Eden Projeler
 
 * **Yürütücü**  
 _Çelik Yassı Mamul Üretiminde Endüstri 4.0 Uygulamaları_  
 TÜBİTAK BİDEB 2244, Eş Yürütücü: O. Özener.
 
-### Tamamlanan Destekler
+### Yürütücü Olarak Tamamlanan Projeler
 
-* **Yürütücü**  
-_Sığınmacı Kampı Envanter Operasyonlarında Belirsizliğin Koordinasyonu ve Yönetimi_  
+* _Sığınmacı Kampı Envanter Operasyonlarında Belirsizliğin Koordinasyonu ve Yönetimi_  
 TÜBİTAK ARDEB 1001.
+
+* _Havayolu Optimizasyonu ve Mühendislik Sistemi_  
+TÜBİTAK TEYDEB 1507.
+
+* _TV Reklam Yayın Yönetim Sistemi_  
+TÜBİTAK TEYDEB 1507.
+
+* _Belirsizlik Altında İlaç Tedarik Zinciri Planlamasında Yıllık Sözleşmesi Olmayan İlaçlar İçin Envanter Yönetimi ve Transfer Politikaları_  
+TÜBİTAK ARDEB 3501 Kariyer Geliştirme Programı.
+
+* _Aktivite Motoru Geliştirilmesi_  
+EmLogis Incorporated Araştırma Ödülü.
+
+* _Web 2.0 ile Öğrenci Katılımının Artırılması ve Katılımın Teşvik Edilmesi: Optimizasyon ve Veri Madenciliği Lisansüstü Dersinin Çevrimiçi Versiyonu_  
+Houston Üniversitesi Öğretim Üyesi Geliştirme Insiyatifi Programı.
+
+* _Tıbbi Sarf Malzemelerinde Envanter Yönetimi_  
+Houston Üniversitesi Destek Programı.
+
+* _Kernel-tabanlı Öğrenme Yöntemlerinde Kombinatoryal Optimizasyon_  
+Houston Üniversitesi Yeni Öğretim Üyesi Araştırma Programı.
+
+### Diğer Projeler
 
 * **Araştırmacı**  
 _Talebin Stoğa Bağımlı Olduğu Durumlarda Stok Yenileme ve Depolama Alanı Tahsis Problemi_  
 TÜBİTAK ARDEB 1001, Yürütücü: M. Önal, Eş Yürütücü: E. Albey.
 
-* **Yürütücü**  
-_Havayolu Optimizasyonu ve Mühendislik Sistemi_  
-TÜBİTAK TEYDEB 1507.
-
 * **Danışman**  
 _MeVe: IPMVP Kapsamında Enerji Tasarruflarının Ölçüm ve Doğrulaması için Destekleyici Araç_  
 TÜBİTAK TEYDEB 1509 – EUREKA, Yürütücü: MIR ARGE, SYLTEC, CARTIF.
-
-* **Yürütücü**  
-_TV Reklam Yayın Yönetim Sistemi_  
-TÜBİTAK TEYDEB 1507.
-
-* **Yürütücü**  
-_Belirsizlik Altında İlaç Tedarik Zinciri Planlamasında Yıllık Sözleşmesi Olmayan İlaçlar İçin Envanter Yönetimi ve Transfer Politikaları_  
-TÜBİTAK ARDEB 3501 Kariyer Geliştirme Programı.
 
 * **Danışman**  
 _Hatlarda Elektrik Hırsızlığı ve Kayıp Tespitinde Kablosuz Sensör Ağ Platformunun Tasarımı ve Geliştirilmesi_  
 KOSGEB, Yürütücü: REENGEN.
 
-* **Yürütücü**  
-_Aktivite Motoru Geliştirilmesi_  
-EmLogis Incorporated Research Gift.
-
-* **Yürütücü**  
-_Web 2.0 ile Öğrenci Katılımının Artırılması ve Katılımın Teşvik Edilmesi: Optimizasyon ve Veri Madenciliği Lisansüstü Dersinin Çevrimiçi Versiyonu_  
-Houston Üniversitesi Faculty Development Initiative Programı.
-
-* **Yürütücü**  
-_Tıbbi Sarf Malzemelerinde Envanter Yönetimi_  
-Houston Üniversitesi Small Grants Programı.
-
-* **Yürütücü**  
-_Kernel-tabanlı Öğrenme Yöntemlerinde Kombinatoryal Optimizasyon_  
-Houston Üniversitesi New Faculty Research Grant.
