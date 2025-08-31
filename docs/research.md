@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Research
+lang: en
 nav_order: 2
 ---
 # Research
@@ -51,40 +52,40 @@ My research also involves combinatorial optimization approaches in numerous subd
 ### Grants in Progress
 
 * **PI**,
-_Industry 4.0 Applications in Flat Steel Manufacturing_,
+_Industry 4.0 Applications in Flat Steel Manufacturing_  
 TUBITAK BIDEB 2244, co-PI: O. Ozener.
 
 ### Completed
 * **PI**,
-_Coordination and Management of Uncertainty in Refugee Camp Inventory Operations_,
+_Coordination and Management of Uncertainty in Refugee Camp Inventory Operations_  
 TUBITAK ARDEB 1001.
 * **Researcher**, 
-_Stock Replenishment and Storage Space Allocation Problem When Demand is Stock Dependent_, 
+_Stock Replenishment and Storage Space Allocation Problem When Demand is Stock Dependent_   
 TUBITAK ARDEB 1001, PI: M. Önal, co-PI: E. Albey.
 * **PI**,
-_Airline Optimization and Engineering System_,
+_Airline Optimization and Engineering System_  
 TUBITAK TEYDEB 1507.
 * **Consultant**,
-_MeVe: Supporting Tool for the Measurement and Verification of Energy Savings Under IPMVP_,
+_MeVe: Supporting Tool for the Measurement and Verification of Energy Savings Under IPMVP_  
 TUBITAK TEYDEB 1509 – EUREKA, PI: MIR ARGE, SYLTEC, CARTIF.
 * **PI**,
-_TV Commercial Broadcast Management Suite_,
+_TV Commercial Broadcast Management Suite_  
 TUBITAK TEYDEB 1507.
 * **PI**,
-_Inventory Management and Transshipment Policies for Drugs with No Annual Contract in Pharmaceutical Supply Chain Planning Under Uncertainty_,
+_Inventory Management and Transshipment Policies for Drugs with No Annual Contract in Pharmaceutical Supply Chain Planning Under Uncertainty_  
 TUBITAK ARDEB 3501 Career Development Program.
 * **Consultant**,
-_Design and Development of Wireless Sensor Network Platform for Power Theft and Loss Detection on Overhead Lines_,
+_Design and Development of Wireless Sensor Network Platform for Power Theft and Loss Detection on Overhead Lines_  
 KOSGEB, PI: REENGEN.
 * **PI**,
-_Development of an Activities Engine_,
+_Development of an Activities Engine_  
 EmLogis Incorporated Research Gift.
 * **PI**,
-_Enhancing Student Engagement and Encouraging Participation Through Web 2.0 in an Online Version of Graduate Course in Optimization and Data Mining_,
+_Enhancing Student Engagement and Encouraging Participation Through Web 2.0 in an Online Version of Graduate Course in Optimization and Data Mining_  
 University of Houston Faculty Development Initiative Program.
 * **PI**,
-_Inventory Management for Perishable Medical Supplies_,
+_Inventory Management for Perishable Medical Supplies_  
 University of Houston Small Grants Program.
 * **PI**,
-_Combinatorial Optimization in Kernel-based Learning Methods_,
+_Combinatorial Optimization in Kernel-based Learning Methods_  
 University of Houston New Faculty Research Grant.

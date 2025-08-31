@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Contact
+lang: en
 nav_order: 5
 ---
 

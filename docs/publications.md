@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Publications
+lang: en
 nav_order: 3
 ---
 # Publications

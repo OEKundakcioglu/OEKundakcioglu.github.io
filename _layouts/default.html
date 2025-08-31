@@ -48,23 +48,40 @@ layout: table_wrappers
       </a>
     </div>
     <nav role="navigation" aria-label="Main" id="site-nav" class="site-nav">
-      {% if site.just_the_docs.collections %}
-        {% assign collections_size = site.just_the_docs.collections | size %}
-        {% for collection_entry in site.just_the_docs.collections %}
-          {% assign collection_key = collection_entry[0] %}
-          {% assign collection_value = collection_entry[1] %}
-          {% assign collection = site[collection_key] %}
-          {% if collection_value.nav_exclude != true %}
-            {% if collections_size > 1 %}
-              <div class="nav-category">{{ collection_value.name }}</div>
-            {% endif %}
-            {% include nav.html pages=collection %}
-          {% endif %}
-        {% endfor %}
-      {% else %}
-        {% include nav.html pages=site.html_pages %}
+  {% assign current_lang = page.lang | default: site.lang | default: site.default_lang %}
+  {% assign default_lang  = site.default_lang | default: 'en' %}
+
+  {% if site.just_the_docs.collections %}
+    {% assign collections_size = site.just_the_docs.collections | size %}
+
+    {% for collection_entry in site.just_the_docs.collections %}
+      {% assign collection_key = collection_entry[0] %}
+      {% assign collection_value = collection_entry[1] %}
+      {% assign collection = site[collection_key] %}
+
+      {% if collection_value.nav_exclude != true %}
+        {%- comment -%}
+        Group pages by their language, defaulting missing lang to default_lang.
+        Then select the group whose name == current_lang.
+        {%- endcomment -%}
+        {% assign groups = collection | group_by_exp: 'p', 'p.lang | default: site.default_lang' %}
+        {% assign current_group = groups | where: 'name', current_lang | first %}
+        {% assign pages_for_lang = current_group.items | default: site.emptyArray %}
+
+        {% if collections_size > 1 %}
+          <div class="nav-category">{{ collection_value.name }}</div>
+        {% endif %}
+        {% include nav.html pages=pages_for_lang %}
       {% endif %}
-    </nav>
+    {% endfor %}
+
+  {% else %}
+    {% assign groups = site.html_pages | group_by_exp: 'p', 'p.lang | default: site.default_lang' %}
+    {% assign current_group = groups | where: 'name', current_lang | first %}
+    {% assign pages_for_lang = current_group.items | default: site.emptyArray %}
+    {% include nav.html pages=pages_for_lang %}
+  {% endif %}
+</nav>
     {% include custom-footer.html %}
   </div>
 

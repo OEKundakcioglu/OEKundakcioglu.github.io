@@ -1,7 +1,11 @@
+{% assign current_lang = page.lang | default: site.lang | default: site.default_lang | default: 'en' %}
+
 <footer class="site-footer">
-  This site uses 
-  <a href="https://github.com/just-the-docs/just-the-docs" target="_blank" rel="noopener noreferrer">
-    Just the Docs
-  </a>, 
-  a documentation theme for Jekyll.
+  {% if current_lang == 'tr' %}
+    <p>Bu site, <a href="https://github.com/just-the-docs/just-the-docs" target="_blank" rel="noopener noreferrer">Just the Docs</a> tema­sını kullanmaktadır.</p>
+    <p>&copy; {{ "now" | date: "%Y" }} Erhun Kundakcıoğlu. Tüm hakları saklıdır.</p>
+  {% else %}
+    <p>This site uses the <a href="https://github.com/just-the-docs/just-the-docs" target="_blank" rel="noopener noreferrer">Just the Docs</a> theme.</p>
+    <p>&copy; {{ "now" | date: "%Y" }} Erhun Kundakcıoğlu. All rights reserved.</p>
+  {% endif %}
 </footer>
