@@ -17,10 +17,10 @@ My research also involves combinatorial optimization approaches in numerous subd
 
 ### In Progress
 
-* Deniz N. Yoltay - 5th year Ph.D. @ Özyeğin University
-* Serkan Ürkmez (co-advised with Enis Kayış) - 6th year Ph.D. @ Özyeğin University
-* Egecan Aktan (co-advised with Mehmet Önal) - 2nd year M.S. @ Özyeğin University
-* Nurullah Y. Duru (co-advised with Mehmet Önal) - 1st year M.S. @ Özyeğin University
+* Deniz N. Yoltay \| 5th year Ph.D. @ Özyeğin University
+* Serkan Ürkmez (co-advised with Enis Kayış) \| 6th year Ph.D. @ Özyeğin University
+* Egecan Aktan (co-advised with Mehmet Önal) \| 2nd year M.S. @ Özyeğin University
+* Nurullah Y. Duru (co-advised with Mehmet Önal) \| 1st year M.S. @ Özyeğin University
 
 ### Graduated
 
