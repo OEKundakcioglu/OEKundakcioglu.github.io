@@ -49,43 +49,37 @@ My research also involves combinatorial optimization approaches in numerous subd
 
 ## Funding
 
-### Grants in Progress
+### Projects in Progress
 
 * **PI**,
 _Industry 4.0 Applications in Flat Steel Manufacturing_  
 TUBITAK BIDEB 2244, co-PI: O. Ozener.
 
-### Completed
-* **PI**,
-_Coordination and Management of Uncertainty in Refugee Camp Inventory Operations_  
+### Completed Projects as PI
+* _Coordination and Management of Uncertainty in Refugee Camp Inventory Operations_  
 TUBITAK ARDEB 1001.
+* _Airline Optimization and Engineering System_  
+TUBITAK TEYDEB 1507.
+* _TV Commercial Broadcast Management Suite_  
+TUBITAK TEYDEB 1507.
+* _Inventory Management and Transshipment Policies for Drugs with No Annual Contract in Pharmaceutical Supply Chain Planning Under Uncertainty_  
+TUBITAK ARDEB 3501 Career Development Program.
+* _Development of an Activities Engine_  
+EmLogis Incorporated Research Gift.
+* _Enhancing Student Engagement and Encouraging Participation Through Web 2.0 in an Online Version of Graduate Course in Optimization and Data Mining_  
+University of Houston Faculty Development Initiative Program.
+* _Inventory Management for Perishable Medical Supplies_  
+University of Houston Small Grants Program.
+* _Combinatorial Optimization in Kernel-based Learning Methods_  
+University of Houston New Faculty Research Grant.
+
+### Other Completed Projects
 * **Researcher**, 
 _Stock Replenishment and Storage Space Allocation Problem When Demand is Stock Dependent_   
 TUBITAK ARDEB 1001, PI: M. Önal, co-PI: E. Albey.
-* **PI**,
-_Airline Optimization and Engineering System_  
-TUBITAK TEYDEB 1507.
 * **Consultant**,
 _MeVe: Supporting Tool for the Measurement and Verification of Energy Savings Under IPMVP_  
 TUBITAK TEYDEB 1509 – EUREKA, PI: MIR ARGE, SYLTEC, CARTIF.
-* **PI**,
-_TV Commercial Broadcast Management Suite_  
-TUBITAK TEYDEB 1507.
-* **PI**,
-_Inventory Management and Transshipment Policies for Drugs with No Annual Contract in Pharmaceutical Supply Chain Planning Under Uncertainty_  
-TUBITAK ARDEB 3501 Career Development Program.
 * **Consultant**,
 _Design and Development of Wireless Sensor Network Platform for Power Theft and Loss Detection on Overhead Lines_  
 KOSGEB, PI: REENGEN.
-* **PI**,
-_Development of an Activities Engine_  
-EmLogis Incorporated Research Gift.
-* **PI**,
-_Enhancing Student Engagement and Encouraging Participation Through Web 2.0 in an Online Version of Graduate Course in Optimization and Data Mining_  
-University of Houston Faculty Development Initiative Program.
-* **PI**,
-_Inventory Management for Perishable Medical Supplies_  
-University of Houston Small Grants Program.
-* **PI**,
-_Combinatorial Optimization in Kernel-based Learning Methods_  
-University of Houston New Faculty Research Grant.
