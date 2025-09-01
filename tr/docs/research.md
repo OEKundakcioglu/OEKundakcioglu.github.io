@@ -26,7 +26,7 @@ Araştırmalarım aynı zamanda **denetimli öğrenme** ve **zaman serisi analiz
 ### Mezun
 
 - **Doktora**
-    - Tonguç Yavuz, Güz 2021, _Bilgi Üniversitesi’nde Yardımcı Doçent_
+    - Tonguç Yavuz (İhsan Yanıkoğlu ile eş danışman), Güz 2021, _Bilgi Üniversitesi’nde Yardımcı Doçent_
     - Samira Saedi, Bahar 2013, _Texas Children's Hospital’da Sistem Mühendisliği Yardımcı Direktörü_
     - Mohammad H. Poursaeidi, Bahar 2013, _Intel Corporation’da Kıdemli Araştırma Mühendisi_
 - **Yüksek Lisans**
@@ -39,7 +39,7 @@ Araştırmalarım aynı zamanda **denetimli öğrenme** ve **zaman serisi analiz
     - Onur Şimşek, Bahar 2019, _n11.com’da Ürün Müdürü_
     - Gizem Atasoy, Yaz 2018, _University of Illinois at Chicago’da Doktora Öğrencisi_
     - Cem Deniz Çağlar Bozkır, Bahar 2018, _KoçDigital’de Kıdemli Analitik Danışmanı_
-    - Ayşenur Betül Çengil, Yaz 2017, _University of Arkansas’ta Doktora Öğrencisi_
+    - Ayşenur Betül Çengil (İhsan Yanıkoğlu ile eş danışman), Yaz 2017, _University of Arkansas’ta Doktora Öğrencisi_
     - Büşra Tüfekci, Bahar 2016, _Beş A’da Üretim Planlama Sorumlusu_
     - Andrea Viacaba, Güz 2011, _Mary Kay Global’de Global Tedarik Zinciri Analisti II_
     - Smita (Sethi) Jain, Güz 2011, _Wyndham Destinations’da Veri Analisti_
