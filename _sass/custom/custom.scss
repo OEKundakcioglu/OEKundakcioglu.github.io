@@ -8,9 +8,15 @@
 .image-link {
     text-decoration: none;
 }
+
 .lang-switcher {
   display: flex;
   justify-content: flex-end;
   font-weight: 500;
-  padding-right: 36px;
+}
+
+@media (max-width: 768px) {
+  .lang-switcher {
+    justify-content: center;
+  }
 }
