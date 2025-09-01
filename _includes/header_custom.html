@@ -1,0 +1,6 @@
+<div class="lang-switcher" style="margin-left:auto; font-weight:500;">
+  <a href="{{ page.url | replace_first: '/tr', '' }}" {% if page.lang == 'en' %}style="font-weight:700;">EN</a>{% else %}
+    <a href="{{ page.url | replace_first: '/tr', '' }}" style="font-weight:300; color:#666;">EN</a> {% endif %} | <a href="/tr{{ page.url | replace_first: '/tr', '' }}" {% if page.lang == 'tr' %}style="font-weight:700;">TR</a>{% else %}
+    <a href="/tr{{ page.url | replace_first: '/tr', '' }}" style="font-weight:300; color:#666;">TR</a>
+  {% endif %}
+</div>

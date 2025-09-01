@@ -1,6 +1,11 @@
-/* _sass/custom.scss */
+.side-bar,
+.main,
+.site-header {
+  border-top: none !important;
+  border-bottom: none !important;
+}
 
 .image-link {
     text-decoration: none;
   }
-  
+ 

@@ -1,23 +1,14 @@
 ---
 layout: default
 title: Contact
+lang: en
 nav_order: 5
 ---
 
 # Contact
 
-#### Mailing Address
-Ozyegin University<br />
-Department of Industrial Engineering<br />
-Nisantepe Mah. Orman Sok.<br />
-Cekmekoy, 34794 Istanbul, Turkey
-#### Phone
-+90 (216) 564 9473
-#### Fax
-+90 (216) 564 9057
-
 <div style="text-align: center;">
 <br />
-      <a href="mailto:erhunk@gmail.com" class="btn fs-3 mb-4 mb-md-0">Email</a>&nbsp;&nbsp;&nbsp;<a href="https://calendly.com/erhun-kundakcioglu/zoom-meeting" target="_blank" class="btn btn-primary fs-3 mb-4 mb-md-0 mr-2">Book an appointment</a>
+      <a href="mailto:erhun@datart-lab.com" class="btn btn-primary fs-3 mb-4 mb-md-0 mr-2">✉️ Email Me</a>&nbsp;&nbsp;&nbsp;<a href="https://calendly.com/erhun-datart-lab/30min" target="_blank" class="btn btn-primary fs-3 mb-4 mb-md-0 mr-2"> 📅 Book Online Appointment</a>
 <br />
 </div>
