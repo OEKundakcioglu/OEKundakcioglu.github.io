@@ -1,18 +1,18 @@
 BEGIN:VCARD
-VERSION:3.0
+VERSION:4.0
 PRODID:-//Apple Inc.//iPhone OS 18.6.2//EN
 N:Kundakcıoğlu;Erhun;;;
 FN:Erhun Kundakcıoğlu
 ORG:Sabancı University / Datart Lab
-EMAIL;TYPE=INTERNET,WORK,pref:erhun@datart-lab.com
-EMAIL;TYPE=INTERNET,WORK:erhun.kundakcioglu@sabanciuniv.edu
-TEL;TYPE=IPHONE,CELL,VOICE,pref:+90 532 673 93 91
-TEL;TYPE=WORK,VOICE:+90 216 483 95 86
-TEL;TYPE=WORK,FAX:+90 216 483 95 50
-URL;TYPE=pref,WORK:https://datart-lab.com
-URL;TYPE=WORK:https://datart.com.tr
-URL;TYPE=WORK:https://erhun.me
-PHOTO;ENCODING=b;TYPE=JPEG:/9j/4AAQSkZJRgABAQAASABIAAD/4QBARXhpZgAATU0AKgAA
+EMAIL;PREF=1;TYPE=work:erhun@datart-lab.com
+EMAIL;TYPE=work:erhun.kundakcioglu@sabanciuniv.edu
+TEL;PREF=1;TYPE=cell,voice:+90 532 673 93 91
+TEL;TYPE=work,voice:+90 216 483 95 86
+TEL;TYPE=work,fax:+90 216 483 95 50
+URL;PREF=1;TYPE=work:https://datart-lab.com
+URL;TYPE=work:https://datart.com.tr
+URL;TYPE=work:https://erhun.me
+PHOTO;MEDIATYPE=image/jpeg:/9j/4AAQSkZJRgABAQAASABIAAD/4QBARXhpZgAATU0AKgAA
  AAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAACRqADAAQAAAABAAACRgAAAAD/7QA4UG
  hvdG9zaG9wIDMuMAA4QklNBAQAAAAAAAA4QklNBCUAAAAAABDUHYzZjwCyBOmACZjs+EJ+/+IC
  KElDQ19QUk9GSUxFAAEBAAACGGFwcGwEAAAAbW50clJHQiBYWVogB+YAAQABAAAAAAAAYWNzcE
