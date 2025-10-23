@@ -20,3 +20,13 @@
     justify-content: center;
   }
 }
+/* Remove link underlines globally EXCEPT navbar links */
+.lang-switcher a,
+.lang-switcher a:visited,
+.lang-switcher a:hover,
+.lang-switcher a:focus {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  background-image: none !important;
+}
