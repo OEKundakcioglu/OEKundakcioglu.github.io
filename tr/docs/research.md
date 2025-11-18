@@ -18,6 +18,7 @@ Araştırmalarım aynı zamanda **denetimli öğrenme** ve **zaman serisi analiz
 
 ### Devam Eden
 
+* Ulvi Fındık \| 1st year Ph.D.
 * Deniz N. Yoltay \| 5. yıl Doktora @ Özyeğin Üniversitesi
 * Serkan Ürkmez (Enis Kayış ile eş danışman) \| 6. yıl Doktora @ Özyeğin Üniversitesi
 * Egecan Aktan (Mehmet Önal ile eş danışman) \| 2. yıl Yüksek Lisans @ Özyeğin Üniversitesi
