@@ -6,11 +6,11 @@ lang: tr
 ---
 # Araştırma
 
-Araştırma alanlarım ağırlıklı olarak **karar analitiği** ve **matematiksel optimizasyon** problemlerini kapsayan _tedarik zinciri yönetimi_ ve _veri bilimi_ uygulamalarıdır.  
+Araştırmalarım, özellikle _tedarik zinciri yönetimi_ ve _veri bilimi_ problemleri için **karar analitiği** ve **matematiksel optimizasyona** odaklanmaktadır.
 
-Özellikle _talep ve arz belirsizliği_ altında _envanter kontrolü_ üzerine çalışıyorum. Bu karar problemleri **sağlık hizmetleri** ve **insani yardım operasyonlarında** yaygın olarak görülmektedir. Ayrıca üretim ve hizmet sistemlerinde çizelgeleme, parti büyüklüğü belirleme, rotalama ve fiyatlandırma gibi çeşitli matematiksel optimizasyon problemleri üzerine de çalıştım.  
+Talep ve arz belirsizliği altında envanter kontrolü üzerine çalışıyorum. Bu tür karar problemleri _sağlık hizmetleri_ ve _insani yardım operasyonlarında_ son derece yaygındır. Ayrıca, üretim ve hizmet sistemlerinde çizelgeleme, parti büyüklüğü belirleme, rotalama ve fiyatlandırma dâhil olmak üzere çeşitli matematiksel optimizasyon problemlerini de inceledim.
 
-Araştırmalarım aynı zamanda **denetimli öğrenme** ve **zaman serisi analizi** dâhil olmak üzere veri biliminin birçok alt alanında kullanılan kombinatoryal optimizasyon yaklaşımlarını kapsamaktadır. Buna ek olarak, bu tekniklerden bazılarını nanopartiküllerin toksikolojik değerlendirilmesinde ve EEG verilerinin yorumlanmasında uyguladım.  
+Araştırmalarım, denetimli öğrenme ve zaman serisi analizi dâhil olmak üzere veri biliminin birçok alt alanında kombinatoryal optimizasyon yaklaşımlarını da kapsamaktadır. Bunun yanı sıra, bu tekniklerin bazılarını nanoparçacıkların toksikolojik değerlendirilmesine ve EEG verilerinin yorumlanmasına da uyguladım.
 
 ---
 
