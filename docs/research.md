@@ -6,11 +6,11 @@ nav_order: 2
 ---
 # Research
 
-My research interests lie primarily in the fields of _supply chain management_ and _data science_ spanning **decision analytics** and **mathematical optimization** problems. 
+My research focuses on **decision analytics** and **mathematical optimization**, particularly for problems in _supply chain management_ and _data science_.
 
-I work on _inventory control_ under _demand and supply uncertainty_. These decision problems are ubiquitous in **healthcare** and **humanitarian aid operations**. I have also studied various mathematical optimization problems in production and service systems, including scheduling, lot sizing, routing, and pricing.
+I work on inventory control under demand and supply uncertainty. These decision problems are ubiquitous in _healthcare_ and _humanitarian aid operations_. I have also studied various mathematical optimization problems in production and service systems, including scheduling, lot sizing, routing, and pricing.
 
-My research also involves combinatorial optimization approaches in numerous subdomains of data science, including **supervised learning** and **time series analysis**. In addition, I have applied some of these techniques to the toxicological evaluation of nanoparticles and interpreting EEG data. 
+My research also involves combinatorial optimization approaches in numerous subdomains of data science, including supervised learning and time series analysis. In addition, I have applied some of these techniques to the toxicological evaluation of nanoparticles and interpreting EEG data. 
 
 ---
 
