@@ -6,8 +6,8 @@ nav_order: 0
 nav_exclude: true
 ---
 
-# Public
-<h2>Folder Contents</h2>
+# Public Files
+<h2>Contents</h2>
 <ul>
 {% assign folder_name = "public" %}
 {% for file in site.static_files %}
