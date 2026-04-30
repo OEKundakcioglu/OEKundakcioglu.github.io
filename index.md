@@ -19,7 +19,7 @@ My research interests include <i>decision analytics</i> and <i>mathematical opti
   &nbsp;&nbsp;&nbsp;
   <a href="https://scholar.google.com/citations?user=k6NTKvsAAAAJ&hl=en" target="_blank" class="image-link"><img src="../../assets/images/scholar.png" style="height:21px;" alt="Scholar"></a>
   &nbsp;&nbsp;&nbsp;
-  <a href="https://www.linkedin.com/in/erhunkundakcioglu" target="_blank" class="image-link"><img src="../../assets/images/linkedin.png" style="height:21px;" alt="Linkedin"></a>
+  <a href="https://www.linkedin.com/in/erhun" target="_blank" class="image-link"><img src="../../assets/images/linkedin.png" style="height:21px;" alt="Linkedin"></a>
   &nbsp;&nbsp;&nbsp;
   <a href="https://publons.com/researcher/457748/o-erhun-kundakcioglu/" target="_blank" class="image-link"><img src="../../assets/images/publons.png" style="height:21px;" alt="Publons"></a>
   &nbsp;&nbsp;&nbsp;
