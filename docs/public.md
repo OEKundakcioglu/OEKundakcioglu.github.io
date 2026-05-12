@@ -9,9 +9,8 @@ permalink: /public/
 # Public Files
 <h2>Contents</h2>
 <ul>
-{% assign folder_name = "public" %}
 {% for file in site.static_files %}
-  {% if file.path contains folder_name %}
+  {% if file.path contains "/public/" %}
     <li><a href="{{ file.path | relative_url }}">{{ file.path | split: "/" | last }}</a></li>
   {% endif %}
 {% endfor %}

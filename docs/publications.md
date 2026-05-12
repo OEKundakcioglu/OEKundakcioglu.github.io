@@ -37,20 +37,28 @@ The "Authors" cell is a comma-separated list. The template auto-converts
 with Oxford-comma + "and" formatting.
 =====================================================================
 {%- endcomment -%}
+
 # Publications
 {: .no_toc }
 
-{%- comment -%} Pre-compute the three groups so the Liquid loop bodies stay readable. {%- endcomment -%}
-{%- assign jp = site.data.publications | where: "Type", "JP" -%}
-{%- assign cp = site.data.publications | where: "Type", "CP" -%}
-{%- assign eb = site.data.publications | where: "Type", "EB" -%}
+{% assign jp = site.data.publications | where: "Type", "JP" %}
+{% assign cp = site.data.publications | where: "Type", "CP" %}
+{% assign eb = site.data.publications | where: "Type", "EB" %}
 
 ## Journal Articles
- 
+
+<ul>
 {% for row in jp %}{% include cite.html row=row %}{% endfor %}
+</ul>
+
 ## Conference Proceedings and Book Chapters
 
+<ul>
 {% for row in cp %}{% include cite.html row=row %}{% endfor %}
+</ul>
+
 ## Edited Books and Special Issues
 
+<ul>
 {% for row in eb %}{% include cite.html row=row %}{% endfor %}
+</ul>
