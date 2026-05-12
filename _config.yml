@@ -116,8 +116,7 @@ compress_html:
   
 lang: en
 default_lang: en
-languages:
-  - code: en
-    label: English
-  - code: tr
-    label: Türkçe
+
+# Load Jekyll data files from /pdf so that publications.csv is also publicly
+# accessible at /pdf/publications.csv (the default _data/ folder is private).
+data_dir: pdf

@@ -1,0 +1,24 @@
+{%- comment -%}
+Input:  editors  — comma-separated editor string
+Output: editors_html — formatted with Oxford-comma + "and"
+{%- endcomment -%}
+{%- assign parts = include.editors | split: ", " -%}
+{%- assign n = parts | size -%}
+{%- capture editors_html -%}
+{%- if n == 1 -%}
+  {{ parts[0] }}
+{%- elsif n == 2 -%}
+  {{ parts[0] }} and {{ parts[1] }}
+{%- else -%}
+  {%- for p in parts -%}
+    {%- if forloop.last -%}
+      , and {{ p }}
+    {%- elsif forloop.first -%}
+      {{ p }}
+    {%- else -%}
+      , {{ p }}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+{%- endcapture -%}
+{%- assign editors_html = editors_html | strip -%}

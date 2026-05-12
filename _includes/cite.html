@@ -1,0 +1,56 @@
+{%- comment -%}
+==============================================================
+cite.html — render a single publication row.
+Input: row (one entry from site.data.publications)
+
+Sub-includes used:
+  cite_authors.html — joins the Authors field with Oxford-comma + "and"
+                      and replaces "O. E. Kundakcioglu" with the &nbsp;
+                      version. Returns the formatted string in
+                      `authors_html`.
+  cite_editors.html — same join logic for the Editors field.
+                      Returns `editors_html`.
+==============================================================
+{%- endcomment -%}
+
+{%- include cite_authors.html authors=row.Authors -%}
+
+{%- case row.Template -%}
+
+{%- comment -%} ----------- JOURNAL ARTICLE / SPECIAL ISSUE ----------- {%- endcomment -%}
+{%- when "journal_article" -%}
+{%- if row.Type == "EB" -%}{%- assign dash = " - " -%}{%- else -%}{%- assign dash = " -  " -%}{%- endif -%}
+{{ dash }}{{ authors_html }}, {% if row["DOI/URL"] and row["DOI/URL"] != "" %}"<a href="{{ row["DOI/URL"] }}" target="_blank">{{ row.Title }}</a>,"{% else %}"{{ row.Title }},"{% endif %} <i>{{ row.Venue }}</i>, vol. {{ row.Volume }}{% if row.Issue and row.Issue != "" %}, no. {{ row.Issue }}{% endif %}{% if row.Pages and row.Pages != "" %}, {% if row.Pages contains "-" %}pp. {{ row.Pages | replace: "-", "–" }}{% else %}{{ row.Pages }}{% endif %}{% endif %}, {{ row.Year }}.{% if row["Source Code"] and row["Source Code"] != "" %} <br /><a href="{{ row["Source Code"] }}" target="_blank"><img src="/assets/images/folder.png" alt="Folder" width="18"/> Source Code</a>{% endif %}
+
+{%- comment -%} ----------- BOOK CHAPTER (Springer / IDEA / World Scientific) ----------- {%- endcomment -%}
+{%- when "book_chapter" -%}
+{%- include cite_editors.html editors=row.Editors -%}
+ -  {{ authors_html }}, {{ row.Venue }}, {{ editors_html }}, Eds., {{ row.Publisher }}, {{ row.Year }}, ch. {{ row.Title }}{% if row.Pages and row.Pages != "" %}, pp. {{ row.Pages | replace: "-", "–" }}{% endif %}.
+
+{%- comment -%} ----------- AMS FIELDS INSTITUTE (sentence-period structure) ----------- {%- endcomment -%}
+{%- when "book_chapter_fields" -%}
+{%- include cite_editors.html editors=row.Editors -%}
+ -  {{ authors_html }}, Lectures on Global Optimization. {{ row.Publisher }}, {{ row.Year }}, Fields Institute Communications Series, {{ editors_html }}, Eds., vol. {{ row.Volume }}, ch. {{ row.Title }}, pp. {{ row.Pages | replace: "-", "–" }}.
+
+{%- comment -%} ----------- IN-BOOK ("Title," in BookTitle, ser. Series, ...) ----------- {%- endcomment -%}
+{%- when "in_book" -%}
+{%- include cite_editors.html editors=row.Editors -%}
+ -  {{ authors_html }}, "{{ row.Title }}," in Data Mining and Mathematical Programming, ser. CRM Proceedings and Lecture Notes, {{ editors_html }}, Eds., vol. {{ row.Volume }}, {{ row.Publisher }}, {{ row.Year }}, pp. {{ row.Pages | replace: "-", "–" }}.
+
+{%- comment -%} ----------- CONFERENCE PROCEEDINGS ----------- {%- endcomment -%}
+{%- when "conference" -%}
+ -  {{ authors_html }}, "{{ row.Title }}," in {{ row.Venue }}{% if row.Editors and row.Editors != "" %}, {% include cite_editors.html editors=row.Editors %}{{ editors_html }}, Eds.{% endif %}{% if row.Volume and row.Volume != "" %}, vol. {{ row.Volume }}{% endif %}{% if row.Year and row.Year != "" %}, {{ row.Year }}{% endif %}{% if row.Pages and row.Pages != "" %}, pp. {{ row.Pages | replace: "-", "–" }}{% endif %}.
+
+{%- comment -%} ----------- "Title," in BookTitle, ser. Series. Publisher, year, pp. ----------- {%- endcomment -%}
+{%- when "conference_book" -%}
+ -  {{ authors_html }}, "{{ row.Title }}," in {{ row.Venue }}. {{ row.Publisher }}, {{ row.Year }}, pp. {{ row.Pages | replace: "-", "–" }}.
+
+{%- comment -%} ----------- EDITED PROCEEDINGS (row 41) ----------- {%- endcomment -%}
+{%- when "edited_proceedings" -%}
+ - {{ authors_html }}, Eds. {{ row.Title }}, {{ row.Year }}.
+
+{%- comment -%} ----------- EDITED VOLUME / AIP (row 44) ----------- {%- endcomment -%}
+{%- when "edited_volume" -%}
+ - {{ authors_html }}, Eds., {{ row.Title }}, no. {{ row.Issue }}, {{ row.Publisher }}, {{ row.Year }}.
+
+{%- endcase -%}

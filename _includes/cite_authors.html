@@ -1,0 +1,25 @@
+{%- comment -%}
+Input:  authors  — comma-separated author string
+Output: authors_html — formatted with Oxford-comma + "and", and with
+        "O. E. Kundakcioglu" → "O.&nbsp;E.&nbsp;Kundakcioglu"
+{%- endcomment -%}
+{%- assign parts = include.authors | split: ", " -%}
+{%- assign n = parts | size -%}
+{%- capture authors_html -%}
+{%- if n == 1 -%}
+  {{ parts[0] }}
+{%- elsif n == 2 -%}
+  {{ parts[0] }} and {{ parts[1] }}
+{%- else -%}
+  {%- for p in parts -%}
+    {%- if forloop.last -%}
+      , and {{ p }}
+    {%- elsif forloop.first -%}
+      {{ p }}
+    {%- else -%}
+      , {{ p }}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+{%- endcapture -%}
+{%- assign authors_html = authors_html | replace: "O. E. Kundakcioglu", "O.&nbsp;E.&nbsp;Kundakcioglu" | strip -%}

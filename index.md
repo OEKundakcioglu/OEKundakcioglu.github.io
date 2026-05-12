@@ -1,6 +1,5 @@
 ---
 layout: default
-lang: en
 title: Home
 nav_order: 1
 description: "Homepage"

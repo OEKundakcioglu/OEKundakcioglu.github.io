@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Public
-lang: en
 nav_order: 0
 nav_exclude: true
+permalink: /public/
 ---
 
 # Public Files

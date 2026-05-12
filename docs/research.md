@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Research
-lang: en
 nav_order: 2
+permalink: /research/
 ---
 # Research
 
