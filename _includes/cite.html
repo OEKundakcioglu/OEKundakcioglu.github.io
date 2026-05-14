@@ -20,7 +20,7 @@ Sub-includes used:
 
 {%- comment -%} ----------- JOURNAL ARTICLE / SPECIAL ISSUE ----------- {%- endcomment -%}
 {%- when "journal_article" -%}
-{{ authors_html }}, {% if row["DOI/URL"] and row["DOI/URL"] != "" %}"<a href="{{ row["DOI/URL"] }}" target="_blank">{{ row.Title }}</a>,"{% else %}"{{ row.Title }},"{% endif %} <i>{{ row.Venue }}</i>, vol. {{ row.Volume }}{% if row.Issue and row.Issue != "" %}, no. {{ row.Issue }}{% endif %}{% if row.Pages and row.Pages != "" %}, {% if row.Pages contains "-" %}pp. {{ row.Pages | replace: "-", "–" }}{% else %}{{ row.Pages }}{% endif %}{% endif %}, {{ row.Year }}.{% if row["Source Code"] and row["Source Code"] != "" %} <br /><a href="{{ row["Source Code"] }}" target="_blank"><img src="/assets/images/folder.png" alt="Folder" width="18"/> Source Code</a>{% endif %}
+{{ authors_html }}, {% if row["DOI/URL"] and row["DOI/URL"] != "" %}"<a href="{{ row["DOI/URL"] }}" target="_blank">{{ row.Title }}</a>,"{% else %}"{{ row.Title }},"{% endif %} <i>{{ row.Venue }}</i>, vol. {{ row.Volume }}{% if row.Issue and row.Issue != "" %}, no. {{ row.Issue }}{% endif %}{% if row.Pages and row.Pages != "" %}, {% if row.Pages contains "-" %}pp. {{ row.Pages | replace: "-", "–" }}{% else %}{{ row.Pages }}{% endif %}{% endif %}, {{ row.Year }}.{% if row["Source Code"] and row["Source Code"] != "" %} <br /><a href="{{ row["Source Code"] }}" target="_blank"><img src="/assets/images/folder.svg" alt="Folder" width="18" style="vertical-align: text-bottom;"/> Source Code</a>{% endif %}
 
 {%- comment -%} ----------- BOOK CHAPTER (Springer / IDEA / World Scientific) ----------- {%- endcomment -%}
 {%- when "book_chapter" -%}
