@@ -6,11 +6,11 @@ permalink: /publications/
 ---
 {%- comment -%}
 =====================================================================
-Publications page — driven by /pdf/publications.csv
+Publications page — driven by /public/publications.csv
 
-The CSV lives in /pdf/ so that it is publicly accessible at
-https://erhun.me/pdf/publications.csv. Jekyll loads it as
-`site.data.publications` because `data_dir: pdf` is set in _config.yml.
+The CSV lives in /public/ so that it is publicly accessible at
+https://erhun.me/public/publications.csv. Jekyll loads it as
+`site.data.publications` because `data_dir: public` is set in _config.yml.
 
 The CSV has one row per publication with columns:
   Type, Authors, Title, Venue, Volume, Issue, Pages, Year,
