@@ -1,3 +1,4 @@
+// ── OOP course page ───────────────────────────────────────────────────────────
 .oop-content {
   h1 { text-align: center; }
   h4 { display: inline; }
@@ -7,76 +8,73 @@
 }
 
 // ── Full-width top bar ────────────────────────────────────────────────────────
-$top-bar-height: 42px;
-
 .site-top-bar {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
-  height: $top-bar-height;
+  height: 42px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #faf8f4;
+  padding: 0 32px;
+}
+
+.site-top-bar .site-title {
+  flex: 1 1 auto;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  display: block;
+  color: #27262b;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 42px;
+}
+
+// Hamburger hidden on desktop, visible on mobile
+.site-top-bar .site-button {
+  flex-shrink: 0;
+  height: 42px;
   display: flex;
   align-items: center;
-  background-color: $body-background-color;
-  border-bottom: 1px solid $border-color;
-  padding: 0 $sp-6;
+}
+@media (min-width: 800px) {
+  .site-top-bar .site-button { display: none; }
+}
 
-  .site-title {
-    flex-grow: 1;
-    max-width: none;
-    margin-left: 0;
-    margin-right: 0;
-    color: $body-heading-color;
-    font-size: $font-size-4;
-    font-weight: 500;
-    padding: 0;
-    height: auto;
+// ── Layout adjustments ────────────────────────────────────────────────────────
+
+// Mobile: push body below the fixed 42px bar
+body { padding-top: 42px; }
+@media (min-width: 800px) { body { padding-top: 0; } }
+
+// Desktop: sidebar starts below the top bar
+@media (min-width: 800px) {
+  .side-bar {
+    top: 42px;
+    height: calc(100% - 42px);
   }
-
-  .site-button {
-    height: $top-bar-height;
-    padding: $sp-2 $sp-3;
-    @include mq(md) { display: none; }
-  }
+  .site-nav { padding-top: 16px !important; }
+  .main { padding-top: 42px; }
 }
 
-// Push body content below fixed top bar
-body {
-  padding-top: $top-bar-height;
-  @include mq(md) { padding-top: 0; }
-}
-
-// Sidebar starts below the top bar on desktop
-.side-bar {
-  @include mq(md) {
-    top: $top-bar-height;
-    height: calc(100% - #{$top-bar-height});
-  }
-}
-
-// Nav no longer needs space for the in-sidebar header
-.site-nav {
-  @include mq(md) { padding-top: $sp-4 !important; }
-}
-
-// Main content offset: top-bar height instead of the old 60px main-header
-.main {
-  @include mq(md) { padding-top: $top-bar-height; }
-}
-
-// Empty main-header kept in DOM for JS compatibility — hide it
+// Empty main-header kept in DOM for JS — hide it
 .main-header { display: none !important; }
 
-// ── Strip leftover borders ─────────────────────────────────────────────────────
+// ── Borders ───────────────────────────────────────────────────────────────────
 .side-bar,
 .main {
   border-top: none !important;
   border-bottom: none !important;
 }
 
+// ── Misc ──────────────────────────────────────────────────────────────────────
 .image-link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .lang-switcher {
@@ -86,11 +84,9 @@ body {
 }
 
 @media (max-width: 768px) {
-  .lang-switcher {
-    justify-content: center;
-  }
+  .lang-switcher { justify-content: center; }
 }
-/* Remove link underlines globally EXCEPT navbar links */
+
 .lang-switcher a,
 .lang-switcher a:visited,
 .lang-switcher a:hover,
