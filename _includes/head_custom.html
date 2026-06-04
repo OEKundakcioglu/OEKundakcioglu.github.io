@@ -4,3 +4,26 @@
 <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | relative_url }}">
 <meta name="theme-color" content="#2774ae">
 <p style="margin-top:10pt;"></p>
+<style>
+  /* Top-bar title: larger thin weight */
+  .site-top-bar .site-title {
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    display: block;
+    color: #27262b;
+    line-height: 52px;
+  }
+
+  /* Align title left-edge with nav link text */
+  @media (min-width: 800px) {
+    .site-top-bar { padding-left: 16px; }
+  }
+  @media (min-width: 1064px) {
+    .site-top-bar { padding-left: calc((100vw - 1064px) / 2 + 16px); }
+  }
+</style>
