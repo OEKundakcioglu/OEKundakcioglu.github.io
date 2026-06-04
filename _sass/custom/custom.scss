@@ -2,7 +2,8 @@
 .oop-content {
   h1 { text-align: center; }
   h4 { display: inline; }
-  h6 { color: #faf8f4; display: inline; }
+  h6 { color: #5c5962; display: inline; font-size: 11px; font-weight: normal; }
+  h6 a::after { content: "Password: "; }
   code { display: table-cell; }
   p { font-size: 0.875em; font-weight: bold; }
 }
@@ -19,7 +20,10 @@
   flex-direction: row;
   align-items: center;
   background-color: #faf8f4;
-  padding: 0 32px;
+  padding: 0 16px;
+}
+@media (min-width: 1064px) {
+  .site-top-bar { padding-left: calc((100vw - 1064px) / 2 + 16px); }
 }
 
 .site-top-bar .site-title {
