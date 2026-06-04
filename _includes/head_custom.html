@@ -5,6 +5,14 @@
 <meta name="theme-color" content="#2774ae">
 <p style="margin-top:10pt;"></p>
 <style>
+  /* Password label next to video icon — must sit outside the <a> box */
+  .oop-content h6 a::after {
+    content: " Password: ";
+    color: #5c5962;
+    display: inline-block;   /* breaks out of the <a> underline/color box */
+    text-decoration: none;
+  }
+
   /* Top-bar title: larger thin weight */
   .site-top-bar .site-title {
     font-size: 22px;
