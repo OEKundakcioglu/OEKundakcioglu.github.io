@@ -40,13 +40,15 @@ layout: table_wrappers
     </symbol>
   </svg>
 
+  <header class="site-top-bar">
+    <a href="{{ '/' | absolute_url }}" class="site-title lh-tight">{% include title.html %}</a>
+    {% include header_custom.html %}
+    <a href="#" id="menu-button" class="site-button">
+      <svg viewBox="0 0 24 24" class="icon"><use xlink:href="#svg-menu"></use></svg>
+    </a>
+  </header>
+
   <div class="side-bar">
-    <div class="site-header">
-      <a href="{{ '/' | absolute_url }}" class="site-title lh-tight">{% include title.html %}</a>
-      <a href="#" id="menu-button" class="site-button">
-        <svg viewBox="0 0 24 24" class="icon"><use xlink:href="#svg-menu"></use></svg>
-      </a>
-    </div>
     <nav role="navigation" aria-label="Main" id="site-nav" class="site-nav">
   {% assign current_lang = page.lang | default: site.lang | default: site.default_lang %}
   {% assign default_lang  = site.default_lang | default: 'en' %}
@@ -82,38 +84,13 @@ layout: table_wrappers
     {% include nav.html pages=pages_for_lang %}
   {% endif %}
 </nav>
+    <footer class="site-footer">
+      {% include footer_custom.html %}
+    </footer>
   </div>
 
   <div class="main" id="top">
-    <div id="main-header" class="main-header">
-      {% if site.search_enabled != false %}
-        <div class="search">
-          <div class="search-input-wrap">
-            <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search {{ site.title }}'s Personal Site" aria-label="Search {{ site.title }}'s Personal Site" autocomplete="off">
-            <label for="search-input" class="search-label"><svg viewBox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
-          </div>
-          <div id="search-results" class="search-results"></div>
-        </div>
-      {% endif %}
-      {% include header_custom.html %}
-      {% if site.aux_links %}
-        <nav aria-label="Auxiliary" class="aux-nav">
-          <ul class="aux-nav-list">
-            {% for link in site.aux_links %}
-              <li class="aux-nav-list-item">
-                <a href="{{ link.last }}" class="site-button"
-                  {% if site.aux_links_new_tab %}
-                  target="_blank" rel="noopener noreferrer"
-                  {% endif %}
-                >
-                  {{ link.first }}
-                </a>
-              </li>
-            {% endfor %}
-          </ul>
-        </nav>
-      {% endif %}
-    </div>
+    <div id="main-header" class="main-header"></div>
     <div id="main-content-wrap" class="main-content-wrap">
       {% unless page.url == "/" %}
         {% if page.parent %}
