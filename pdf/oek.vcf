@@ -1,9 +1,9 @@
 BEGIN:VCARD
 VERSION:3.0
-N;CHARSET=UTF-8;ENCODING=QUOTED-PRINTABLE:Kundakc=C4=B1o=C4=9Flu;Erhun;;;
-FN;CHARSET=UTF-8;ENCODING=QUOTED-PRINTABLE:Erhun Kundakc=C4=B1o=C4=9Flu
+N:Kundakcıoğlu;Erhun;;;
+FN:Erhun Kundakcıoğlu
 X-ABShowAs:PERSON
-ORG;CHARSET=UTF-8;ENCODING=QUOTED-PRINTABLE:Sabanc=C4=B1 =C3=9Cniversitesi / Datart Lab
+ORG:Sabancı Üniversitesi / Datart Lab
 EMAIL;TYPE=work:erhun@datart-lab.com
 EMAIL;TYPE=work:erhun.kundakcioglu@sabanciuniv.edu
 TEL;TYPE=cell,voice:+90 532 673 93 91
