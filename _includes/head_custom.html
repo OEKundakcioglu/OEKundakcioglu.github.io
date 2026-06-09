@@ -3,8 +3,18 @@
 <link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicon-16x16.png' | relative_url }}">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | relative_url }}">
 <meta name="theme-color" content="#2774ae">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
 <p style="margin-top:10pt;"></p>
 <style>
+  /* ── Fonts ── */
+  body, .site-nav, .main, h1, h2, h3, h4, h5, h6, p, li, td, th, label, input, button, select, textarea {
+    font-family: 'Inter', sans-serif;
+  }
+  code, pre, kbd, samp, .highlight {
+    font-family: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+  }
   /* Password label next to video icon — must sit outside the <a> box */
   .oop-content h6 a::after {
     content: " Password: ";
