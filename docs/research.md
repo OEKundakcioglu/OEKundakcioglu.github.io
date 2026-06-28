@@ -6,6 +6,10 @@ permalink: /research/
 ---
 # Research
 
+**We are looking for an MS student to join our group to work on a TÜBİTAK-funded project.** More details [here](/positions/ms-tubitak-2026/).
+
+---
+
 My research focuses on **decision analytics** and **mathematical optimization**, particularly for problems in _supply chain management_ and _data science_.
 
 I work on inventory control under demand and supply uncertainty. These decision problems are ubiquitous in _healthcare_ and _humanitarian aid operations_. I have also studied various mathematical optimization problems in production and service systems, including scheduling, lot sizing, routing, and pricing.
@@ -18,15 +22,14 @@ My research also involves combinatorial optimization approaches in numerous subd
 
 ### In Progress
 
-* Ulvi Fındık \| 1st year Ph.D.
-* Deniz N. Yoltay \| 5th year Ph.D. @ Özyeğin University
-* Serkan Ürkmez (co-advised with Enis Kayış) \| 6th year Ph.D. @ Özyeğin University
+* Ulvi Fındık \| 2nd year Ph.D.
+* Deniz N. Yoltay \| 6th year Ph.D. @ Özyeğin University
 * Egecan Aktan (co-advised with Mehmet Önal) \| 2nd year M.S. @ Özyeğin University
-* Nurullah Y. Duru (co-advised with Mehmet Önal) \| 1st year M.S. @ Özyeğin University
 
 ### Graduated
 
 - **Ph.D.**
+    - Serkan Ürkmez (co-advised with Enis Kayış), Spring 2026, _Management Systems Director at Borçelik_
     - Tonguç Yavuz (co-advised with İhsan Yanıkoğlu), Fall 2021, _Assistant Professor at Bilgi University_
     - Samira Saedi, Spring 2013, _Assistant Director of Healthcare System Engineer at Texas Children's Hospital_
     - Mohammad H. Poursaeidi, Spring 2013, _Senior Research Engineer at Intel Corporation_
