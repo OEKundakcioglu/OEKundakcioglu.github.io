@@ -8,6 +8,8 @@ permalink: /positions/ms-tubitak-2026/
 
 # MS Student Position
 
+---
+
 **Funding:** TÜBİTAK 1001
 
 **Project Title:** Dual-Visit Service Logistics with Time-Dependent Travel Times
