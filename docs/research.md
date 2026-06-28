@@ -6,12 +6,6 @@ permalink: /research/
 ---
 # Research
 
-<div style="background-color:#f5f6fa; border-left:4px solid #7253ed; padding:12px 16px; border-radius:4px; margin-bottom:1.5rem;">
-  We are looking for an MS student to join our group to work on a TÜBİTAK-funded project. More details <a href="/positions/ms-tubitak-2026/">here</a>.
-</div>
-
----
-
 My research focuses on **decision analytics** and **mathematical optimization**, particularly for problems in _supply chain management_ and _data science_.
 
 I work on inventory control under demand and supply uncertainty. These decision problems are ubiquitous in _healthcare_ and _humanitarian aid operations_. I have also studied various mathematical optimization problems in production and service systems, including scheduling, lot sizing, routing, and pricing.
@@ -20,6 +14,11 @@ My research also involves combinatorial optimization approaches in numerous subd
 
 ---
 
+<div style="background-color:#f5f6fa; border-left:4px solid #7253ed; padding:12px 16px; border-radius:4px; margin-bottom:1.5rem;">
+  We are looking for an MS student to join our group to work on a TÜBİTAK-funded project. More details <a href="/positions/ms-tubitak-2026/">here</a>.
+</div>
+
+---
 ## Graduate Students Supervised
 
 ### In Progress
