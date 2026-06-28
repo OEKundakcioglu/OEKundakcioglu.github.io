@@ -30,7 +30,7 @@ Within the scope of the project, two optimization approaches will be developed a
 
 ## Responsibilities
 
-As an MS student, you are expected to perform mathematical modeling and implement the code for the SVRP model within the project.
+As an MS student, you are expected to perform mathematical modeling, implement the code for the SVRP model, and help us develop a web-based system within the project.
 
 ---
 

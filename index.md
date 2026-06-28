@@ -15,7 +15,11 @@ I am a Professor of Industrial Engineering at <a href="http://www.sabanciuniv.ed
 My research interests include <i>decision analytics</i> and <i>mathematical optimization</i>, and I have supervised four Ph.D. and fourteen M.S. students in these areas. I received an Early Career Award from the <a href="https://www.tubitak.gov.tr" target="_blank">Scientific and Technological Research Council of Turkey</a>, a <a href="https://www.egr.uh.edu/news/201205/cullen-college-faculty-staff-honored-excellence" target="_blank">Teaching Excellence Award</a> at the University of Houston, and a Florida Chapter Scholarship from the <a href="https://www.himss.org" target="_blank">HIMSS Foundation</a>. I serve as an Associate Editor for the <a href="https://www.springer.com/journal/10898" target="_blank">Journal of Global Optimization</a>, <a href="https://www.springer.com/journal/11590" target="_blank">Optimization Letters</a>, and <a href="https://www.springer.com/journal/43069" target="_blank">SN Operations Research Forum</a>.
 ## News
 
-- We are looking for an MS student to join our group to work on a TÜBİTAK-funded project. More details [here](/positions/ms-tubitak-2026/).
+<div style="background-color:#f5f6fa; border-left:4px solid #7253ed; padding:12px 16px; border-radius:4px; margin-bottom:1.5rem;">
+  We are looking for an MS student to join our group to work on a TÜBİTAK-funded project. More details <a href="/positions/ms-tubitak-2026/">here</a>.
+</div>
+
+<div style="margin-bottom:1.5rem;"></div>
 
 <div style="text-align: center;">
   <a href="https://github.com/OEKundakcioglu/" target="_blank" class="image-link"><img src="../../assets/images/github.png" style="height:21px;" alt="Github"></a>

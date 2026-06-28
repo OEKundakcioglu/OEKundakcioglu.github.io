@@ -6,7 +6,9 @@ permalink: /research/
 ---
 # Research
 
-**We are looking for an MS student to join our group to work on a TÜBİTAK-funded project.** More details [here](/positions/ms-tubitak-2026/).
+<div style="background-color:#f5f6fa; border-left:4px solid #7253ed; padding:12px 16px; border-radius:4px; margin-bottom:1.5rem;">
+  We are looking for an MS student to join our group to work on a TÜBİTAK-funded project. More details <a href="/positions/ms-tubitak-2026/">here</a>.
+</div>
 
 ---
 
