@@ -1,0 +1,77 @@
+---
+layout: default
+title: Private
+nav_order: 0
+nav_exclude: true
+permalink: /private/
+---
+
+<h1>Private Files</h1>
+<h2>Contents</h2>
+
+{% assign private_files = site.static_files | sort: "path" %}
+{% assign has_private_files = false %}
+
+{% capture folder_list %}{% endcapture %}
+{% for file in private_files %}
+{% if file.path contains "/private/" %}
+{% assign first_char = file.name | slice: 0, 1 %}
+{% if first_char != "." %}
+{% assign has_private_files = true %}
+{% assign relative = file.path | remove_first: "/private/" %}
+{% assign parts = relative | split: "/" %}
+{% assign depth = parts | size | minus: 1 %}
+{% if depth > 0 %}
+{% assign dir_parts = parts | slice: 0, depth %}
+{% assign folder = dir_parts | join: "/" %}
+{% capture folder_list %}{{ folder_list }}{{ folder }}||{% endcapture %}
+{% endif %}
+{% endif %}
+{% endif %}
+{% endfor %}
+
+{% assign folders = folder_list | split: "||" | uniq | sort %}
+
+{% if has_private_files %}
+<h3>/private/</h3>
+<ul>
+{% for file in private_files %}
+{% if file.path contains "/private/" %}
+{% assign first_char = file.name | slice: 0, 1 %}
+{% if first_char != "." %}
+{% assign relative = file.path | remove_first: "/private/" %}
+{% unless relative contains "/" %}
+<li><a href="{{ file.path | relative_url }}">{{ relative }}</a></li>
+{% endunless %}
+{% endif %}
+{% endif %}
+{% endfor %}
+</ul>
+
+{% for folder in folders %}
+{% unless folder == "" %}
+{% assign folder_parts = folder | split: "/" %}
+{% assign folder_indent = folder_parts | size | minus: 1 | times: 1.25 %}
+<h3 style="margin-left: {{ folder_indent }}rem;">{{ folder }}/</h3>
+<ul style="margin-left: {{ folder_indent }}rem;">
+{% assign folder_prefix = folder | append: "/" %}
+{% for file in private_files %}
+{% if file.path contains "/private/" %}
+{% assign first_char = file.name | slice: 0, 1 %}
+{% if first_char != "." %}
+{% assign relative = file.path | remove_first: "/private/" %}
+{% if relative contains folder_prefix %}
+{% assign tail = relative | remove_first: folder_prefix %}
+{% unless tail contains "/" %}
+<li><a href="{{ file.path | relative_url }}">{{ tail }}</a></li>
+{% endunless %}
+{% endif %}
+{% endif %}
+{% endif %}
+{% endfor %}
+</ul>
+{% endunless %}
+{% endfor %}
+{% else %}
+<p>No private files found.</p>
+{% endif %}
