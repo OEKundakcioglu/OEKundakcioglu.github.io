@@ -25,7 +25,6 @@ My research also involves combinatorial optimization approaches in numerous subd
 
 * Ulvi Fındık \| 2nd year Ph.D.
 * Deniz N. Yoltay \| 6th year Ph.D. @ Özyeğin University
-* Egecan Aktan (co-advised with Mehmet Önal) \| 2nd year M.S. @ Özyeğin University
 
 ### Graduated
 
@@ -35,6 +34,7 @@ My research also involves combinatorial optimization approaches in numerous subd
     - Samira Saedi, Spring 2013, _Assistant Director of Healthcare System Engineer at Texas Children's Hospital_
     - Mohammad H. Poursaeidi, Spring 2013, _Senior Research Engineer at Intel Corporation_
 - **M.S.**
+    - Egecan Aktan (co-advised with Mehmet Önal), Summer 2026
     - Buket İpek Akbal, Summer 2025, _Senior Data & Analytics Consultant at CALIGO_
     - Ulvi Fındık, Summer 2025, _Ph.D. Student at Sabancı University_
     - Cem Yarkın Yıldız (co-advised with Mehmet Önal), Summer 2025
