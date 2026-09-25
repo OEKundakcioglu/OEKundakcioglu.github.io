@@ -1,0 +1,63 @@
+---
+layout: default
+title: Music
+nav_exclude: true
+search_exclude: true
+permalink: /music/
+---
+
+{% comment %}
+Media files live in the root `music/` folder; this page lists every file under /music/ and the player picks out the audio and video ones.
+The layout's HTML compressor joins all lines, so keep the player logic in assets/js/music-player.js rather than inline.
+{% endcomment %}
+
+<link rel="stylesheet" href="{{ '/assets/css/music-player.css' | relative_url }}">
+
+<h1>Music</h1>
+
+<div id="music-player" class="music-player">
+  <div class="mp-now" hidden>
+    <div class="mp-meta">
+      <div class="mp-title" aria-live="polite"></div>
+      <div class="mp-sub"></div>
+    </div>
+    <div class="mp-screen" hidden>
+      <video class="mp-video" controls playsinline preload="metadata"></video>
+    </div>
+    <audio class="mp-audio" controls preload="metadata" hidden></audio>
+    <div class="mp-controls">
+      <button type="button" class="mp-btn" data-action="prev" aria-label="Previous" title="Previous">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 5 9 12l10 7Z" fill="currentColor"/><path d="M5 5v14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button type="button" class="mp-btn" data-action="next" aria-label="Next" title="Next">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 5 10 7-10 7Z" fill="currentColor"/><path d="M19 5v14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <span class="mp-sep" aria-hidden="true"></span>
+      <button type="button" class="mp-btn" data-action="shuffle" aria-label="Shuffle" title="Shuffle" aria-pressed="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg>
+      </button>
+      <button type="button" class="mp-btn" data-action="repeat" aria-label="Repeat: off" title="Repeat: off" aria-pressed="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m17 2 4 4-4 4M3 11v-1a4 4 0 0 1 4-4h14M7 22l-4-4 4-4M21 13v1a4 4 0 0 1-4 4H3"/></svg>
+      </button>
+      <span class="mp-status" role="status"></span>
+      <span class="mp-count"></span>
+    </div>
+  </div>
+  <div class="mp-playlist"></div>
+  <p class="mp-empty" hidden>No media files yet.</p>
+</div>
+
+<noscript><p>The player needs JavaScript.</p></noscript>
+
+<script type="application/json" id="music-files">[
+{%- assign first = true -%}
+{%- for file in site.static_files -%}
+{%- assign prefix = file.path | slice: 0, 7 -%}
+{%- if prefix == "/music/" -%}
+{%- unless first -%},{%- endunless -%}
+{{- file.path | jsonify -}}
+{%- assign first = false -%}
+{%- endif -%}
+{%- endfor -%}
+]</script>
+<script src="{{ '/assets/js/music-player.js' | relative_url }}" defer></script>
