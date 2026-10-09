@@ -21,7 +21,7 @@ url: "https://erhun.me" # the base hostname & protocol for your site, e.g. http:
 permalink: pretty
 
 # Web app URL of the poll backend (poll-backend/README.md), used by /poll/ and /poll/admin/
-poll_api: ""
+poll_api: "https://script.google.com/macros/s/AKfycbyeIMAC0pP8sfQge3gLE-7Iq6vbuNGLGAzhI7TiyHCtnngaZGdfFbTTejYUXyVMO4Nc/exec"
 exclude: ["docs/tests/", "poll-backend/"
 ]
 
