@@ -19,7 +19,10 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://erhun.me" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: pretty
-exclude: ["docs/tests/"
+
+# Web app URL of the poll backend (poll-backend/README.md), used by /poll/ and /poll/admin/
+poll_api: ""
+exclude: ["docs/tests/", "poll-backend/"
 ]
 
 remote_theme: just-the-docs/just-the-docs

@@ -1,0 +1,16 @@
+---
+layout: default
+title: Poll
+nav_exclude: true
+search_exclude: true
+permalink: /poll/
+---
+
+<link rel="stylesheet" href="{{ '/assets/css/poll.css' | relative_url }}">
+
+<div id="poll-app" class="poll-app" data-mode="vote" data-api="{{ site.poll_api }}">
+  <p class="pl-muted">Loading&hellip;</p>
+</div>
+
+<noscript><p>This page needs JavaScript.</p></noscript>
+<script src="{{ '/assets/js/poll.js' | relative_url }}" defer></script>
