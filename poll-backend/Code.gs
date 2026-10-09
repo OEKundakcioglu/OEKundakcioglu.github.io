@@ -45,6 +45,7 @@ function handle_(req) {
     case 'adminCheck': return true;
     case 'adminListPolls': return listPolls_();
     case 'adminGetPoll': return adminPoll_(req.pollId);
+    case 'adminCheckSlots': return availability_(pollSettings_(req.poll || {}), (req.poll && req.poll.options) || []);
     case 'adminSavePoll': return withLock_(() => savePoll_(req.poll || {}));
     case 'adminDeletePoll': return withLock_(() => deletePoll_(req.pollId));
     case 'adminDeleteResponse': return withLock_(() => deleteRows_(SHEETS.responses, (r) => r.id === req.responseId));
@@ -153,6 +154,7 @@ function savePoll_(p) {
     options,
     created: existing ? existing.data.created : new Date().toISOString(),
   };
+  Object.assign(poll, pollSettings_(p));
   put_(SHEETS.polls, poll.id, '', poll);
   return poll;
 }
@@ -179,6 +181,11 @@ function publicPoll_(req) {
   const all = responsesFor_(poll.id);
   const mine = req.responseId ? all.find((r) => r.id === req.responseId && r.token === req.token) : null;
   const visible = poll.hideResponses ? [] : all;
+  if (poll.calendarCheck && poll.calendarHide) {
+    const avail = availability_(poll, poll.options);
+    if (!avail.error) poll.options = poll.options.filter((o, i) => avail.slots[i].busy <= poll.calendarTolerance);
+  }
+  ['calendarIds', 'calendarFrom', 'calendarWeeks', 'calendarTolerance'].forEach((k) => delete poll[k]);
   return {
     poll,
     responseCount: all.length,
@@ -195,7 +202,80 @@ function adminPoll_(pollId) {
       id: r.id, name: r.name, email: r.email, note: r.note, votes: r.votes, created: r.created, updated: r.updated,
     })),
     events: rows_(SHEETS.events).filter((r) => r.pollId === poll.id).map((r) => r.data),
+    availability: poll.calendarCheck ? availability_(poll, poll.options) : null,
   };
+}
+
+/* ---------- calendar availability (weekly slots checked against your free/busy) ---------- */
+
+function pollSettings_(p) {
+  return {
+    timezone: clean_(p.timezone, 64) || Session.getScriptTimeZone(),
+    calendarCheck: Boolean(p.calendarCheck),
+    calendarHide: p.calendarHide !== false,
+    calendarIds: clean_(p.calendarIds, 500) || 'primary',
+    calendarFrom: /^\d{4}-\d\d-\d\d$/.test(p.calendarFrom) ? p.calendarFrom : '',
+    calendarWeeks: clamp_(p.calendarWeeks, 1, 26, 8),
+    calendarTolerance: clamp_(p.calendarTolerance, 0, 26, 0),
+  };
+}
+
+function addDays_(date, days) {
+  const d = date.split('-').map(Number);
+  return new Date(Date.UTC(d[0], d[1] - 1, d[2]) + days * 86400000).toISOString().slice(0, 10);
+}
+
+function busyIntervals_(ids, timeMin, timeMax) {
+  const cache = CacheService.getScriptCache();
+  const cacheKey = 'fb:' + Utilities.base64Encode(ids.join(',') + '|' + timeMin + '|' + timeMax).slice(0, 200);
+  const hit = cache.get(cacheKey);
+  if (hit) return JSON.parse(hit);
+
+  const out = { busy: [], errors: [] };
+  const end = new Date(timeMax).getTime();
+  for (let t = new Date(timeMin).getTime(); t < end; t += 56 * 86400000) {
+    const res = Calendar.Freebusy.query({
+      timeMin: new Date(t).toISOString(),
+      timeMax: new Date(Math.min(end, t + 56 * 86400000)).toISOString(),
+      items: ids.map((id) => ({ id })),
+    });
+    ids.forEach((id) => {
+      const cal = (res.calendars && res.calendars[id]) || {};
+      if (cal.errors && cal.errors.length) out.errors.push(id + ': ' + cal.errors.map((e) => e.reason).join(', '));
+      (cal.busy || []).forEach((b) => out.busy.push([new Date(b.start).getTime(), new Date(b.end).getTime()]));
+    });
+  }
+  out.errors = out.errors.filter((e, i, all) => all.indexOf(e) === i);
+  cache.put(cacheKey, JSON.stringify(out), 300);
+  return out;
+}
+
+function availability_(settings, options) {
+  const tz = settings.timezone;
+  const from = settings.calendarFrom || Utilities.formatDate(new Date(), tz, 'yyyy-MM-dd');
+  const weeks = settings.calendarWeeks;
+  const ids = settings.calendarIds.split(/[\s,;]+/).filter(Boolean);
+  const fromDay = (new Date(from + 'T00:00:00Z').getUTCDay() + 6) % 7;
+  const at = (date, time) => Utilities.parseDate(date + ' ' + time, tz, 'yyyy-MM-dd HH:mm').getTime();
+
+  let found;
+  try {
+    found = busyIntervals_(ids, new Date(at(from, '00:00')).toISOString(), new Date(at(addDays_(from, weeks * 7 + 1), '00:00')).toISOString());
+  } catch (err) {
+    return { error: 'Could not read your calendar: ' + ((err && err.message) || err), from, weeks, slots: options.map(() => ({ busy: 0, total: weeks })) };
+  }
+
+  const slots = (options || []).map((o) => {
+    const first = addDays_(from, (clamp_(o.day, 0, 6, 0) - fromDay + 7) % 7);
+    let busy = 0;
+    for (let w = 0; w < weeks; w += 1) {
+      const start = at(addDays_(first, w * 7), /^([01]\d|2[0-3]):[0-5]\d$/.test(o.start) ? o.start : '09:00');
+      const end = start + clamp_(o.duration, 5, 1440, 60) * 60000;
+      if (found.busy.some((b) => b[0] < end && b[1] > start)) busy += 1;
+    }
+    return { busy, total: weeks };
+  });
+  return { from, weeks, slots, warnings: found.errors };
 }
 
 /* ---------- responses ---------- */

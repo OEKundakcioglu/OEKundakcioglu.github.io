@@ -95,7 +95,7 @@
   const MARK = { yes: '✓', maybe: '(✓)' };
   const WORD = { yes: 'yes', maybe: 'if need be', no: 'no' };
 
-  function grid(poll, rows, edit) {
+  function grid(poll, rows, edit, cal) {
     const opts = poll.options;
     const tally = opts.map((o) => {
       const all = rows.map((r) => r.votes).concat(edit ? [edit.votes] : []);
@@ -146,7 +146,15 @@
         edit ? h('tr', { class: 'pl-edit-row' }, h('th', { class: 'pl-name', scope: 'row' }, edit.nameInput), opts.map(editCell)) : null),
       h('tfoot', null, h('tr', null, h('th', { class: 'pl-name' }, 'Available'),
         tally.map((t, i) => h('td', { class: `pl-count${best[i] ? ' is-best' : ''}` },
-          h('strong', null, String(t.yes)), t.maybe ? h('span', { class: 'pl-sub' }, ` +${t.maybe}`) : null))))));
+          h('strong', null, String(t.yes)), t.maybe ? h('span', { class: 'pl-sub' }, ` +${t.maybe}`) : null))),
+      cal ? h('tr', { class: 'pl-cal-row' }, h('th', { class: 'pl-name' }, 'Your calendar', h('span', { class: 'pl-sub' }, `next ${cal.weeks} weeks`)),
+        cal.slots.map((c) => calCell(c, cal.hideAbove))) : null)));
+  }
+
+  function calCell(c, hideAbove) {
+    const hidden = hideAbove != null && c.busy > hideAbove;
+    return h('td', { class: `pl-cal ${c.busy ? 'is-busy' : 'is-free'}`, title: `Busy in ${c.busy} of ${c.total} weeks${hidden ? ' · hidden from participants' : ''}` },
+      c.busy ? `${c.busy}/${c.total}` : 'free', hidden ? h('span', { class: 'pl-sub pl-cal-hidden' }, 'hidden') : null);
   }
 
   function legend(poll) {
@@ -275,7 +283,7 @@
           toast(err.message, true);
         }
       });
-    } }, field('Admin key', input, 'Shown in the Apps Script log when you ran setup(). This browser will remember it.'),
+    } }, field('Admin key', input, ''),
     h('div', { class: 'pl-actions' }, h('button', { type: 'submit', class: 'pl-btn pl-btn-primary' }, 'Sign in')));
     screen(h('h1', null, 'Polls'), form);
   }
@@ -324,6 +332,10 @@
       } }, 'Delete'),
     }));
 
+    const avail = data.availability;
+    const calOk = avail && !avail.error;
+    const calInfo = calOk ? { weeks: avail.weeks, slots: avail.slots, hideAbove: poll.calendarHide ? poll.calendarTolerance : null } : null;
+    const hiddenCount = calOk && poll.calendarHide ? avail.slots.filter((c) => c.busy > poll.calendarTolerance).length : 0;
     const scheduleBox = h('div');
     const showSchedule = (event) => scheduleBox.replaceChildren(scheduler(key, data, event, refresh));
     showSchedule(null);
@@ -332,14 +344,18 @@
       h('p', null, h('a', { href: '?' }, '← All polls')),
       pollHeader(poll, poll.closed ? h('span', null, 'Closed') : null),
       message ? h('div', { class: 'pl-banner' }, message) : null,
+      avail && avail.error ? h('div', { class: 'pl-banner pl-banner-warn' }, `${avail.error} Participants currently see all slots.`) : null,
+      calOk && avail.warnings && avail.warnings.length ? h('div', { class: 'pl-banner pl-banner-warn' }, `Some calendars could not be read (${avail.warnings.join('; ')}). Check the calendar IDs in Poll settings.`) : null,
+      hiddenCount ? h('div', { class: 'pl-banner pl-banner-muted' }, `${hiddenCount} slot${hiddenCount === 1 ? ' is' : 's are'} hidden from participants because your calendar is busy then.`) : null,
       share,
       h('h2', null, `Responses (${data.responses.length})`),
-      poll.options.length && data.responses.length ? [legend(poll), grid(poll, rows, null)] : h('p', { class: 'pl-muted' }, poll.options.length ? 'No responses yet.' : 'Add time slots below to start collecting responses.'),
+      poll.options.length && (data.responses.length || calInfo) ? [legend(poll), grid(poll, rows, null, calInfo)] : null,
+      !poll.options.length || !data.responses.length ? h('p', { class: 'pl-muted' }, poll.options.length ? 'No responses yet.' : 'Add time slots below to start collecting responses.') : null,
       h('h2', null, 'Send a calendar invite'),
       scheduleBox,
       data.events.length ? [h('h2', null, 'Invites sent'), h('div', { class: 'pl-list' }, data.events.map((ev) => eventCard(key, ev, showSchedule, refresh)))] : null,
       h('h2', null, 'Poll settings'),
-      editor(key, poll));
+      editor(key, poll, calOk ? avail : null));
     return null;
   }
 
@@ -369,10 +385,11 @@
     const ev = editing || {};
     const optSelect = h('select', { class: 'pl-input-text' },
       h('option', { value: '' }, '— choose a time slot —'),
-      poll.options.map((o) => {
+      poll.options.map((o, i) => {
+        const c = data.availability && !data.availability.error ? data.availability.slots[i] : null;
         const yes = responses.filter((r) => r.votes[o.id] === 'yes').length;
         const maybe = responses.filter((r) => r.votes[o.id] === 'maybe').length;
-        return h('option', { value: o.id, selected: o.id === ev.optionId }, `${optLabel(o)} · ${yes} yes${maybe ? `, ${maybe} if need be` : ''}`);
+        return h('option', { value: o.id, selected: o.id === ev.optionId }, `${optLabel(o)} · ${yes} yes${maybe ? `, ${maybe} if need be` : ''}${c ? (c.busy ? ` · you are busy ${c.busy}/${c.total} weeks` : ' · you are free') : ''}`);
       }));
 
     const checks = withEmail.map((r) => ({ r, box: h('input', { type: 'checkbox', checked: Boolean(editing && ev.attendees.includes(r.email)) }), mark: h('span', { class: 'pl-chip' }) }));
@@ -472,7 +489,7 @@
     return form;
   }
 
-  function editor(key, poll) {
+  function editor(key, poll, initialAvail) {
     const p = poll || { title: '', description: '', location: '', timezone: browserZone(), allowMaybe: true, hideResponses: false, closed: false, options: [] };
     let options = p.options.map((o) => Object.assign({}, o));
 
@@ -484,6 +501,56 @@
     const maybe = h('input', { type: 'checkbox', checked: p.allowMaybe });
     const hide = h('input', { type: 'checkbox', checked: p.hideResponses });
     const closed = h('input', { type: 'checkbox', checked: p.closed });
+
+    const calCheck = h('input', { type: 'checkbox', checked: Boolean(p.calendarCheck) });
+    const calIds = h('input', { class: 'pl-input-text', type: 'text', value: p.calendarIds || 'primary', placeholder: 'primary' });
+    const calFrom = h('input', { class: 'pl-input-text', type: 'date', value: p.calendarFrom || '' });
+    const calWeeks = h('input', { class: 'pl-input-text', type: 'number', min: 1, max: 26, value: p.calendarWeeks || 8 });
+    const calHide = h('input', { type: 'checkbox', checked: p.calendarHide !== false });
+    const calTol = h('input', { class: 'pl-input-text', type: 'number', min: 0, max: 26, value: p.calendarTolerance || 0 });
+    const calSettings = () => ({
+      timezone: tz.value, calendarCheck: calCheck.checked, calendarIds: calIds.value, calendarFrom: calFrom.value,
+      calendarWeeks: Number(calWeeks.value), calendarHide: calHide.checked, calendarTolerance: Number(calTol.value),
+    });
+    const slotKey = (o) => `${o.day}|${o.start}|${o.duration}`;
+    const busyMap = new Map();
+    if (initialAvail) p.options.forEach((o, i) => busyMap.set(slotKey(o), initialAvail.slots[i]));
+    const calBox = h('div', { class: 'pl-generator' },
+      h('label', { class: 'pl-check' }, calCheck, ' Check my Google Calendar for conflicts'),
+      h('div', { class: 'pl-cal-settings' },
+        field('Calendars to check', calIds, '"primary" is your main calendar. Add other calendar IDs (for example a work calendar shared with this account), separated by commas.'),
+        h('div', { class: 'pl-grid-form' }, field('Check from', calFrom, 'Empty means today.'), field('Weeks to check', calWeeks)),
+        h('label', { class: 'pl-check' }, calHide, ' Hide slots from participants when I am busy'),
+        field('Busy weeks allowed before hiding', calTol, '0 hides a slot if you are busy in any checked week. For example, 1 tolerates a single clash.'),
+        h('div', { class: 'pl-actions' },
+          h('button', { type: 'button', class: 'pl-btn', onclick: (e) => checkCalendar(e.currentTarget) }, 'Check my calendar now'),
+          h('button', { type: 'button', class: 'pl-btn pl-btn-quiet', onclick: () => {
+            const tol = Number(calTol.value) || 0;
+            const busy = options.filter((o) => (busyMap.get(slotKey(o)) || { busy: 0 }).busy > tol);
+            if (!busy.length) return toast('No checked slot clashes with your calendar.');
+            if (!window.confirm(`Remove ${busy.length} slot${busy.length === 1 ? '' : 's'} that clash with your calendar?`)) return null;
+            options = options.filter((o) => !busy.includes(o));
+            drawOptions();
+            return null;
+          } }, 'Remove busy slots'))));
+    const syncCal = () => { calBox.querySelector('.pl-cal-settings').hidden = !calCheck.checked; };
+    calCheck.addEventListener('change', syncCal);
+
+    async function checkCalendar(button) {
+      if (!options.length) return toast('Add time slots first.', true);
+      return busy(button, async () => {
+        try {
+          const res = await api('adminCheckSlots', { key, poll: Object.assign(calSettings(), { options }) });
+          if (res.error) return toast(res.error, true);
+          options.forEach((o, i) => busyMap.set(slotKey(o), res.slots[i]));
+          drawOptions();
+          const clash = res.slots.filter((c) => c.busy).length;
+          return toast(`${clash} of ${options.length} slots clash with your calendar in the next ${res.weeks} weeks.${res.warnings && res.warnings.length ? ` Could not read: ${res.warnings.join('; ')}` : ''}`, Boolean(res.warnings && res.warnings.length));
+        } catch (err) {
+          return toast(err.message, true);
+        }
+      });
+    }
 
     const dayBoxes = DAYS.map((d, i) => h('input', { type: 'checkbox', value: i, checked: !poll && i < 5 }));
     const from = h('input', { class: 'pl-input-text', type: 'time', value: '09:00' });
@@ -499,7 +566,9 @@
           DAYS.map((d, i) => h('option', { value: i, selected: i === o.day }, d))),
         h('input', { class: 'pl-input-text', type: 'time', value: o.start, 'aria-label': 'Start time', onchange: (e) => { if (e.target.value) { o.start = e.target.value; drawOptions(); } } }),
         h('input', { class: 'pl-input-text', type: 'number', min: 5, max: 1440, step: 5, value: o.duration, 'aria-label': 'Duration in minutes', onchange: (e) => { o.duration = Math.max(5, Number(e.target.value) || 60); drawOptions(); } }),
-        h('span', { class: 'pl-sub' }, `min · ends ${fromMin(toMin(o.start) + o.duration)}`),
+        h('span', { class: 'pl-sub' }, `min · ends ${fromMin(toMin(o.start) + o.duration)}`,
+          busyMap.has(slotKey(o)) ? h('span', { class: `pl-cal-badge ${busyMap.get(slotKey(o)).busy ? 'is-busy' : 'is-free'}` },
+            busyMap.get(slotKey(o)).busy ? `busy ${busyMap.get(slotKey(o)).busy}/${busyMap.get(slotKey(o)).total}` : 'free') : null),
         h('button', { type: 'button', class: 'pl-link-danger', 'aria-label': `Remove ${optLabel(o)}`, onclick: () => { options = options.filter((x) => x !== o); drawOptions(); } }, 'Remove')))
         : [h('p', { class: 'pl-muted' }, 'No time slots yet. Add some above.')]));
     }
@@ -529,7 +598,7 @@
         try {
           const saved = await api('adminSavePoll', { key, poll: {
             id: poll ? poll.id : undefined, title: title.value, description: desc.value, location: loc.value, timezone: tz.value,
-            allowMaybe: maybe.checked, hideResponses: hide.checked, closed: closed.checked, options,
+            allowMaybe: maybe.checked, hideResponses: hide.checked, closed: closed.checked, options, ...calSettings(), timezone: tz.value,
           } });
           if (poll) adminPoll(key, saved.id).then(() => toast('Poll saved.'));
           else location.search = `?id=${encodeURIComponent(saved.id)}`;
@@ -548,6 +617,7 @@
         h('div', { class: 'pl-actions' }, h('button', { type: 'button', class: 'pl-btn', onclick: addSlots }, 'Add slots'),
           h('button', { type: 'button', class: 'pl-btn pl-btn-quiet', onclick: () => { if (options.length && window.confirm('Remove all time slots?')) { options = []; drawOptions(); } } }, 'Remove all'))),
       list),
+    h('div', { class: 'pl-field' }, h('span', { class: 'pl-label' }, 'My availability'), calBox),
     h('div', { class: 'pl-checks' },
       h('label', { class: 'pl-check' }, maybe, ' Allow "if need be" answers'),
       h('label', { class: 'pl-check' }, hide, ' Hide responses from participants'),
@@ -562,6 +632,7 @@
       } }, 'Delete poll') : null));
 
     drawOptions();
+    syncCal();
     return form;
   }
 

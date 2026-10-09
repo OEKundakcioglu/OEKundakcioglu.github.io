@@ -544,3 +544,57 @@ textarea.pl-input-text {
     min-width: 120px;
   }
 }
+
+/* Calendar availability */
+
+.pl-banner-warn {
+  background: #fdf2d2;
+  color: #6b4b00;
+}
+
+.poll-app .pl-grid .pl-cal-row th,
+.poll-app .pl-grid .pl-cal-row td {
+  border-top: 1px solid var(--pl-line);
+  font-size: 0.75rem !important;
+}
+
+.poll-app .pl-grid .pl-cal.is-free {
+  color: var(--pl-yes);
+}
+
+.poll-app .pl-grid .pl-cal.is-busy {
+  background: #fbe9e7;
+  color: var(--pl-error);
+  font-weight: 600;
+}
+
+.pl-cal-hidden {
+  display: block;
+  font-weight: 400;
+}
+
+.pl-cal-badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 0 6px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+
+.pl-cal-badge.is-free {
+  background: var(--pl-yes-bg);
+  color: var(--pl-yes);
+}
+
+.pl-cal-badge.is-busy {
+  background: #fbe9e7;
+  color: var(--pl-error);
+}
+
+.pl-cal-settings > * + * {
+  margin-top: 10px;
+}
+
+.pl-cal-settings {
+  margin-top: 10px;
+}
