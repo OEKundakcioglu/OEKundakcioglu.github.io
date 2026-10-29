@@ -57,6 +57,9 @@ My research also involves combinatorial optimization approaches in numerous subd
 ### Projects in Progress
 
 * **PI**,
+_An Instructor-Governed, Course-Grounded AI Assistant for Lecture-Based University Courses_  
+Sabancı University Integration Projects Support (IPS) Program.
+* **PI**,
 _Dual-Visit Service Logistics with Time-Dependent Travel Times_  
 TUBITAK ARDEB 1001.
 * **PI**,
