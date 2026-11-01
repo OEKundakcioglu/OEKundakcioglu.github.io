@@ -6,11 +6,11 @@ permalink: /research/
 ---
 # Research
 
-My research focuses on **decision analytics** and **mathematical optimization**, particularly for problems in _supply chain management_ and _data science_.
+My research focuses on **mathematical optimization** and **data analytics**, particularly for problems in _supply chain management_, _sports analytics_, and _engineering education_.
 
-I work on inventory control under demand and supply uncertainty. These decision problems are ubiquitous in _healthcare_ and _humanitarian aid operations_. I have also studied various mathematical optimization problems in production and service systems, including scheduling, lot sizing, routing, and pricing.
+I work on various mathematical optimization problems in production and service systems, including scheduling, lot sizing, routing, and inventory control under supply and demand uncertainty, with applications in healthcare and humanitarian operations. Building on this background, I am increasingly interested in how artificial intelligence can support supply chain planning and engineering education.
 
-My research also involves combinatorial optimization approaches in numerous subdomains of data science, including supervised learning and time series analysis. In addition, I have applied some of these techniques to the toxicological evaluation of nanoparticles and interpreting EEG data. 
+My research also involves optimization-based data analytics, including supervised learning and time series analysis. I have applied some of these techniques to the toxicological evaluation of nanoparticles, the interpretation of EEG data, and sports analytics.
 
 ---
 
@@ -61,20 +61,20 @@ _An Instructor-Governed, Course-Grounded AI Assistant for Lecture-Based Universi
 Sabancı University Integration Projects Support (IPS) Program.
 * **PI**,
 _Dual-Visit Service Logistics with Time-Dependent Travel Times_  
-TUBITAK ARDEB 1001.
+TÜBİTAK ARDEB 1001.
 * **PI**,
 _Industry 4.0 Applications in Flat Steel Manufacturing_  
-TUBITAK BIDEB 2244, co-PI: O. Ozener.
+TÜBİTAK BIDEB 2244, co-PI: O. Ozener.
 
 ### Completed Projects as PI
 * _Coordination and Management of Uncertainty in Refugee Camp Inventory Operations_  
-TUBITAK ARDEB 1001.
+TÜBİTAK ARDEB 1001.
 * _Airline Optimization and Engineering System_  
-TUBITAK TEYDEB 1507.
+TÜBİTAK TEYDEB 1507.
 * _TV Commercial Broadcast Management Suite_  
-TUBITAK TEYDEB 1507.
+TÜBİTAK TEYDEB 1507.
 * _Inventory Management and Transshipment Policies for Drugs with No Annual Contract in Pharmaceutical Supply Chain Planning Under Uncertainty_  
-TUBITAK ARDEB 3501 Career Development Program.
+TÜBİTAK ARDEB 3501 Career Development Program.
 * _Development of an Activities Engine_  
 EmLogis Incorporated Research Gift.
 * _Enhancing Student Engagement and Encouraging Participation Through Web 2.0 in an Online Version of Graduate Course in Optimization and Data Mining_  
@@ -87,10 +87,10 @@ University of Houston New Faculty Research Grant.
 ### Other Completed Projects
 * **Researcher**, 
 _Stock Replenishment and Storage Space Allocation Problem When Demand is Stock Dependent_   
-TUBITAK ARDEB 1001, PI: M. Önal, co-PI: E. Albey.
+TÜBİTAK ARDEB 1001, PI: M. Önal, co-PI: E. Albey.
 * **Consultant**,
 _MeVe: Supporting Tool for the Measurement and Verification of Energy Savings Under IPMVP_  
-TUBITAK TEYDEB 1509 – EUREKA, PI: MIR ARGE, SYLTEC, CARTIF.
+TÜBİTAK TEYDEB 1509 – EUREKA, PI: MIR ARGE, SYLTEC, CARTIF.
 * **Consultant**,
 _Design and Development of Wireless Sensor Network Platform for Power Theft and Loss Detection on Overhead Lines_  
 KOSGEB, PI: REENGEN.
