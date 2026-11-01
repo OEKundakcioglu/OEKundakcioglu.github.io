@@ -6,11 +6,13 @@ permalink: /research/
 ---
 # Research
 
-My research focuses on **decision analytics** and **mathematical optimization**, particularly for problems in _supply chain management_ and _data science_.
+My research focuses on **decision analytics** and **mathematical optimization**, particularly for problems in _supply chain management_ and _data science_. In recent years, my work has been expanding toward _industrial engineering education_, _artificial intelligence in education_, and _sports analytics_.
 
-I work on inventory control under demand and supply uncertainty. These decision problems are ubiquitous in _healthcare_ and _humanitarian aid operations_. I have also studied various mathematical optimization problems in production and service systems, including scheduling, lot sizing, routing, and pricing.
+I work on inventory control under demand and supply uncertainty. These decision problems are ubiquitous in _healthcare_ and _humanitarian aid operations_. I have also studied various mathematical optimization problems in production and service systems, including scheduling, lot sizing, routing, and pricing. Building on this background, I am increasingly interested in how artificial intelligence can support supply chain planning.
 
-My research also involves combinatorial optimization approaches in numerous subdomains of data science, including supervised learning and time series analysis. In addition, I have applied some of these techniques to the toxicological evaluation of nanoparticles and interpreting EEG data. 
+My research also involves combinatorial optimization approaches in numerous subdomains of data science, including supervised learning and time series analysis. In addition, I have applied some of these techniques to the toxicological evaluation of nanoparticles and the interpretation of EEG data. More recently, I have been using these analytics tools in sports.
+
+In industrial engineering education, I study how artificial intelligence can support teaching. Within the scope of a Sabancı University Integration Projects Support (IPS) project, we are developing an instructor-governed, course-grounded AI assistant for lecture-based university courses.
 
 ---
 
