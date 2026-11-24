@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FENS AI Tool Expenses</title>
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #ffffff; --text: #1b1f24; --muted: #5b6573;
+    --border: #d9dee5; --accent: #2f5bd3; --accent-soft: #e8eefc; --danger: #b42318;
+    color-scheme: light;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+    font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 1100px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.5rem; margin: 0 0 4px; }
+  .lede { color: var(--muted); margin: 0 0 24px; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+  label.field { display: block; font-weight: 600; margin-bottom: 4px; }
+  .hint { color: var(--muted); font-size: 0.85rem; font-weight: 400; }
+  input, select { font: inherit; color: inherit; background: var(--card);
+    border: 1px solid var(--border); border-radius: 8px; padding: 7px 9px; width: 100%; }
+  input:focus, select:focus, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .name-row { max-width: 360px; margin-bottom: 24px; }
+  h2 { font-size: 1.1rem; margin: 0 0 4px; }
+  table { width: 100%; border-collapse: collapse; margin-top: 16px; }
+  th { text-align: left; font-size: 0.8rem; text-transform: uppercase; letter-spacing: .03em;
+    color: var(--muted); padding: 8px; border-bottom: 1px solid var(--border); }
+  td { padding: 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  td.tool { font-weight: 600; width: 22%; }
+  td.tool .hint { display: block; }
+  .usd { position: relative; }
+  .usd::before { content: "$"; position: absolute; left: 9px; top: 8px; color: var(--muted); }
+  .usd input { padding-left: 20px; }
+  .other-amount { margin-top: 6px; }
+  .other-amount[hidden] { display: none; }
+  .row-actions { text-align: right; }
+  select:required:invalid { border-color: var(--danger); }
+  .req-note { display: none; color: var(--danger); font-size: 0.8rem; margin-top: 4px; }
+  select:required:invalid + .req-note { display: block; }
+  tr[hidden], tbody[hidden], button[hidden] { display: none !important; }
+  .table-actions { display: flex; flex-wrap: wrap; gap: 4px 20px; margin-top: 8px; }
+  button { font: inherit; cursor: pointer; border-radius: 8px; }
+  .btn-link { background: none; border: 0; color: var(--accent); padding: 4px 0; }
+  .btn-remove { background: none; border: 0; color: var(--danger); font-size: 0.85rem; padding: 4px 0; }
+  .btn-primary { background: var(--accent); color: #fff; border: 0; padding: 10px 22px; font-weight: 600; }
+  .btn-primary:disabled { opacity: .6; cursor: wait; }
+  .footer { display: flex; flex-wrap: wrap; gap: 16px; align-items: center;
+    justify-content: space-between; margin-top: 20px; }
+  .total { color: var(--muted); }
+  .total strong { color: var(--text); }
+  [data-form-status] { margin: 12px 0 0; font-weight: 600; }
+  @media (max-width: 760px) {
+    thead { display: none; }
+    table, tbody, tr, td { display: block; width: 100%; }
+    tr { border: 1px solid var(--border); border-radius: 10px; padding: 6px 4px; margin-bottom: 12px; }
+    td { border: 0; padding: 6px 8px; }
+    td.tool { width: 100%; }
+    td[data-label]::before { content: attr(data-label); display: block; font-size: 0.75rem;
+      text-transform: uppercase; color: var(--muted); margin-bottom: 2px; }
+    .row-actions { text-align: left; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Sabancı University FENS Survey on AI Tool Expenses</h1>
+  <p class="lede">The aim of this survey is to determine AI tool usage and expenses across FENS, in order to assess opportunities for institutional (enterprise) licensing.</p>
+
+  <form id="ai-spend-form" class="card" novalidate>
+    <div class="name-row">
+      <label class="field" for="fullName">Name <span class="hint">(optional)</span></label>
+      <input id="fullName" name="fi-sender-fullName" autocomplete="name">
+    </div>
+
+    <h2>How much are you approximately spending for the following AI tools?</h2>
+    <p class="hint"><u>Annual plans</u>: choose the closest tier.<br>Leave a row on "Not used" if it doesn't apply. Plan prices are approximate monthly list prices.</p>
+
+    <table>
+      <thead>
+        <tr><th>AI tool</th><th>Plan (~USD/month)</th><th>Extra expenses - API usage, extra seats, add-ons (USD/month)</th><th>Expense type</th></tr>
+      </thead>
+      <tbody id="tool-rows"></tbody>
+      <tbody id="other-rows"></tbody>
+    </table>
+    <div class="table-actions">
+      <button type="button" class="btn-link" id="toggle-rows" aria-controls="tool-rows other-rows"></button>
+      <button type="button" class="btn-link" id="add-other">+ Add another tool</button>
+    </div>
+
+    <div class="footer">
+      <div class="total">Estimated monthly total: <strong id="total">$0</strong></div>
+      <button type="submit" class="btn-primary">Submit</button>
+    </div>
+    <p data-form-status role="status"></p>
+  </form>
+</main>
+
+<script>
+  // Plan options per tool. "" = not used, "__other" = custom amount.
+  const TOOLS = [
+    { key: "chatgpt", label: "ChatGPT (OpenAI)", plans: [
+      ["ChatGPT Free ($0)", 0], ["ChatGPT Go (~$8/month)", 8], ["ChatGPT Plus (~$20/month)", 20],
+      ["ChatGPT Business seat (~$25/month)", 25], ["ChatGPT Pro (~$100/month)", 100], ["ChatGPT Pro (~$200/month)", 200]] },
+    { key: "claude", label: "Claude (Anthropic)", plans: [
+      ["Claude Free ($0)", 0], ["Claude Pro (~$20/month)", 20], ["Claude Team Standard seat (~$25/month)", 25],
+      ["Claude Max 5x (~$100/month)", 100], ["Claude Team Premium seat (~$125/month)", 125], ["Claude Max 20x (~$200/month)", 200]] },
+    { key: "google_ai", label: "Gemini & NotebookLM (Google)", plans: [
+      ["University Google account only (EDU, $0)", 0], ["Personal Google account, free tier ($0)", 0],
+      ["Personal Google AI Plus (~$8/month)", 8], ["Personal Google AI Pro (~$20/month)", 20],
+      ["Personal Google AI Ultra 5x (~$100/month)", 100], ["Personal Google AI Ultra 20x (~$200/month)", 200]] },
+    { key: "copilot", label: "Microsoft Copilot", plans: [
+      ["Copilot Free ($0)", 0], ["Microsoft 365 Personal (~$10/month)", 10], ["Microsoft 365 Family (~$13/month)", 13],
+      ["Microsoft 365 Premium (~$20/month)", 20], ["Microsoft 365 Copilot business seat (~$30/month)", 30],
+      ["Microsoft 365 Pro (~$100/month)", 100]] },
+    { key: "perplexity", label: "Perplexity", plans: [
+      ["Perplexity Free ($0)", 0], ["Perplexity Pro (~$20/month)", 20],
+      ["Perplexity Enterprise Pro seat (~$40/month)", 40], ["Perplexity Max (~$200/month)", 200]] },
+    { key: "deepseek", label: "DeepSeek", plans: [
+      ["DeepSeek Free chat ($0)", 0], ["DeepSeek API only (enter under Extra expenses)", 0]] },
+    { key: "grok", label: "Grok (xAI)", plans: [
+      ["Grok Free ($0)", 0], ["SuperGrok Lite (~$10/month)", 10], ["SuperGrok (~$30/month)", 30],
+      ["SuperGrok Plus (~$100/month)", 100], ["SuperGrok Heavy (~$300/month)", 300]] },
+    { key: "image_gen", label: "Image generators", hint: "e.g., Midjourney, DALL-E, Adobe Firefly", plans: [
+      ["Free tier only ($0)", 0], ["Included in my ChatGPT/Gemini plan", 0],
+      ["Midjourney Basic (~$10/month)", 10], ["Midjourney Standard (~$30/month)", 30],
+      ["Midjourney Pro (~$60/month)", 60], ["Midjourney Mega (~$120/month)", 120],
+      ["Adobe Firefly Standard (~$10/month)", 10], ["Adobe Firefly Pro (~$20/month)", 20],
+      ["Adobe Firefly Pro Plus (~$50/month)", 50]] },
+    { key: "video_audio_gen", label: "Video or audio generators", hint: "e.g., Sora, Runway, ElevenLabs", plans: [
+      ["Free tier only ($0)", 0], ["Sora, included in my ChatGPT plan", 0],
+      ["Runway Standard (~$15/month)", 15], ["Runway Pro (~$35/month)", 35], ["Runway Max (~$95/month)", 95],
+      ["ElevenLabs Starter (~$6/month)", 6], ["ElevenLabs Creator (~$22/month)", 22], ["ElevenLabs Pro (~$99/month)", 99]] },
+    { key: "research_assist", label: "AI research assistants", hint: "e.g., Elicit, Consensus, Scite", plans: [
+      ["Free tier only ($0)", 0], ["Elicit Plus (~$12/month)", 12], ["Elicit Pro (~$49/month)", 49],
+      ["Consensus Pro (~$20/month)", 20], ["Consensus Deep (~$65/month)", 65], ["Scite paid plan (~$20/month)", 20]] },
+  ];
+  const EXPENSE_TYPES = ["Out of pocket", "Internal funding (KAF, PAF etc.)", "External funding"];
+  const PRICE = new Map(TOOLS.flatMap((t) => t.plans));
+
+  function el(tag, attrs = {}, children = []) {
+    const node = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs)) {
+      if (k === "text") node.textContent = v; else node.setAttribute(k, v);
+    }
+    for (const c of [].concat(children)) node.append(c);
+    return node;
+  }
+  function usdInput(name, label) {
+    return el("div", { class: "usd" }, el("input", { name, type: "number", min: "0", step: "0.01",
+      inputmode: "decimal", placeholder: "0", "aria-label": label }));
+  }
+  function expenseSelect(key, label) {
+    return [
+      el("select", { name: `fi-select-${key}_expense_type`, "aria-label": `${label}: expense type` },
+        [el("option", { value: "", text: "Select…" }), ...EXPENSE_TYPES.map((t) => el("option", { value: t, text: t }))]),
+      el("div", { class: "req-note", text: "Required: this tool has a cost." }),
+    ];
+  }
+  function planCell(key, label, plans) {
+    const select = el("select", { name: `fi-select-${key}_plan`, "aria-label": `${label}: plan` }, [
+      el("option", { value: "", text: "Not used" }),
+      ...plans.map(([p]) => el("option", { value: p, text: p })),
+      el("option", { value: "Other plan / amount", text: "Other plan / amount…" }),
+    ]);
+    const other = usdInput(`fi-text-${key}_plan_other_usd`, `${label}: other plan amount in USD`);
+    other.classList.add("other-amount");
+    other.hidden = true;
+    return el("td", { "data-label": "Plan (~USD/month)" }, [select, other]);
+  }
+
+  const VISIBLE_ROWS = 3;
+  const toolRows = document.getElementById("tool-rows");
+  for (const [i, t] of TOOLS.entries()) {
+    const tool = el("td", { class: "tool" }, [t.label, ...(t.hint ? [el("span", { class: "hint", text: t.hint })] : [])]);
+    toolRows.append(el("tr", i < VISIBLE_ROWS ? {} : { "data-extended": "" }, [
+      tool,
+      planCell(t.key, t.label, t.plans),
+      el("td", { "data-label": "Extra expenses - API usage, extra seats, add-ons (USD/month)" }, usdInput(`fi-text-${t.key}_extra_usd`, `${t.label}: extra expenses in USD`)),
+      el("td", { "data-label": "Expense type" }, expenseSelect(t.key, t.label)),
+    ]));
+  }
+
+  // "Other" rows: tool name + plan name + plan amount + extras + expense type. Each gets a unique index.
+  const otherRows = document.getElementById("other-rows");
+  let otherCount = 0;
+  function addOtherRow() {
+    const key = `other${++otherCount}`;
+    const label = `Other tool ${otherCount}`;
+    const remove = el("button", { type: "button", class: "btn-remove", text: "Remove" });
+    const row = el("tr", { "data-other": "" }, [
+      el("td", { class: "tool" }, [
+        el("span", { text: "Other (please specify)" }),
+        el("input", { name: `fi-text-${key}_tool_name`, placeholder: "Tool name", "aria-label": `${label}: name`, style: "margin-top:6px" }),
+      ]),
+      el("td", { "data-label": "Plan (~USD/month)" }, [
+        el("input", { name: `fi-text-${key}_plan_name`, placeholder: "Plan name (optional)", "aria-label": `${label}: plan name` }),
+        el("div", { class: "other-amount" }, usdInput(`fi-text-${key}_plan_usd`, `${label}: plan amount in USD`)),
+      ]),
+      el("td", { "data-label": "Extra expenses - API usage, extra seats, add-ons (USD/month)" }, usdInput(`fi-text-${key}_extra_usd`, `${label}: extra expenses in USD`)),
+      el("td", { "data-label": "Expense type" }, [...expenseSelect(key, label), el("div", { class: "row-actions" }, remove)]),
+    ]);
+    remove.addEventListener("click", () => {
+      row.remove();
+      if (!otherRows.querySelector("tr")) addOtherRow();
+      refresh();
+    });
+    otherRows.append(row);
+    return row;
+  }
+  addOtherRow();
+  document.getElementById("add-other").addEventListener("click", () => {
+    addOtherRow().querySelector("input").focus();
+  });
+
+  // Collapsed: show the first three tools only. Rows already filled in stay visible.
+  const toggle = document.getElementById("toggle-rows");
+  const addOther = document.getElementById("add-other");
+  const filled = (row) => [...row.querySelectorAll("select, input")].some((f) => f.value !== "");
+  let expanded = false;
+  function setExpanded(open) {
+    expanded = open;
+    for (const row of toolRows.querySelectorAll("tr[data-extended]")) row.hidden = !open && !filled(row);
+    const otherFilled = [...otherRows.querySelectorAll("tr")].some(filled);
+    otherRows.hidden = addOther.hidden = !open && !otherFilled;
+    toggle.setAttribute("aria-expanded", String(open));
+    toggle.textContent = open ? "Show fewer tools" : `Show all tools (${TOOLS.length - VISIBLE_ROWS} more, or add your own)`;
+  }
+  toggle.addEventListener("click", () => setExpanded(!expanded));
+  setExpanded(false);
+
+  const money = (input) => { const n = parseFloat(input?.value); return Number.isFinite(n) && n > 0 ? n : 0; };
+  // Per row: show the custom amount box, require expense type when the row costs something, update total.
+  function refresh() {
+    let total = 0;
+    for (const row of document.querySelectorAll("#tool-rows tr, #other-rows tr")) {
+      const [planInput, ...rest] = row.querySelectorAll("td:nth-child(2) select, td:nth-child(2) input");
+      const amounts = row.querySelectorAll('input[type="number"]');
+      const expense = row.querySelector('select[name$="_expense_type"]');
+      let cost = 0;
+      if (planInput.tagName === "SELECT") {
+        const custom = row.querySelector(".other-amount");
+        custom.hidden = planInput.value !== "Other plan / amount";
+        cost += custom.hidden ? (PRICE.get(planInput.value) ?? 0) : money(custom.querySelector("input"));
+        cost += money(row.querySelector('input[name$="_extra_usd"]'));
+      } else {
+        for (const a of amounts) cost += money(a);
+      }
+      expense.required = cost > 0;
+      total += cost;
+    }
+    document.getElementById("total").textContent =
+      "$" + total.toLocaleString("en-US", { maximumFractionDigits: 2 });
+  }
+  document.getElementById("ai-spend-form").addEventListener("input", refresh);
+  document.getElementById("ai-spend-form").addEventListener("change", refresh);
+  refresh();
+</script>
+
+<script src="https://forminit.com/sdk/v1/forminit.js"></script>
+<script>
+  (() => {
+    // Forminit form: inputs are named fi-{type}-{name}. Rules: https://forminit.com/setup.md
+    const FORM_ID = "qmkmybxv6g5";
+    // One message per field Forminit validates, in the page's language. Keys are Forminit's
+    // field names: sender.<name> for fi-sender-*, else the {name} of fi-{type}-{name}.
+    const FIELD_ERRORS = {
+      "sender.fullName": "Please use only letters, spaces, hyphens, apostrophes and periods in your name.",
+    };
+    // Forminit names the failing field in error.fieldName or, today, as the first quoted word of error.message
+    function errorText(error) {
+      const field = error?.fieldName ?? /['"]([^'"]+)['"]/.exec(error?.message ?? "")?.[1];
+      if (field && FIELD_ERRORS[field]) return FIELD_ERRORS[field];
+      if (error?.error === "TOO_MANY_REQUESTS") return "Please wait a few seconds and try again.";
+      return "Something went wrong. Please try again.";
+    }
+    const form = document.getElementById("ai-spend-form");
+    const buttons = form.querySelectorAll('button[type="submit"]');
+    const status = form.querySelector("[data-form-status]");
+    let forminit; // created on first submit: a blocked SDK then shows the error instead of a native GET with the fields in the URL
+    let sending = false;
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      if (sending) return;
+      // Expense type is required on any row with a cost.
+      const missing = form.querySelector("select:invalid, input:invalid");
+      if (missing) {
+        status.textContent = missing.type === "number"
+          ? "Please enter amounts as positive numbers."
+          : "Please choose an expense type for every tool you pay for.";
+        missing.focus();
+        return;
+      }
+      const fd = new FormData(form); // before anything is disabled
+      // after any remap: curly apostrophes in sender names reject the submission
+      for (const k of ["fi-sender-fullName", "fi-sender-firstName", "fi-sender-lastName"]) {
+        const v = fd.get(k);
+        if (typeof v === "string") fd.set(k, v.replace(/[‘’]/g, "'")); // one value each, so set is right
+      }
+      status.textContent = ""; // before the flag: nothing that can throw sits between the flag and try
+      sending = true;
+      buttons.forEach((b) => (b.disabled = true));
+      try {
+        if (!forminit) forminit = new Forminit();
+        const { data, error } = await forminit.submit(FORM_ID, fd);
+        if (error || typeof data?.hashId !== "string") {
+          console.error("Forminit:", error ?? data);
+          status.textContent = errorText(error);
+          return;
+        }
+        form.reset();
+        document.querySelectorAll("#other-rows tr:not(:first-child)").forEach((r) => r.remove());
+        refresh();
+        setExpanded(false);
+        status.textContent = "Thank you! Your response has been recorded.";
+      } catch (err) {
+        console.error("Forminit:", err);
+        status.textContent = "Something went wrong. Please try again.";
+      } finally {
+        sending = false;
+        buttons.forEach((b) => (b.disabled = false));
+      }
+    });
+  })();
+</script>
+</body>
+</html>
